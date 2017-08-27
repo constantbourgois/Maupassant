@@ -1,0 +1,526 @@
+@charset "UTF-8";
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+a,
+a:link {
+	text-decoration: none;
+	border-bottom: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: white;
+}
+a:hover{
+	color:white;
+}
+
+.white {
+	color: white;
+}
+
+.black {
+	color: #191919;
+}
+
+.white-border {
+	border-bottom: 1px solid white;
+}
+
+.black-border {
+	border-bottom: 1px solid#191919;
+}
+
+section {
+	width: 100%;
+}
+
+h3 {
+	letter-spacing: 3px;
+}
+
+
+body {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+
+
+.navmobile {
+	display: none;
+}
+
+header {
+	background-color: #191919;
+	width: 100%;
+	position: relative;
+	padding: 3%;
+	height: 100vh;
+	overflow: hidden;
+	padding-bottom: 15%;
+}
+
+nav {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 2%;
+}
+
+nav li,
+nav li a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: white;
+	display: inline-block;
+	text-align: right;
+}
+
+nav li a {
+	padding-right: 35%;
+	padding-bottom: 5%;
+	letter-spacing: 1.3px;
+}
+
+
+nav ul {
+	padding-right: 10%;
+	border-bottom: 1px solid white;
+	position: fixed;
+	right: 5%;
+}
+
+header div {
+	text-align: center;
+	padding: 0 5%;
+}
+
+header div img {
+	max-width: 90%;
+}
+
+header span {
+	position: absolute;
+	color: white;
+	left: 5%;
+	right: 0;
+	top: 50%;
+	bottom: 0;
+	text-align: left;
+}
+
+h1 {
+	font-size: 77px;
+	font-weight: Bold;
+}
+
+h2 {
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 28px;
+	display: inline;
+}
+
+h2 span {
+	position: static;
+	display: inline-block;
+}
+
+
+/*******************************LOGO ANIM**********************************/
+
+.backhome{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+	z-index: 9000;
+	width: 8vw;
+    
+
+}
+
+.backhome img,.backhome svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+	left: 0;
+	
+}
+.backhome svg{
+	width:100%;
+	background-color: white;
+	fill:#191919;
+
+	
+}
+
+
+
+.backhome img{
+	transition: .25s cubic-bezier(.645,.045,.355,1);
+	clip: rect(0 0 8vw 0);
+	-webkit-clip-path: inset(0 8vw 0 0);
+	clip-path: inset(0 8vw 0 0)
+}
+.backhome:hover img{
+	opacity: 1;
+	clip: rect(0 8vw 8vw 0);
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0)
+}
+
+
+
+
+	
+	/****************************ANIMATION**********************************/
+
+#Acteurs svg {
+	height: 100vh;
+	max-width: 100%;
+}
+
+#paths {
+	visibility: hidden;
+	padding-top: 20px;
+}
+}
+/****************************GALAXY**********************************/
+
+#Acteurs svg {
+	height: 100vh;
+	max-width: 100%;
+}
+
+#paths {
+	visibility: hidden;
+	padding-top: 20px;
+}
+/*****************************LITEBOXES*********************************/
+.lbx{
+	height:100vh;
+	background-image: url("../../assets/img/fondturgotlbx.png");
+	background-position: 25% center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	padding:5%;
+	position:relative;
+	display:none;
+}
+
+
+.lbx .innerlbx{
+	width:60%;
+	display: inline-block;
+	margin-left: 30%;
+	background-color: white;
+	margin-top: 15%;
+	padding:50px;
+	position:relative;
+	height:60vh;
+	
+	
+}
+.lbx p{
+	font-family: 'Playfair Display';
+	font-size: 12px;
+	display: inline-block;
+	margin-bottom: 30%; 
+	padding:5% 0;
+	
+}
+.lbx .paraglbx{
+	width: 60%;
+	display: inline-block;
+	
+	
+}
+.imglbx img{
+	max-width: 100%;
+}
+.imglbx {
+	background-color: #131f6b;
+	opacity:.7;
+	padding: 3%;
+	padding-bottom: 20%;
+	max-width: 30%;
+	position:absolute;
+	top:-50px;
+	right:50px;
+	box-sizing: padding-box;
+	
+
+	
+}
+.lbx a{
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color:#131f6b;
+	width:29%;
+	vertical-align: bottom;
+	border-right:3px solid #131f6b;
+	padding-right: 2%;
+	margin-bottom:3%;
+	margin-left: 10%;
+}
+h5{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 19px;
+	color:#131f6b;
+	padding:0 0%;
+}
+/*****************************EVENTS*********************************/
+#Events img{
+	max-width: 100%;
+}
+#Events {
+	color: white;
+	position: relative;
+	background-image: url("../../assets/img/fondevents.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: -1;
+	padding-bottom: 5%;
+}
+
+#img-bg {
+	background-image: url("../../assets/img/fondevents.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#Events .background {
+	background-color: rgba(25, 25, 25, .67);
+	margin: 5%;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding:7%;
+}
+
+.col-events {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+article {
+	display: inline-block;
+	overflow: visible;
+	
+	vertical-align: top;
+	position: relative;
+	margin-bottom: -100px;
+	padding: 3% 12%;
+}
+
+article>img {
+	width: 80%;
+}
+
+.eventsdata {
+	background-color: #1d1d1b;
+	position: relative;
+	top: -100px;
+	left: 20%;
+	padding: 3%;
+	width: 100%;
+	text-align: left;
+}
+
+.eventdescription {
+	font-family: 'Playfair Display';
+	font-size: 13px;
+	padding-left: 35%;
+}
+
+.eventcontact {
+	font-size: 16px;
+	width: 72.5%;
+	text-align: right;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: bottom;
+}
+
+.eventlinklogo {
+	width: 22.5%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.eventlinklogo img {
+	max-width: 100%;
+}
+
+h3 {
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.new-events {
+	width: 100%;
+}
+
+
+/***************************************CONTACT********************************************/
+
+#Contact {
+	height: 100vh;
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+#Contact h3 {
+	padding: 0;
+	margin: 0;
+}
+
+#Contact a {
+	font-size: 21px;
+	font-weight: bold;
+	color: #191919;
+	letter-spacing: 3px;
+}
+
+#Contact div {
+	font-size: 18px;
+}
+
+
+/***************************************FOOTER********************************************/
+
+footer {
+	background-color: #191919;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	padding: 5%;
+}
+
+footer img {
+	max-width: 30%;
+}
+
+footer a{
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+
+footer ul {
+	margin: 0;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+
+footer ul ul {
+	display: inline-block;
+	width: 48%;
+	padding: 0 5%;
+	letter-spacing: 2px;
+}
+
+footer ul ul li {
+	padding: 10% 0;
+}
+
+#social {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	text-align: right;
+}
+
+#social a {
+	color: #191919;
+}
+
+.smGlobalBtn {
+	/* global button class */
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	padding: 0px;
+	text-decoration: none;
+	text-align: center;
+	color: #191919;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.5em;
+	border-radius: 27px;
+	-moz-border-radius: 27px;
+	-webkit-border-radius: 37px;
+	background-color: white;
+	margin: 5%;
+}
+
+
+/* facebook button class*/
+
+.facebookBtn:before {
+	/* use :before to add the relevant icons */
+	font-family: "FontAwesome";
+	content: "\f09a";
+	/* add facebook icon */
+}
+
+.twitterBtn:before {
+	font-family: "FontAwesome";
+	content: "\f099";
+	/* add twitter icon */
+}
+
+.linkedinBtn:before {
+	font-family: "FontAwesome";
+	content: "\f0e1";
+	/* add linkedin icon */
+}
+
+.youtubeBtn:before {
+	font-family: "FontAwesome";
+	content: "\f167";
+	/* add linkedin icon */
+}
+
