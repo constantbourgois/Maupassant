@@ -78,8 +78,8 @@ nav {
 	        justify-content: space-between;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
-	        align-items: center;
-	padding: 2%;
+	        align-items: top;
+	padding: 0 2%;
 }
 
 nav li,
@@ -92,14 +92,15 @@ nav li a {
 }
 
 nav li a {
-	padding-right: 35%;
+	padding-right: 55%;
 	padding-bottom: 5%;
 	letter-spacing: 1.3px;
+
 }
 
 
 nav ul {
-	padding-right: 10%;
+	padding-right: 0%;
 	border-bottom: 1px solid white;
 	position: fixed;
 	right: 5%;
@@ -111,7 +112,9 @@ header div {
 }
 
 header div img {
-	max-width: 90%;
+	max-width: 88%;
+	padding-top: 10%;
+	margin-left: 8%
 }
 
 header span {
@@ -119,7 +122,7 @@ header span {
 	color: white;
 	left: 5%;
 	right: 0;
-	top: 50%;
+	top: 40%;
 	bottom: 0;
 	text-align: left;
 }
@@ -144,11 +147,9 @@ h2 span {
 /*******************************LOGO ANIM**********************************/
 
 .backhome{
-    position: fixed;
-    top: 20px;
-    left: 20px;
 	z-index: 9000;
-	width: 8vw;
+	width: 5.5vw;
+	position:relative;
     
 
 }
@@ -162,8 +163,8 @@ h2 span {
 }
 .backhome svg{
 	width:100%;
-	background-color: white;
-	fill:#191919;
+	background-color: #191919;
+	fill:white;
 
 	
 }
@@ -214,77 +215,18 @@ h2 span {
 .lbx{
 	height:100vh;
 	background-image: url("../../assets/img/fondturgotlbx.png");
+	
 	background-position: 25% center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 30%
+	border:1px solid black;
 	padding:5%;
-	position:relative;
-	display:none;
 }
 
-
-.lbx .innerlbx{
-	width:60%;
-	display: inline-block;
-	margin-left: 30%;
-	background-color: white;
-	margin-top: 15%;
-	padding:50px;
-	position:relative;
-	height:60vh;
-	
-	
-}
 .lbx p{
-	font-family: 'Playfair Display';
-	font-size: 12px;
-	display: inline-block;
-	margin-bottom: 30%; 
-	padding:5% 0;
-	
+	font-family: 
 }
-.lbx .paraglbx{
-	width: 60%;
-	display: inline-block;
-	
-	
-}
-.imglbx img{
-	max-width: 100%;
-}
-.imglbx {
-	background-color: #131f6b;
-	opacity:.7;
-	padding: 3%;
-	padding-bottom: 20%;
-	max-width: 30%;
-	position:absolute;
-	top:-50px;
-	right:50px;
-	box-sizing: padding-box;
-	
 
-	
-}
-.lbx a{
-	display: inline-block;
-	font-family: 'Montserrat';
-	font-weight: bold;
-	color:#131f6b;
-	width:29%;
-	vertical-align: bottom;
-	border-right:3px solid #131f6b;
-	padding-right: 2%;
-	margin-bottom:3%;
-	margin-left: 10%;
-}
-h5{
-	font-family: 'Montserrat';
-	font-weight: bold;
-	font-size: 19px;
-	color:#131f6b;
-	padding:0 0%;
-}
 /*****************************EVENTS*********************************/
 #Events img{
 	max-width: 100%;
@@ -331,7 +273,10 @@ article {
 	vertical-align: top;
 	position: relative;
 	margin-bottom: -100px;
-	padding: 3% 12%;
+	padding-top: 4%;
+	padding-bottom: 16%;
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
 article>img {
@@ -342,7 +287,7 @@ article>img {
 	background-color: #1d1d1b;
 	position: relative;
 	top: -100px;
-	left: 20%;
+	left: 10%;
 	padding: 3%;
 	width: 100%;
 	text-align: left;

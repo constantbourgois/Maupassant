@@ -121,7 +121,7 @@
 		closeTrigger:   'click',               /* Event that triggers the closing of the lightbox */
 		filter:         null,                  /* Selector to filter events. Think $(...).on('click', filter, eventHandler) */
 		root:           'body',                /* Where to append featherlights */
-		openSpeed:      250,                   /* Duration of opening animation */
+		openSpeed:      2000,                   /* Duration of opening animation */
 		closeSpeed:     250,                   /* Duration of closing animation */
 		closeOnClick:   'background',          /* Close lightbox on click ('background', 'anywhere' or false) */
 		closeOnEsc:     true,                  /* Close lightbox when pressing esc */
@@ -129,10 +129,12 @@
 		loading:        '',                    /* Content to show while initial content is loading */
 		persist:        false,                 /* If set, the content will persist and will be shown again when opened again. 'shared' is a special value when binding multiple elements for them to share the same content */
 		otherClose:     null,                  /* Selector for alternate close buttons (e.g. "a.close") */
-		beforeOpen:     function(event){ console.log(event);
-			setTimeout(function(){alert(event) }, 2600);
-		},                /* Called before open. can return false to prevent opening of lightbox. Gets event as parameter, this contains all data */
-		beforeContent:  $.noop,                /* Called when content is loaded. Gets event as parameter, this contains all data */
+		beforeOpen:    function(event){
+            setTimeout(function(){console.log(event)},2300)
+        },                /* Called before open. can return false to prevent opening of lightbox. Gets event as parameter, this contains all data */
+		beforeContent:    function(event){
+            setTimeout(function(){console.log(event)},2300)
+        },                /* Called when content is loaded. Gets event as parameter, this contains all data */
 		beforeClose:    $.noop,                /* Called before close. can return false to prevent opening of lightbox. Gets event as parameter, this contains all data */
 		afterOpen:      $.noop,                /* Called after open. Gets event as parameter, this contains all data */
 		afterContent:   $.noop,                /* Called after content is ready and has been set. Gets event as parameter, this contains all data */
