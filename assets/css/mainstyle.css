@@ -199,12 +199,12 @@ h2 span {
 	visibility: hidden;
 	padding-top: 20px;
 }
-}
+
 /****************************GALAXY**********************************/
 
 #Acteurs svg {
 	height: 100vh;
-	max-width: 100%;
+	width: 100%;
 }
 
 #paths {
@@ -215,16 +215,78 @@ h2 span {
 .lbx{
 	height:100vh;
 	background-image: url("../../assets/img/fondturgotlbx.png");
-	
 	background-position: 25% center;
 	background-repeat: no-repeat;
-	background-size: 30%
+	background-size: 50%;
+	background-size: 30%;
 	border:1px solid black;
 	padding:5%;
+	position:relative;
+	display:none;
 }
 
+
+.lbx .innerlbx{
+	width:60%;
+	display: inline-block;
+	margin-left: 30%;
+	background-color: white;
+	margin-top: 15%;
+	padding:50px;
+	position:relative;
+	height:60vh;
+	
+	
+}
 .lbx p{
-	font-family: 
+	font-family: 'Playfair Display';
+	font-size: 12px;
+	display: inline-block;
+	margin-bottom: 30%; 
+	padding:5% 0;
+	
+}
+.lbx .paraglbx{
+	width: 60%;
+	display: inline-block;
+	
+	
+}
+.imglbx img{
+	max-width: 100%;
+}
+.imglbx {
+	background-color: #131f6b;
+	opacity:.7;
+	padding: 3%;
+	padding-bottom: 20%;
+	max-width: 30%;
+	position:absolute;
+	top:-50px;
+	right:50px;
+	box-sizing: padding-box;
+	
+
+	
+}
+.lbx a{
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color:#131f6b;
+	width:29%;
+	vertical-align: bottom;
+	border-right:3px solid #131f6b;
+	padding-right: 2%;
+	margin-bottom:3%;
+	margin-left: 10%;
+}
+h5{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 19px;
+	color:#131f6b;
+	padding:0 0%;
 }
 
 /*****************************EVENTS*********************************/
