@@ -457,6 +457,7 @@ h3 {
 
 .new-events {
 	width: 100%;
+	padding-bottom: 10%;
 }
 .eventsdata h4 {
     font-size: 1.3rem;
