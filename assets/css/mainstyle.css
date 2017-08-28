@@ -11,7 +11,7 @@ a:link {
 	border-bottom: none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-
+color: white;
 }
 a:hover{
     
@@ -384,12 +384,12 @@ background-color: rgba(25, 25, 25, .05);
 	margin: 0 auto;
 	padding:3%;
     padding-top: 5%;
-    font-size: 25px;
+    font-size: 18px;
 
 }
 
 .col-events {
-	width: 45%;
+	width: 40%;
 	display: inline-block;
 	vertical-align: top;
     
@@ -401,22 +401,22 @@ article {
 	vertical-align: top;
 	position: relative;
 	margin-bottom: -100px;
-	padding-left: 20%;
-	padding-right: 20%;
+	padding-left: 10%;
+    padding-right: 25%;
     margin-top: 15%;
 }
 
 article>img {
-	width: 80%;
+	width: 90%;
 }
 
 .eventsdata {
 	background-color: #1d1d1b;
 	position: relative;
 	top: -100px;
-	left: 10%;
+	left: 8%;
 	padding: 3%;
-	width: 100%;
+	width: 115%;
 	text-align: left;
 }
 
@@ -488,19 +488,19 @@ letter-spacing: 1px;
 #Contact h3 {
 	padding: 0;
 	margin: 0;
-    font-size: 25px;
+    font-size: 18px;
     padding-top: 13%;
 }
 
 #Contact a {
-	font-size: 18px;
+	font-size: 16.5px;
 	font-weight: bold;
 	color: #5C315E;
 	letter-spacing: 3px;
 }
 
 #Contact div {
-	font-size: 18px;
+	font-size: 15px;
 }
 
 
@@ -521,11 +521,13 @@ footer {
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
 	        align-items: flex-end;
-	padding: 5%;
+	padding: 3% 5%;
 }
 
 footer img {
 	max-width: 15%;
+    padding-left: 2%;
+    margin-left: 10%;
 }
 
 footer a{
@@ -544,12 +546,13 @@ footer ul {
 footer ul ul {
 	display: inline-block;
 	width: 48%;
-	padding: 0 5%;
+	padding: 0 3%;
 	letter-spacing: 2px;
 }
 
 footer ul ul li {
 	padding: 10% 0;
+    font-size: 14px;
 }
 
 #social {
