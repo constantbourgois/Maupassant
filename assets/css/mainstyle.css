@@ -333,7 +333,7 @@ h5{
 
 #Events .background {
 position: relative;
-background-color: rgba(25, 25, 25, .67);
+background-color: rgba(25, 25, 25, .05);
 }
 
 
@@ -348,9 +348,10 @@ background-color: rgba(25, 25, 25, .67);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity:.9;
+	opacity:.8;
 	height: 100%;
 	width:100%;
+    z-index: -1;
 }
 #Events .background:after {
     content: ' ';
@@ -373,11 +374,11 @@ background-color: rgba(25, 25, 25, .67);
 }
 #background-transp{
 	margin: 0 5%;
-	background-color: black;
+	background-color: rgba(25, 25, 25, .67);
 }
 
 #Events h3{
-	background-color: rgba(25, 25, 25, .67);
+	background-color: rgba(25, 25, 25, .8);
 	width: 90%;
 	text-align: center;
 	margin: 0 auto;
