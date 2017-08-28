@@ -402,8 +402,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</section>
 				
 			<section id="Events">
+				<h3>Events</h3>
 				<div class="background">
-					<h3>Events</h3>
 					<div class="col-events">
 						<article>
 							<div class="wrapevents">

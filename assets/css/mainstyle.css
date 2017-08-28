@@ -296,13 +296,10 @@ h5{
 #Events {
 	color: white;
 	position: relative;
-	background-image: url("../../assets/img/fondevents.png");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
 	z-index: -1;
 	padding-bottom: 5%;
+	text-align: center;
+	
 }
 
 #img-bg {
@@ -312,14 +309,51 @@ h5{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-#Events .background {
+#Events .background{
+	position:relative;
 	background-color: rgba(25, 25, 25, .67);
-	margin: 5%;
+}
+#Events .background:before {
+	content: ' ';
+    display: block;
+    position: absolute;
 	text-align: center;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding:7%;
+	background-image: url("../../assets/img/fondevents.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity:.67;
+	height: 100%;
+	width:100%;
+}
+#Events .background:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 5%;
+    /* border: 5vw solid blue; */
+    width: 90%;
+    background-color: rgba(25, 25, 25, .67);
+    /* margin: 0 auto; */
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 5%;
+    width: 90%;
+    margin: 0;
+    /* top: 0; */
+    right: 0;
+    left: 5%;
+	
+}
+
+#Events h3{
+	background-color: rgba(25, 25, 25, .67);
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	padding:3%;
+
 }
 
 .col-events {
