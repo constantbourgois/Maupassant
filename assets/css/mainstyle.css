@@ -205,6 +205,7 @@ h2 span {
 #Acteurs svg {
 	height: 100vh;
 	width: 100%;
+    margin-bottom: 6%;
 }
 
 #paths {
@@ -323,9 +324,11 @@ h5{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#Events .background{
-	position:relative;
-	background-color: rgba(25, 25, 25, .67);
+
+
+#Events .background {
+position: relative;
+background-color: black;
 }
 #Events .background:before {
 	content: ' ';
@@ -367,6 +370,8 @@ h5{
 	text-align: center;
 	margin: 0 auto;
 	padding:3%;
+    padding-top: 5%;
+    font-size: 25px;
 
 }
 
@@ -457,6 +462,8 @@ h3 {
 #Contact h3 {
 	padding: 0;
 	margin: 0;
+    font-size: 25px;
+    padding-top: 13%;
 }
 
 #Contact a {
