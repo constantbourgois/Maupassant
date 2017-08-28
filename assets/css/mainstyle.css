@@ -531,3 +531,28 @@ footer ul ul li {
 	/* add linkedin icon */
 }
 
+/* Responsive 15" */
+
+@media only screen and (min-width : 1200px) { 
+  
+ /* Home page */
+    nav li, nav li a {
+    font-size: 14px;
+}
+    
+    header div img {
+    max-width: 83%;    
+    padding-top: 9%;
+}
+    .backhome{
+	width: 5vw;   
+
+}
+    h1 {
+    font-size: 70px;
+}
+    h2 {
+    font-size: 25px;
+}
+
+}
