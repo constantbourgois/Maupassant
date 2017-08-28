@@ -333,8 +333,11 @@ h5{
 
 #Events .background {
 position: relative;
-background-color: black;
+background-color: rgba(25, 25, 25, .67);
 }
+
+
+
 #Events .background:before {
 	content: ' ';
     display: block;
@@ -367,6 +370,10 @@ background-color: black;
     right: 0;
     left: 5%;
 	
+}
+#background-transp{
+	margin: 0 5%;
+	background-color: black;
 }
 
 #Events h3{

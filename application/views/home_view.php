@@ -405,71 +405,73 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<section id="Events">
 				<h3>Events</h3>
 				<div class="background">
-					<div class="col-events">
-						<article>
-							<div class="wrapevents">
-								<img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->background_image; ?>" alt="backgroundevent">
-								<div class="eventsdata">
-									<h4>
-										<?php echo $events[0]->title; ?>
-									</h4>
-									<div class="eventdate">
-										<?php echo $events[0]->date; ?>
-									</div>
-									<div class="eventdescription">
-										<?php echo $events[0]->description; ?>
-									</div>
-									<a class="eventlinklogo" href="<?php echo $events[0]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
-									<a href="#" class="eventcontact">Contact</a>
-								</div>
-							</div>
-						</article>
-					</div>
-					<div class="col-events">
-						<?php for ($i = 1; $i <= 2;$i++){?>
-						<article>
-							<div class="wrapevents">
-								<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image; ?>" alt="backgroundevent">
-								<div class="eventsdata">
-									<h4>
-										<?php echo $events[$i]->title; ?>
-									</h4>
-									<div class="eventdate">
-										<?php echo $events[$i]->date; ?>
-									</div>
-									<div class="eventdescription">
-										<?php echo $events[$i]->description; ?>
-									</div>
-									<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
-									<a href="#" class="eventcontact">Contact</a>
-								</div>
-							</div>
-						</article>
-						<? }?>
-					</div>
-					<div class="new-events">
-						<?php if (count($events) > 3) for ($i = 3; $i < count($events);$i++){?>
-						<div class="col-events">
-							<article>
-								<div class="wrapevents">
-									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image; ?>" alt="backgroundevent">
-									<div class="eventsdata">
-										<h4>
-											<?php echo $events[$i]->title; ?>
-										</h4>
-										<div class="eventdate">
-											<?php echo $events[$i]->date; ?>
+					<div id="background-transp">
+							<div class="col-events">
+								<article>
+									<div class="wrapevents">
+										<img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->background_image; ?>" alt="backgroundevent">
+										<div class="eventsdata">
+											<h4>
+												<?php echo $events[0]->title; ?>
+											</h4>
+											<div class="eventdate">
+												<?php echo $events[0]->date; ?>
+											</div>
+											<div class="eventdescription">
+												<?php echo $events[0]->description; ?>
+											</div>
+											<a class="eventlinklogo" href="<?php echo $events[0]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
+											<a href="#" class="eventcontact">Contact</a>
 										</div>
-										<div class="eventdescription">
-											<?php echo $events[$i]->description; ?>
-										</div>
-										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
-										<a href="#" class="eventcontact">Contact</a>
 									</div>
+								</article>
+							</div>
+							<div class="col-events">
+								<?php for ($i = 1; $i <= 2;$i++){?>
+								<article>
+									<div class="wrapevents">
+										<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image; ?>" alt="backgroundevent">
+										<div class="eventsdata">
+											<h4>
+												<?php echo $events[$i]->title; ?>
+											</h4>
+											<div class="eventdate">
+												<?php echo $events[$i]->date; ?>
+											</div>
+											<div class="eventdescription">
+												<?php echo $events[$i]->description; ?>
+											</div>
+											<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
+											<a href="#" class="eventcontact">Contact</a>
+										</div>
+									</div>
+								</article>
+								<? }?>
+							</div>
+							<div class="new-events">
+								<?php if (count($events) > 3) for ($i = 3; $i < count($events);$i++){?>
+								<div class="col-events">
+									<article>
+										<div class="wrapevents">
+											<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image; ?>" alt="backgroundevent">
+											<div class="eventsdata">
+												<h4>
+													<?php echo $events[$i]->title; ?>
+												</h4>
+												<div class="eventdate">
+													<?php echo $events[$i]->date; ?>
+												</div>
+												<div class="eventdescription">
+													<?php echo $events[$i]->description; ?>
+												</div>
+												<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
+												<a href="#" class="eventcontact">Contact</a>
+											</div>
+										</div>
+									</article>
 								</div>
-							</article>
-						</div>
-						<? }?>
+								<? }?>
+							</div>	
 					</div>
 				</div>
 			</section>
