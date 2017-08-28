@@ -48,10 +48,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</svg>
 				 	<img src="<?php echo base_url()?>assets/img/logoAnim.gif" alt="logoAnimMaupassant"> </a>
 				<ul class="categories">
-					<li><a href="#Home"> home </a></li>
-					<li><a href="#Acteurs"> acteurs </a></li>
-					<li><a href="#Events"> events </a></li>
-					<li><a href="#Contact"> contact </a></li>
+					<li><a href="#Home"> Home </a></li>
+					<li><a href="#Acteurs"> Acteurs </a></li>
+					<li><a href="#Events"> Events </a></li>
+					<li><a href="#Contact"> Contact </a></li>
 				</ul>
 				<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
 			</nav>
