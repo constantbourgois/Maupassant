@@ -218,24 +218,25 @@ h2 span {
 .lbx{
 	height:100vh;
 	background-image: url("../../assets/img/fondturgotlbx.png");
-	background-position: 25% center;
+	background-position: 18% center;
 	background-repeat: no-repeat;
-	background-size: 30%;
-	padding:0%;
+	background-size: 60%;
+	padding-left:10%;
 	position:relative;
 	display:none;
 }
 
 
 .lbx .innerlbx{
-	width:60%;
-	display: inline-block;
-	margin-left: 30%;
-	background-color: white;
-	margin-top: 15%;
-	padding:50px;
-	position:relative;
-	height:60vh;
+	width: 68%;
+display: inline-block;
+margin-left: 24%;
+background-color: white;
+margin-top: 15%;
+padding: 50px;
+position: relative;
+height: 70vh;
+box-shadow: 7px 7px 55px #888888;
 	
 	
 }
@@ -259,11 +260,12 @@ h2 span {
 .imglbx {
 	background-color: #131f6b;
 	opacity:.7;
-	padding: 3%;
-	padding-bottom: 20%;
+	padding: 6%;
+    padding-top: 3%;
+	padding-bottom: 25%;
 	max-width: 30%;
 	position:absolute;
-	top:-50px;
+	top:-75px;
 	right:50px;
 	box-sizing: padding-box;
 	
@@ -277,9 +279,9 @@ h2 span {
 	color:#131f6b;
 	width:29%;
 	vertical-align: bottom;
-	border-right:3px solid #131f6b;
+	border-right:4px solid #131f6b;
 	padding-right: 2%;
-	margin-bottom:5%;
+	margin-bottom:10%;
 	margin-left: 10%;
 }
 .featherlight .featherlight-content {
@@ -304,6 +306,7 @@ h5{
 	font-size: 19px;
 	color:#131f6b;
 	padding:0 0%;
+    line-height: 25px;
 }
 
 /*****************************EVENTS*********************************/
@@ -378,7 +381,7 @@ background-color: black;
 }
 
 .col-events {
-	width: 49%;
+	width: 45%;
 	display: inline-block;
 	vertical-align: top;
     background-color: rgba(25, 25, 25, .9);
@@ -387,14 +390,12 @@ background-color: black;
 article {
 	display: inline-block;
 	overflow: visible;
-	
 	vertical-align: top;
 	position: relative;
 	margin-bottom: -100px;
-	padding-top: 4%;
-	padding-bottom: 16%;
 	padding-left: 20%;
 	padding-right: 20%;
+    margin-top: 15%;
 }
 
 article>img {
@@ -412,13 +413,17 @@ article>img {
 }
 
 .eventdescription {
-	font-family: 'Playfair Display';
-	font-size: 13px;
-	padding-left: 35%;
+font-family: 'Playfair Display';
+font-size: 13.5px;
+padding-left: 30%;
+font-weight: 100;
+letter-spacing: .3px;
+padding-bottom: 5%;
+padding-right: 5%;
 }
 
 .eventcontact {
-	font-size: 16px;
+	font-size: 14px;
 	width: 72.5%;
 	text-align: right;
 	display: inline-block;
@@ -434,6 +439,7 @@ article>img {
 
 .eventlinklogo img {
 	max-width: 100%;
+    padding-bottom: 2%;
 }
 
 h3 {
@@ -444,7 +450,15 @@ h3 {
 .new-events {
 	width: 100%;
 }
-
+.eventsdata h4 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.eventdate{
+font-size: .8rem;
+font-weight: 300;
+letter-spacing: 1px;
+}
 
 /***************************************CONTACT********************************************/
 
@@ -620,20 +634,15 @@ footer ul ul li {
     .lbx {
     height: 92vh;
     background-image: url("../../assets/img/fondturgotlbx.png");
-    background-position: 24% center;
     background-repeat: no-repeat;
     background-size: 50%;
-    padding: 0%;
     position: relative;
     display: none;
+    overflow: hidden;
 }
       /* Events */ 
     
-    .col-events {
-    width: 45%;
-    margin-top: 5%;
-   
-}
+
     
 
 }
