@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</head>
 
 	<body>
-		<header>
+		<header id="Home">
 			<div class="navmobile">
 				<button id="simple-menu" type="button" class="hamburger hamburger--slider">
 					<span class="hamburger-box">
@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</svg>
 				 	<img src="<?php echo base_url()?>assets/img/logoAnim.gif" alt="logoAnimMaupassant"> </a>
 				<ul class="categories">
-					<li><a href="#Home"> Home </a></li>
+					<li><a href="#Home" class="sectionactive"> Home </a></li>
 					<li><a href="#Acteurs"> Acteurs </a></li>
 					<li><a href="#Events"> Events </a></li>
 					<li><a href="#Contact"> Contact </a></li>
