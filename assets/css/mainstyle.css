@@ -377,7 +377,7 @@ background-color: rgba(25, 25, 25, .67);
 }
 
 #Events h3{
-	background-color: rgba(25, 25, 25, .9);
+	background-color: rgba(25, 25, 25, .67);
 	width: 90%;
 	text-align: center;
 	margin: 0 auto;
@@ -391,7 +391,7 @@ background-color: rgba(25, 25, 25, .67);
 	width: 45%;
 	display: inline-block;
 	vertical-align: top;
-    background-color: rgba(25, 25, 25, .9);
+    
 }
 
 article {
