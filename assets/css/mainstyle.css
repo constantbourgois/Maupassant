@@ -2,7 +2,7 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 * {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 a,
@@ -11,11 +11,11 @@ a:link {
 	border-bottom: none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	color: unset;
 }
-a:hover{
-    
-    color: gray;
-	
+
+a:hover {
+	color: gray;
 }
 
 .white {
@@ -42,22 +42,15 @@ h3 {
 	letter-spacing: 3px;
 }
 
-.sectionactive{
-	color:gray!important;
+.sectionactive {
+	color: gray!important;
 }
-
 
 body {
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
-    font-weight: 400;
-}
-
-
-
-.navmobile {
-	display: none;
+	font-weight: 400;
 }
 
 header {
@@ -70,26 +63,26 @@ header {
 	padding-bottom: 15%;
 }
 
-nav {
+.navfull {
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: flex-start;
+	-ms-flex-align: center;
+	align-items: flex-start;
 	padding: 0 2%;
 }
 
-nav li,
-nav li a {
+.navfull li,
+.navfull nav li a {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	color: white;
@@ -97,33 +90,31 @@ nav li a {
 	text-align: right;
 }
 
-nav li a {
-	padding-right: 55%;
-	padding-bottom: 5%;
+.navfull li a {
+	padding-right: 5vw;
+	margin-bottom: 5px;
 	letter-spacing: 1.3px;
-
 }
 
-
-nav ul {
+.navfull ul {
 	padding-right: 0%;
 	border-bottom: 1px solid white;
 	position: fixed;
 	right: 5%;
 }
 
-header div {
+.fondh1 {
 	text-align: center;
 	padding: 0 5%;
 }
 
-header div img {
+.fondh1 img {
 	max-width: 88%;
 	padding-top: 10%;
 	margin-left: 8%
 }
 
-header span {
+.fondh1 span {
 	position: absolute;
 	color: white;
 	left: 5%;
@@ -145,46 +136,42 @@ h2 {
 }
 
 h2 span {
-	position: static;
+	position: static!important;
 	display: inline-block;
 }
 
 
 /*******************************LOGO ANIM**********************************/
 
-.backhome{
+.backhome {
 	z-index: 9000;
 	width: 5.5vw;
-	position:relative;
-    
-
+	position: relative;
 }
 
-.backhome img,.backhome svg {
-    width: 100%;
-    position: absolute;
-    top: 0;
+.backhome img,
+.backhome svg {
+	width: 100%;
+	position: absolute;
+	top: 0;
 	left: 0;
-	
 }
-.backhome svg{
-	width:100%;
+
+.backhome svg {
+	width: 100%;
 	background-color: #191919;
-	fill:white;
-
-	
+	fill: white;
 }
 
-
-
-.backhome img{
-	-webkit-transition: .25s cubic-bezier(.645,.045,.355,1);
-	transition: .25s cubic-bezier(.645,.045,.355,1);
+.backhome img {
+	-webkit-transition: .25s cubic-bezier(.645, .045, .355, 1);
+	transition: .25s cubic-bezier(.645, .045, .355, 1);
 	clip: rect(0 0 8vw 0);
 	-webkit-clip-path: inset(0 8vw 0 0);
 	clip-path: inset(0 8vw 0 0)
 }
-.backhome:hover img{
+
+.backhome:hover img {
 	opacity: 1;
 	clip: rect(0 8vw 8vw 0);
 	-webkit-clip-path: inset(0 0 0 0);
@@ -192,14 +179,13 @@ h2 span {
 }
 
 
+/****************************ANIMATION**********************************/
 
-
-	
-	/****************************ANIMATION**********************************/
 
 /*#Acteurs{
 background-image: url("../../assets/img/galaxia.png");
     }*/
+
 #Acteurs svg {
 	height: 100vh;
 	max-width: 100%;
@@ -210,12 +196,13 @@ background-image: url("../../assets/img/galaxia.png");
 	padding-top: 20px;
 }
 
+
 /****************************GALAXY**********************************/
 
 #Acteurs svg {
 	height: 100vh;
 	width: 100%;
-    margin-bottom: 6%;
+	margin-bottom: 6%;
 }
 
 #paths {
@@ -260,115 +247,117 @@ background-image: url("../../assets/img/galaxia.png");
 .st8 {
 	fill: #55565A;
 }
+
+
 /*****************************LITEBOXES*********************************/
-.lbx{
-	height:100vh;
+
+.lbx {
+	height: 100vh;
 	background-image: url("../../assets/img/fondturgotlbx.png");
 	background-position: 18% center;
 	background-repeat: no-repeat;
 	background-size: 60%;
-	padding-left:10%;
-	position:relative;
-	display:none;
+	padding-left: 10%;
+	position: relative;
+	display: none;
 }
 
-
-.lbx .innerlbx{
+.lbx .innerlbx {
 	width: 68%;
-display: inline-block;
-margin-left: 24%;
-background-color: white;
-margin-top: 15%;
-padding: 50px;
-position: relative;
-height: 70vh;
--webkit-box-shadow: 7px 7px 55px #888888;
-        box-shadow: 7px 7px 55px #888888;
-	
-	
+	display: inline-block;
+	margin-left: 24%;
+	background-color: white;
+	margin-top: 15%;
+	padding: 50px;
+	position: relative;
+	height: 70vh;
+	-webkit-box-shadow: 7px 7px 55px #888888;
+	box-shadow: 7px 7px 55px #888888;
 }
-.lbx p{
+
+.lbx p {
 	font-family: 'Roboto Slab';
-    font-weight: 300;
+	font-weight: 300;
 	font-size: 13px;
 	display: inline-block;
-	margin-bottom: 30%; 
-	padding:5% 0;
-	
+	margin-bottom: 30%;
+	padding: 5% 0;
 }
-.lbx .paraglbx{
+
+.lbx .paraglbx {
 	width: 60%;
 	display: inline-block;
-	
-	
 }
-.imglbx img{
+
+.imglbx img {
 	max-width: 100%;
 }
+
 .imglbx {
 	background-color: #131f6b;
-	opacity:.7;
+	opacity: .7;
 	padding: 6%;
-    padding-top: 3%;
+	padding-top: 3%;
 	padding-bottom: 25%;
 	max-width: 30%;
-	position:absolute;
-	top:-75px;
-	right:50px;
+	position: absolute;
+	top: -75px;
+	right: 50px;
 	-webkit-box-sizing: padding-box;
-	        box-sizing: padding-box;
-	
-
-	
+	box-sizing: padding-box;
 }
-.lbx a{
+
+.lbx a {
 	display: inline-block;
 	font-family: 'Montserrat';
 	font-weight: bold;
-	color:#131f6b;
-	width:29%;
+	color: #131f6b;
+	width: 29%;
 	vertical-align: bottom;
-	border-right:4px solid #131f6b;
+	border-right: 4px solid #131f6b;
 	padding-right: 2%;
-	margin-bottom:10%;
+	margin-bottom: 10%;
 	margin-left: 10%;
 }
+
 .featherlight .featherlight-content {
-    padding: 0px 25px 0;
-    border-bottom: 25px solid transparent;
-    margin-left: 5%;
-    margin-right: 5%;
-    max-height: 95%;
-   
+	padding: 0px 25px 0;
+	border-bottom: 25px solid transparent;
+	margin-left: 5%;
+	margin-right: 5%;
+	max-height: 95%;
 }
 
 .featherlight .featherlight-close-icon {
-    line-height: 48px;
-    width: 53px;
-    font-size: 26px;
-    font-weight: lighter;
-    font-family: 'Montserrat';
+	line-height: 48px;
+	width: 53px;
+	font-size: 26px;
+	font-weight: lighter;
+	font-family: 'Montserrat';
 }
-h5{
+
+h5 {
 	font-family: 'Montserrat';
 	font-weight: bold;
 	font-size: 19px;
-	color:#131f6b;
-	padding:0 0%;
-    line-height: 25px;
+	color: #131f6b;
+	padding: 0 0%;
+	line-height: 25px;
 }
 
+
 /*****************************EVENTS*********************************/
-#Events img{
+
+#Events img {
 	max-width: 100%;
 }
+
 #Events {
 	color: white;
 	position: relative;
 	z-index: -1;
 	padding-bottom: 5%;
 	text-align: center;
-	
 }
 
 #img-bg {
@@ -379,63 +368,59 @@ h5{
 	background-size: cover;
 }
 
-
 #Events .background {
-position: relative;
-background-color: rgba(25, 25, 25, .05);
+	position: relative;
+	background-color: rgba(25, 25, 25, .05);
 }
-
-
 
 #Events .background:before {
 	content: ' ';
-    display: block;
-    position: absolute;
+	display: block;
+	position: absolute;
 	text-align: center;
 	background-image: url("../../assets/img/fondevents.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity:.8;
+	opacity: .8;
 	height: 100%;
-	width:100%;
-    z-index: -1;
+	width: 100%;
+	z-index: -1;
 }
+
 #Events .background:after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    height: 5%;
-    background-color: rgba(25, 25, 25, .67);
-    text-align: center;
-    width: 90%;
-    margin: 0 5%;
-    right: 0;
-    left: 0;
-	
+	content: ' ';
+	display: block;
+	position: absolute;
+	height: 5%;
+	background-color: rgba(25, 25, 25, .67);
+	text-align: center;
+	width: 90%;
+	margin: 0 5%;
+	right: 0;
+	left: 0;
 }
-#background-transp{
+
+#background-transp {
 	margin: 0 5%;
 	background-color: rgba(25, 25, 25, .67);
 }
 
-#Events h3{
+#Events h3 {
 	background-color: rgba(25, 25, 25, .8);
 	width: 90%;
 	text-align: center;
 	margin: 0 auto;
-	padding:3%;
-    padding-top: 5%;
-    font-size: 18px;
-
+	padding: 3%;
+	padding-top: 5%;
+	font-size: 18px;
 }
 
 .col-events {
 	width: 40%;
 	display: inline-block;
 	vertical-align: top;
-    
 }
 
 article {
@@ -445,8 +430,8 @@ article {
 	position: relative;
 	margin-bottom: -100px;
 	padding-left: 10%;
-    padding-right: 25%;
-    margin-top: 15%;
+	padding-right: 25%;
+	margin-top: 15%;
 }
 
 article>img {
@@ -464,13 +449,13 @@ article>img {
 }
 
 .eventdescription {
-font-family: 'Roboto Slab';
-font-size: 13.5px;
-padding-left: 30%;
-font-weight: 100;
-letter-spacing: .3px;
-padding-bottom: 5%;
-padding-right: 5%;
+	font-family: 'Roboto Slab';
+	font-size: 13.5px;
+	padding-left: 30%;
+	font-weight: 100;
+	letter-spacing: .3px;
+	padding-bottom: 5%;
+	padding-right: 5%;
 }
 
 .eventcontact {
@@ -480,9 +465,9 @@ padding-right: 5%;
 	display: inline-block;
 	text-decoration: none;
 	vertical-align: bottom;
-    font-family: 'Roboto Slab';
-    font-weight: 300;
-    letter-spacing: .3px;
+	font-family: 'Roboto Slab';
+	font-weight: 300;
+	letter-spacing: .3px;
 }
 
 .eventlinklogo {
@@ -493,7 +478,7 @@ padding-right: 5%;
 
 .eventlinklogo img {
 	max-width: 100%;
-    padding-bottom: 2%;
+	padding-bottom: 2%;
 }
 
 h3 {
@@ -505,16 +490,27 @@ h3 {
 	width: 100%;
 	padding-bottom: 10%;
 }
+
 .eventsdata h4 {
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    font-weight: 300;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	font-weight: 300;
 }
-.eventdate{
-font-size: .8rem;
-font-weight: 300;
-letter-spacing: 1px;
+
+.eventdate {
+	font-size: .8rem;
+	font-weight: 300;
+	letter-spacing: 1px;
 }
+
+.hideelement {
+	display: none!important;
+}
+
+.navmobile {
+	display: none;
+}
+
 
 /***************************************CONTACT********************************************/
 
@@ -526,17 +522,17 @@ letter-spacing: 1px;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	justify-content: space-around;
 }
 
 #Contact h3 {
 	padding: 0;
 	margin: 0;
-    font-size: 18px;
-    padding-top: 13%;
+	font-size: 18px;
+	padding-top: 13%;
 }
 
 #Contact a {
@@ -560,34 +556,34 @@ footer {
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-box-align: end;
-	    -ms-flex-align: end;
-	        align-items: flex-end;
+	-ms-flex-align: end;
+	align-items: flex-end;
 	padding: 3% 5%;
 }
 
 footer img {
 	max-width: 15%;
-    padding-left: 2%;
-    margin-left: 10%;
+	padding-left: 2%;
+	margin-left: 10%;
 }
 
-footer a{
+footer a {
 	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 }
 
 footer ul {
 	margin: 0;
 	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 }
 
 footer ul ul {
@@ -599,15 +595,15 @@ footer ul ul {
 
 footer ul ul li {
 	padding: 7% 0;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
 }
 
 #social {
 	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 	text-align: right;
 }
 
@@ -664,46 +660,43 @@ footer ul ul li {
 	/* add linkedin icon */
 }
 
+
 /* Responsive 15" */
 
-@media only screen and (min-width : 1200px) { 
-  
- /* Home page */
-    nav li, nav li a {
-    font-size: 14px;
+@media only screen and (min-width: 1200px) {
+	/* Home page */
+	.navfull li,
+	navfull li a {
+		font-size: 14px;
+	}
+	header div img {
+		max-width: 83%;
+		padding-top: 9%;
+	}
+	.backhome {
+		width: 5vw;
+	}
+	h1 {
+		font-size: 70px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	/* Galaxie page */
+	.lbx {
+		height: 92vh;
+		background-image: url("../../assets/img/fondturgotlbx.png");
+		background-repeat: no-repeat;
+		background-size: 50%;
+		position: relative;
+		display: none;
+		overflow: hidden;
+	}
+	/* Events */
 }
-    
-    header div img {
-    max-width: 83%;    
-    padding-top: 9%;
-}
-    .backhome{
-	width: 5vw;   
 
-}
-    h1 {
-    font-size: 70px;
-}
-    h2 {
-    font-size: 25px;
-}
-    
-    
-  /* Galaxie page */   
-    
-    
-    .lbx {
-    height: 92vh;
-    background-image: url("../../assets/img/fondturgotlbx.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    position: relative;
-    display: none;
-    overflow: hidden;
-}
-      /* Events */ 
-    
-
-    
-
+@media only screen and (max-width: 768px) {
+	.navfull {
+		display: none;
+	}
 }

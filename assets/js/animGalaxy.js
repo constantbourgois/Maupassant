@@ -76,6 +76,7 @@ $(document).ready(function () {
 
 		$(targetsAnim).mouseenter(function () {
 			$('.plain').attr('stroke', 'black');
+			console.log('enter',this);
 			var t = $(this).find('.plain');
 			TweenMax.to(t, 1, {
 				delay: 0,
@@ -87,6 +88,7 @@ $(document).ready(function () {
 
 		$(targetsAnim).mouseout(function () {
 			var t = $(this).find('.plain');
+			console.log('leave',this);
 			TweenMax.to(t, 1, {
 				delay: 0,
 				drawSVG: '0%',

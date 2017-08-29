@@ -23,9 +23,22 @@ $(document).ready(function () {
 	var eventsOffset = Math.floor(($('#Events').offset()).top);
 	var contactOffset = Math.floor(($('#Contact').offset()).top);
 
-	var menuLinks = $(".navfull .categories a");
+    var menuLinks = $(".navfull .categories a");
+    
+    $('.navfull').show();
+    $('.navmobile').hide();
 
 	$(window).scroll(function () {
+        if(window.scrollY === 0){
+            $('.navfull').show();
+            $('.navmobile').hide();
+           
+        }
+        else{
+            $('.navfull').hide();
+            $('.navmobile').show();
+           
+        }
 
 		var offsetLinks = menuLinks.offset().top;
 

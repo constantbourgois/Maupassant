@@ -18,13 +18,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.1/hamburgers.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.sidr@2.2.1(stylesheets/jquery.sidr.light.min.css+stylesheets/jquery.sidr.bare.css)">
 		<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 		<link rel="stylesheet" type="text/css" href="assets/css/mainstyle.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/menustyle.css"/>
 	</head>
 
 	<body>
 		<header id="Home">
 			<div class="navmobile">
-				<button id="simple-menu" type="button" class="hamburger hamburger--slider">
+				<!--<button id="simple-menu" type="button" class="hamburger hamburger--slider">
 					<span class="hamburger-box">
 						<span class="hamburger-inner"></span>
 					</span>
@@ -37,7 +39,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<li><a href="#Events"> Events </a></li>
 						<li><a href="#Contact"> Contact </a></li>
 					</ul>
-					<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
+					<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>
+				</div>-->
+
+				<div class="button_container" id="toggle">
+					<span class="top"></span>
+					<span class="middle"></span>
+					<span class="bottom"></span>
+				</div>
+
+				<div class="overlay" id="overlay">
+					<nav class="overlay-menu">
+						<ul>
+							<li><a href="#Home">Home</a></li>
+							<li><a href="#Acteurs">Acteurs</a></li>
+							<li><a href="#Events">Events</a></li>
+							<li><a href="#Contact">Contact</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 
@@ -58,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ul>
 				<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
 			</nav>
-			<div>
+			<div class="fondh1">
 				<img src="assets/img/fondhome.png" alt="fondhome">
 				<span><h1> A little bit<br> about the hotel </h1>
 			<h2> <span>here is where the </span><br><span>welcome line comes </span></h2>
@@ -151,7 +170,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<path class="st3" d="M435.1 145.7c0-.6 0-.8-.2-.8h-.3v-.2h2.9l-.1.5s-.1 0-.1-.1-.1-.2-1-.2h-.6c-.1 0-.1 0-.1.1v1.3h.7c.6 0 .8 0 .8-.2v-.2h.2v1h-.2v-.2c0-.2-.1-.2-.7-.2h-.7v1c0 .7.1.7.2.7h.4c1 0 1.2-.1 1.3-.3 0 0 0-.1.1-.1v.1c0 .1-.1.3-.1.5h-2.7v-.2h.3c.1 0 .1 0 .1-.1v-2.4z"
 							/>
 						</g>
-						<g class="st2">
+						<g data-featherlight="#turgot-lbx" class="st2">
 							<circle class="st4" cx="90.4" cy="90.4" r="90.4" />
 							<path id="SVGID_1_" d="M30.8 115.4h-.3l-1.8-4.2-1.8 4.2h-.3l-2.2-6.2h1.2l1.3 4 1.6-4h.3l1.7 4 1.4-4H33l-2.2 6.2zm11 0h-.3l-1.8-4.2-1.8 4.2h-.3l-2.2-6.2h1.2l1.3 4 1.6-4h.3l1.7 4 1.4-4H44l-2.2 6.2zm11 0h-.3l-1.8-4.2-1.8 4.2h-.3l-2.2-6.2h1.2l1.3 4 1.6-4h.3l1.7 4 1.4-4H55l-2.2 6.2zm6-.2c-.2.2-.4.3-.6.3s-.4-.1-.6-.3c-.2-.2-.3-.4-.3-.6 0-.2.1-.4.3-.6.2-.2.4-.3.6-.3s.4.1.6.3c.2.2.3.4.3.6 0 .2-.1.4-.3.6zm4.9-1.6v-6.9h1.1v6.7c0 .3.1.6.3.8.2.2.4.3.7.3v1c-1.4-.1-2.1-.7-2.1-1.9zm10.8-1.2h-4.4c0 .7.2 1.3.6 1.6.3.3.8.5 1.3.5.6 0 1.1-.2 1.5-.5l.5.8c-.2.2-.4.3-.8.4-.4.2-.9.2-1.4.2-.8 0-1.4-.3-2-.8-.6-.6-.9-1.3-.9-2.3 0-1 .3-1.8.9-2.4.5-.5 1.2-.8 1.9-.8.9 0 1.6.2 2 .7.5.5.7 1.1.7 1.9.2.3.1.5.1.7zm-1.4-1.9c-.3-.3-.7-.5-1.2-.5s-.9.2-1.2.5c-.3.3-.5.7-.5 1.1h3.4c-.1-.4-.2-.8-.5-1.1zm10.1 1.9h-4.4c0 .7.2 1.3.6 1.6.3.3.8.5 1.3.5.6 0 1.1-.2 1.5-.5l.5.8c-.2.2-.4.3-.8.4-.4.2-.9.2-1.4.2-.8 0-1.4-.3-2-.8-.6-.6-.9-1.3-.9-2.3 0-1 .3-1.8.9-2.4.5-.5 1.2-.8 1.9-.8.9 0 1.6.2 2 .7.5.5.7 1.1.7 1.9.2.3.1.5.1.7zm-1.4-1.9c-.3-.3-.7-.5-1.2-.5s-.9.2-1.2.5c-.3.3-.5.7-.5 1.1h3.4c-.1-.4-.2-.8-.5-1.1zm12 4.8v-3.9c0-1-.4-1.4-1.2-1.4-.3 0-.5.1-.7.2-.2.2-.4.3-.5.5v4.5h-1.1V111c0-.3-.1-.5-.3-.7-.2-.2-.5-.3-.9-.3-.2 0-.4.1-.7.2-.2.2-.4.4-.5.6v4.5h-1.1v-6.1h.7l.4.7c.4-.5.9-.8 1.6-.8.9 0 1.5.3 1.8.8.1-.2.3-.4.7-.6.3-.2.7-.2 1-.2.6 0 1.1.2 1.5.6.3.4.5.9.5 1.6v4.1h-1.2v-.1zm9.3-.7c-.5.6-1.2.9-2 .9-.9 0-1.5-.3-2-.9-.5-.6-.7-1.3-.7-2.3 0-.9.3-1.7.8-2.3.5-.6 1.2-.9 2-.9.9 0 1.6.3 2 .8.5.6.7 1.3.7 2.3 0 1.1-.3 1.8-.8 2.4zm-2-4.6c-.5 0-.9.2-1.2.6-.3.4-.4 1-.4 1.7 0 1.5.5 2.3 1.6 2.3.5 0 .9-.2 1.2-.6.3-.4.4-1 .4-1.7 0-1.5-.5-2.3-1.6-2.3zm8.1 5.2c-.2.2-.4.3-.6.3s-.4-.1-.6-.3c-.2-.2-.2-.4-.2-.6 0-.2.1-.4.2-.6.2-.2.4-.3.6-.3s.4.1.6.3c.2.2.3.4.3.6-.1.2-.1.4-.3.6zm8-7.5c-.2-.1-.4-.1-.6-.1-.3 0-.6.1-.8.4-.2.3-.3.6-.3 1v.3h1.2v.9h-1.2v5.2h-1.1v-5.2h-.9v-.9h.9c0-.8.2-1.4.6-1.8.4-.4.9-.7 1.5-.7.3 0 .7.1 1 .2l-.3.7zm6.7 2.6c-.2-.2-.5-.2-.7-.2-.4 0-.7.2-1 .5-.3.4-.4.8-.4 1.3v3.5h-1.1v-6.1h1.1v1c.4-.7 1-1.1 1.8-1.1.2 0 .5 0 .8.1l-.5 1z"
 							/>
@@ -479,14 +498,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script src="assets/js/featherlight.js" type="text/javascript" charset="utf-8"></script>
 
 	<script>
-		/*$(document).ready(function () {
-							$('#simple-menu').sidr({
-								displace: false
-							});
-						});*/
+		$(document).ready(function () {
+
+			$('#toggle').click(function() {
+			$(this).toggleClass('active');
+			$('#overlay').toggleClass('open');
+			});
+				
+			/*$('#simple-menu').sidr({
+										displace: false
+									});*/
+		});
 
 	</script>
 	<script src="assets/js/homejs.js"></script>
 	<script src="assets/js/animGalaxy.js"></script>
 
 	</html>
+
