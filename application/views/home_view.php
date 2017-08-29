@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" href="assets/css/reset.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
 		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
 		crossorigin="anonymous">-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.1/hamburgers.min.css">
@@ -43,11 +43,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<nav id="menu" class="navfull">
 				<a class="backhome" href="#Home">
-					<svg id="logoHome" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 290.95 276.3">
-						<path class="cls-1" d="M192.61 143.27c0 8.9-.31 17.81-.77 26.71 11.15-3.81 20.65-10 27.54-18.06a53.39 53.39 0 0 0 0-70.51c-8.28-9.72-20.26-16.73-34.46-20.07a291 291 0 0 1 6 40.73c1.1 13.73 1.68 27.47 1.69 41.2z"/>
-						<path class="cls-1" d="M.02 0v276.28h290.95V.02H.02zm82.61 184.46a288.12 288.12 0 0 1-6.11 41.2 285.59 285.59 0 0 1-6.12-41.19c-1.14-13.74-1.66-27.47-1.65-41.2s.54-27.46 1.68-41.19a293.17 293.17 0 0 1 6.09-41.2 289.76 289.76 0 0 1 6.09 41.2c1.15 13.73 1.66 27.46 1.68 41.2s-.53 27.45-1.66 41.18zm65.82-77.36c-3.62 5.51-7.48 10.82-11.51 16l-4.14 5.29-5.89-5.19a258.78 258.78 0 0 1-27.9-28.66c-4.27-5.13-8.33-10.44-12.1-16A127.45 127.45 0 0 1 76.59 60.9a134.52 134.52 0 0 1 17.35 11.24q8.1 6.12 15.52 12.89a259.13 259.13 0 0 1 23.15 24.22c3-2.68 6-5.41 9.23-7.93a150.33 150.33 0 0 1 16.56-11.53 146.34 146.34 0 0 1-9.96 17.3zm79.58 53.26a54.41 54.41 0 0 1-36.4 13.05c-.21 3.69-.37 7.37-.68 11.06a286.25 286.25 0 0 1-6.1 41.19 286.28 286.28 0 0 1-6.11-41.19q-1.71-20.6-1.65-41.2c0-13.74.54-27.47 1.67-41.2a295.63 295.63 0 0 1 6-40.78c15-3.29 30.78 1.05 43.26 11.73a57.29 57.29 0 0 1 0 87.34z"/>
+					<svg id="logoHome" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.95 276.3">
+						<path class="cls-1" d="M192.61 143.27c0 8.9-.31 17.81-.77 26.71 11.15-3.81 20.65-10 27.54-18.06a53.39 53.39 0 0 0 0-70.51c-8.28-9.72-20.26-16.73-34.46-20.07a291 291 0 0 1 6 40.73c1.1 13.73 1.68 27.47 1.69 41.2z"
+						/>
+						<path class="cls-1" d="M.02 0v276.28h290.95V.02H.02zm82.61 184.46a288.12 288.12 0 0 1-6.11 41.2 285.59 285.59 0 0 1-6.12-41.19c-1.14-13.74-1.66-27.47-1.65-41.2s.54-27.46 1.68-41.19a293.17 293.17 0 0 1 6.09-41.2 289.76 289.76 0 0 1 6.09 41.2c1.15 13.73 1.66 27.46 1.68 41.2s-.53 27.45-1.66 41.18zm65.82-77.36c-3.62 5.51-7.48 10.82-11.51 16l-4.14 5.29-5.89-5.19a258.78 258.78 0 0 1-27.9-28.66c-4.27-5.13-8.33-10.44-12.1-16A127.45 127.45 0 0 1 76.59 60.9a134.52 134.52 0 0 1 17.35 11.24q8.1 6.12 15.52 12.89a259.13 259.13 0 0 1 23.15 24.22c3-2.68 6-5.41 9.23-7.93a150.33 150.33 0 0 1 16.56-11.53 146.34 146.34 0 0 1-9.96 17.3zm79.58 53.26a54.41 54.41 0 0 1-36.4 13.05c-.21 3.69-.37 7.37-.68 11.06a286.25 286.25 0 0 1-6.1 41.19 286.28 286.28 0 0 1-6.11-41.19q-1.71-20.6-1.65-41.2c0-13.74.54-27.47 1.67-41.2a295.63 295.63 0 0 1 6-40.78c15-3.29 30.78 1.05 43.26 11.73a57.29 57.29 0 0 1 0 87.34z"
+						/>
 					</svg>
-				 	<img src="<?php echo base_url()?>assets/img/logoAnim.gif" alt="logoAnimMaupassant"> </a>
+					<img src="<?php echo base_url()?>assets/img/logoAnim.gif" alt="logoAnimMaupassant"> </a>
 				<ul class="categories">
 					<li><a href="#Home" class="sectionactive"> Home </a></li>
 					<li><a href="#Acteurs"> Acteurs </a></li>
@@ -96,7 +98,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<path class="st0" d="M404.1 129c160 55.3 278.3-33.5 354.5 28.2" />
 					</g>
 					<g id="circles">
-						<g  data-featherlight="#turgot-lbx" class="st2">
+						<g data-featherlight="#turgot-lbx" class="st2">
 							<circle class="st1" cx="402.3" cy="129" r="65" />
 							<path class="st3" d="M397.5 96.4c1.6-.3 4-1.5 5.4-2.2l1.4-.7.3.5 3.6-4.4v-.1h-.1l-5.7.9.4.5s-3.1 1.5-4.7 2.3c-1.7.8-4.6 2-4.6 2s1.2 1.8 4 1.2"
 							/>
@@ -351,40 +353,63 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
 							</p>
 							</span>
-							<a href="#">aller au site pour plus d'informations</a>
-							<span class="imglbx"><img src="assets/img/logoturgottransp.png" alt="turgotlbx"></span>
+						<a href="#">aller au site pour plus d'informations</a>
+						<span class="imglbx"><img src="assets/img/logoturgottransp.png" alt="turgotlbx"></span>
 						</span>
-						
+
 					</div>
 				</div>
 			</section>
-				
+
 			<section id="Events">
 				<h3>Events</h3>
 				<div class="background">
 					<div id="background-transp">
-							<div class="col-events">
-								<article>
-									<div class="wrapevents">
-										<img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->background_image; ?>" alt="backgroundevent">
-										<div class="eventsdata">
-											<h4>
-												<?php echo $events[0]->title; ?>
-											</h4>
-											<div class="eventdate">
-												<?php echo $events[0]->date; ?>
-											</div>
-											<div class="eventdescription">
-												<?php echo $events[0]->description; ?>
-											</div>
-											<a class="eventlinklogo" href="<?php echo $events[0]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
-											<a href="#" class="eventcontact">Contact</a>
+						<div class="col-events">
+							<article>
+								<div class="wrapevents">
+									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->background_image; ?>" alt="backgroundevent">
+									<div class="eventsdata">
+										<h4>
+											<?php echo $events[0]->title; ?>
+										</h4>
+										<div class="eventdate">
+											<?php echo $events[0]->date; ?>
 										</div>
+										<div class="eventdescription">
+											<?php echo $events[0]->description; ?>
+										</div>
+										<a class="eventlinklogo" href="<?php echo $events[0]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
+										<a href="#" class="eventcontact">Contact</a>
 									</div>
-								</article>
-							</div>
+								</div>
+							</article>
+						</div>
+						<div class="col-events">
+							<?php for ($i = 1; $i <= 2;$i++){?>
+							<article>
+								<div class="wrapevents">
+									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image; ?>" alt="backgroundevent">
+									<div class="eventsdata">
+										<h4>
+											<?php echo $events[$i]->title; ?>
+										</h4>
+										<div class="eventdate">
+											<?php echo $events[$i]->date; ?>
+										</div>
+										<div class="eventdescription">
+											<?php echo $events[$i]->description; ?>
+										</div>
+										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
+										<a href="#" class="eventcontact">Contact</a>
+									</div>
+								</div>
+							</article>
+							<? }?>
+						</div>
+						<div class="new-events">
+							<?php if (count($events) > 3) for ($i = 3; $i < count($events);$i++){?>
 							<div class="col-events">
-								<?php for ($i = 1; $i <= 2;$i++){?>
 								<article>
 									<div class="wrapevents">
 										<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image; ?>" alt="backgroundevent">
@@ -398,37 +423,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<div class="eventdescription">
 												<?php echo $events[$i]->description; ?>
 											</div>
-											<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
+											<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
 											<a href="#" class="eventcontact">Contact</a>
 										</div>
 									</div>
 								</article>
-								<? }?>
 							</div>
-							<div class="new-events">
-								<?php if (count($events) > 3) for ($i = 3; $i < count($events);$i++){?>
-								<div class="col-events">
-									<article>
-										<div class="wrapevents">
-											<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image; ?>" alt="backgroundevent">
-											<div class="eventsdata">
-												<h4>
-													<?php echo $events[$i]->title; ?>
-												</h4>
-												<div class="eventdate">
-													<?php echo $events[$i]->date; ?>
-												</div>
-												<div class="eventdescription">
-													<?php echo $events[$i]->description; ?>
-												</div>
-												<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
-												<a href="#" class="eventcontact">Contact</a>
-											</div>
-										</div>
-									</article>
-								</div>
-								<? }?>
-							</div>	
+							<? }?>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -443,7 +445,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</section>
 		</main>
 		<footer>
-			<a  href="#Home"> <img id="logosmall" src="<?php echo base_url()?>assets/img/logompwhite.png" alt="logomaupassant"> </a>
+			<a href="#Home"> <img id="logosmall" src="<?php echo base_url()?>assets/img/logompwhite.png" alt="logomaupassant"> </a>
 			<ul>
 				<ul>
 					<li><a href="#">Turgot</a></li>
@@ -457,10 +459,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ul>
 			</ul>
 			<div id="social">
-			<a class="linkedinBtn smGlobalBtn" href="#" ></a>
-			<a class="twitterBtn smGlobalBtn" href="#" ></a>
-			<a class="youtubeBtn smGlobalBtn" href="#" ></a>
-			<a class="facebookBtn smGlobalBtn" href="#" ></a>
+				<a class="linkedinBtn smGlobalBtn" href="#"></a>
+				<a class="twitterBtn smGlobalBtn" href="#"></a>
+				<a class="youtubeBtn smGlobalBtn" href="#"></a>
+				<a class="facebookBtn smGlobalBtn" href="#"></a>
 			</div>
 		</footer>
 	</body>
@@ -471,20 +473,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
 	crossorigin="anonymous"></script>-->
 	<script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
 	<script src="https:////s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
+	<script src="assets/js/DrawSVGPlugin.min.js"></script>
 	<script src="assets/js/featherlight.js" type="text/javascript" charset="utf-8"></script>
 
 	<script>
 		/*$(document).ready(function () {
-					$('#simple-menu').sidr({
-						displace: false
-					});
-				});*/
+							$('#simple-menu').sidr({
+								displace: false
+							});
+						});*/
 
 	</script>
 	<script src="assets/js/homejs.js"></script>
 	<script src="assets/js/animGalaxy.js"></script>
 
 	</html>
-
