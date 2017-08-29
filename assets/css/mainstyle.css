@@ -51,6 +51,7 @@ body {
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -196,6 +197,9 @@ h2 span {
 	
 	/****************************ANIMATION**********************************/
 
+/*#Acteurs{
+background-image: url("../../assets/img/galaxia.png");
+    }*/
 #Acteurs svg {
 	height: 100vh;
 	max-width: 100%;
@@ -284,7 +288,8 @@ height: 70vh;
 	
 }
 .lbx p{
-	font-family: 'Playfair Display';
+	font-family: 'Roboto Slab';
+    font-weight: 300;
 	font-size: 13px;
 	display: inline-block;
 	margin-bottom: 30%; 
@@ -465,7 +470,7 @@ article>img {
 }
 
 .eventdescription {
-font-family: 'Playfair Display';
+font-family: 'Roboto Slab';
 font-size: 13.5px;
 padding-left: 30%;
 font-weight: 100;
@@ -475,12 +480,15 @@ padding-right: 5%;
 }
 
 .eventcontact {
-	font-size: 14px;
+	font-size: 13px;
 	width: 72.5%;
 	text-align: right;
 	display: inline-block;
 	text-decoration: none;
 	vertical-align: bottom;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    letter-spacing: .3px;
 }
 
 .eventlinklogo {
@@ -506,6 +514,7 @@ h3 {
 .eventsdata h4 {
     font-size: 1.3rem;
     letter-spacing: 1px;
+    font-weight: 300;
 }
 .eventdate{
 font-size: .8rem;
@@ -595,8 +604,10 @@ footer ul ul {
 }
 
 footer ul ul li {
-	padding: 10% 0;
+	padding: 7% 0;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
 
 #social {
