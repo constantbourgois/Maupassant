@@ -11,7 +11,6 @@ a:link {
 	border-bottom: none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-color: white;
 }
 a:hover{
     
@@ -84,7 +83,7 @@ nav {
 	        justify-content: space-between;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
-	        align-items: top;
+	        align-items: flex-start;
 	padding: 0 2%;
 }
 
@@ -178,6 +177,7 @@ h2 span {
 
 
 .backhome img{
+	-webkit-transition: .25s cubic-bezier(.645,.045,.355,1);
 	transition: .25s cubic-bezier(.645,.045,.355,1);
 	clip: rect(0 0 8vw 0);
 	-webkit-clip-path: inset(0 8vw 0 0);
@@ -218,6 +218,44 @@ h2 span {
 	visibility: hidden;
 	padding-top: 20px;
 }
+
+.st0 {
+	fill: none;
+	stroke: #0084D4;
+	stroke-miterlimit: 10;
+}
+
+.st1 {
+	fill: #520A76;
+}
+
+.st2 {
+	opacity: 1;
+}
+
+.st3 {
+	fill: #F4F2F2;
+}
+
+.st4 {
+	fill: #002E6D;
+}
+
+.st5 {
+	fill: #131F6B;
+}
+
+.st6 {
+	fill: #1D1D1B;
+}
+
+.st7 {
+	fill: #282F61;
+}
+
+.st8 {
+	fill: #55565A;
+}
 /*****************************LITEBOXES*********************************/
 .lbx{
 	height:100vh;
@@ -240,7 +278,8 @@ margin-top: 15%;
 padding: 50px;
 position: relative;
 height: 70vh;
-box-shadow: 7px 7px 55px #888888;
+-webkit-box-shadow: 7px 7px 55px #888888;
+        box-shadow: 7px 7px 55px #888888;
 	
 	
 }
@@ -271,7 +310,8 @@ box-shadow: 7px 7px 55px #888888;
 	position:absolute;
 	top:-75px;
 	right:50px;
-	box-sizing: padding-box;
+	-webkit-box-sizing: padding-box;
+	        box-sizing: padding-box;
 	
 
 	

@@ -9,12 +9,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> Maupassant </title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+		<link rel="stylesheet" href="assets/css/reset.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-		crossorigin="anonymous">
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+		crossorigin="anonymous">-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.1/hamburgers.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.sidr@2.2.1(stylesheets/jquery.sidr.light.min.css+stylesheets/jquery.sidr.bare.css)">
 		<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css" type="text/css" rel="stylesheet" />
@@ -87,49 +87,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<main>
 			<section id="Acteurs">
 				<svg id="animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-60 -50 1000 600">
-					<style>
-						.st0 {
-							fill: none;
-							stroke: #0084D4;
-							stroke-miterlimit: 10;
-						}
-
-						.st1 {
-							fill: #520A76;
-						}
-
-						.st2 {
-							opacity: 1;
-						}
-
-						.st3 {
-							fill: #F4F2F2;
-						}
-
-						.st4 {
-							fill: #002E6D;
-						}
-
-						.st5 {
-							fill: #131F6B;
-						}
-
-						.st6 {
-							fill: #1D1D1B;
-						}
-
-						.st7 {
-							fill: #282F61;
-						}
-
-						.st8 {
-							fill: #55565A;
-						}
-
-					</style>
-					<title>
-						pop
-					</title>
 					<g id="paths">
 						<path class="st0" d="M95.7 89.5c109-38.7 170.1 39.4 308.4 39.4" />
 						<path class="st0" d="M104.6 393.9c-54.6-39-70.2-84.5-70.2-137.5 0-52.3 7.8-128.1 61.2-166.9" />
@@ -511,10 +468,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 	crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-	crossorigin="anonymous"></script>
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+	crossorigin="anonymous"></script>-->
 	<script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 	<script src="https:////s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
 	<script src="assets/js/featherlight.js" type="text/javascript" charset="utf-8"></script>
