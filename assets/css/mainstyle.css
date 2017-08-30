@@ -11,7 +11,7 @@ a:link {
 	border-bottom: none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	color: white !important;
+	color: unset;
 }
 
 a:hover {
@@ -183,11 +183,12 @@ h2 span {
 
 
 #Acteurs{
-background-image: url("../../assets/img/mp.constelation.png");
+background-image: url("../../assets/img/galaxy3.png");
      -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
     }
 
 #Acteurs svg {
@@ -254,6 +255,8 @@ background-image: url("../../assets/img/mp.constelation.png");
 
 
 /*****************************LITEBOXES*********************************/
+
+/************ Turgot ***************/
 
 .lbx {
 	height: 100vh;
@@ -341,7 +344,7 @@ background-image: url("../../assets/img/mp.constelation.png");
 	font-family: 'Montserrat';
 }
 
-h5 {
+.lbx h5 {
 	font-family: 'Montserrat';
 	font-weight: bold;
 	font-size: 19px;
@@ -351,6 +354,336 @@ h5 {
 }
 
 
+
+
+/************ Orelis lbx ***************/
+.lbx2 {
+	height: 92vh;
+	background-image: url("../../assets/img/fondturgotlbx_0003_fondorelislbx.png");
+	background-position: 18% center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	padding-left: 10%;
+	position: relative;
+	display: none;
+    opacity: .8;
+}
+
+.lbx2 .innerlbx {
+	width: 68%;
+	display: inline-block;
+	margin-left: 24%;
+	background-color: white;
+	margin-top: 15%;
+	padding: 50px;
+	position: relative;
+	height: 70vh;
+	-webkit-box-shadow: 7px 7px 55px #888888;
+	box-shadow: 7px 7px 55px #888888;
+}
+
+.lbx2 p {
+	font-family: 'Roboto Slab';
+	font-weight: 300;
+	font-size: 13px;
+	display: inline-block;
+	margin-bottom: 30%;
+	padding: 5% 0;
+}
+
+.lbx2 .paraglbx {
+	width: 60%;
+	display: inline-block;
+}
+
+.imglbx2 img {
+	max-width: 120%;
+}
+
+.imglbx2 {
+	background-color: #004993;
+	opacity: .7;
+	padding: 6%;
+	padding-top: 3%;
+	padding-bottom: 25%;
+	max-width: 30%;
+	position: absolute;
+	top: -70px;
+	right: 50px;
+	-webkit-box-sizing: padding-box;
+	box-sizing: padding-box;
+}
+
+.lbx2 a {
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #004993;
+	width: 29%;
+	vertical-align: bottom;
+	border-right: 4px solid #004993;
+	padding-right: 2%;
+	margin-bottom: 10%;
+	margin-left: 10%;
+}
+
+
+
+.lbx2 h5 {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 19px;
+	color: #004993;
+	padding: 0 0%;
+	line-height: 25px;
+}
+
+
+/************ 23 lbx ***************/
+.lbx3 {
+	height: 92vh;
+	background-image: url("../../assets/img/fondturgotlbx_0001_23.png");
+	background-position: 18% center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	padding-left: 10%;
+	position: relative;
+	display: none;
+    opacity: .8;
+}
+
+.lbx3 .innerlbx {
+	width: 68%;
+	display: inline-block;
+	margin-left: 24%;
+	background-color: white;
+	margin-top: 15%;
+	padding: 50px;
+	position: relative;
+	height: 70vh;
+	-webkit-box-shadow: 7px 7px 55px #888888;
+	box-shadow: 7px 7px 55px #888888;
+}
+
+.lbx3 p {
+	font-family: 'Roboto Slab';
+	font-weight: 300;
+	font-size: 13px;
+	display: inline-block;
+	margin-bottom: 30%;
+	padding: 5% 0;
+}
+
+.lbx3 .paraglbx {
+	width: 60%;
+	display: inline-block;
+}
+
+.imglbx3 img {
+	max-width: 120%;
+}
+
+.imglbx3 {
+	background-color: #000000;
+	opacity: .9;
+	padding: 6%;
+	padding-top: 3%;
+	padding-bottom: 25%;
+	max-width: 30%;
+	position: absolute;
+	top: -70px;
+	right: 50px;
+	-webkit-box-sizing: padding-box;
+	box-sizing: padding-box;
+}
+
+.lbx3 a {
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #000000;
+	width: 29%;
+	vertical-align: bottom;
+	border-right: 4px solid #000000;
+	padding-right: 2%;
+	margin-bottom: 10%;
+	margin-left: 10%;
+}
+
+
+
+.lbx3 h5 {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 19px;
+	color: #000000;
+	padding: 0 0%;
+	line-height: 25px;
+}
+
+/************ fundee lbx ***************/
+.lbx4 {
+	height: 92vh;
+	background-image: url("../../assets/img/fondturgotlbx_0000_fundee.png");
+	background-position: 18% center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	padding-left: 10%;
+	position: relative;
+	display: none;
+    opacity: .9;
+}
+
+.lbx4 .innerlbx {
+	width: 68%;
+	display: inline-block;
+	margin-left: 24%;
+	background-color: white;
+	margin-top: 15%;
+	padding: 50px;
+	position: relative;
+	height: 70vh;
+	-webkit-box-shadow: 7px 7px 55px #888888;
+	box-shadow: 7px 7px 55px #888888;
+}
+
+.lbx4 p {
+	font-family: 'Roboto Slab';
+	font-weight: 300;
+	font-size: 13px;
+	display: inline-block;
+	margin-bottom: 30%;
+	padding: 5% 0;
+}
+
+.lbx4 .paraglbx {
+	width: 60%;
+	display: inline-block;
+}
+
+.imglbx4 img {
+	max-width: 100%;
+}
+
+.imglbx4 {
+	background-color: #283062;
+	opacity: .83;
+	padding: 6%;
+	padding-top: 3%;
+	padding-bottom: 25%;
+	max-width: 30%;
+	position: absolute;
+	top: -70px;
+	right: 50px;
+	-webkit-box-sizing: padding-box;
+	box-sizing: padding-box;
+}
+
+.lbx4 a {
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #283062;
+	width: 29%;
+	vertical-align: bottom;
+	border-right: 4px solid #283062;
+	padding-right: 2%;
+	margin-bottom: 10%;
+	margin-left: 10%;
+}
+
+
+
+.lbx4 h5 {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 19px;
+	color: #283062;
+	padding: 0 0%;
+	line-height: 25px;
+}
+
+/************ fiducee lbx ***************/
+.lbx5 {
+	height: 92vh;
+	background-image: url("../../assets/img/fondturgotlbx_0002_fiducee.png");
+	background-position: 18% center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	padding-left: 10%;
+	position: relative;
+	display: none;
+    opacity: .9;
+}
+
+.lbx5 .innerlbx {
+	width: 68%;
+	display: inline-block;
+	margin-left: 24%;
+	background-color: white;
+	margin-top: 15%;
+	padding: 50px;
+	position: relative;
+	height: 70vh;
+	-webkit-box-shadow: 7px 7px 55px #888888;
+	box-shadow: 7px 7px 55px #888888;
+}
+
+.lbx5 p {
+	font-family: 'Roboto Slab';
+	font-weight: 300;
+	font-size: 13px;
+	display: inline-block;
+	margin-bottom: 30%;
+	padding: 5% 0;
+}
+
+.lbx5 .paraglbx {
+	width: 60%;
+	display: inline-block;
+}
+
+.imglbx5 img {
+	max-width: 100%;
+}
+
+.imglbx5 {
+	background-color: #542C8E;
+	opacity: .83;
+	padding: 6%;
+	padding-top: 3%;
+	padding-bottom: 25%;
+	max-width: 30%;
+	position: absolute;
+	top: -70px;
+	right: 50px;
+	-webkit-box-sizing: padding-box;
+	box-sizing: padding-box;
+}
+
+.lbx5 a {
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #542C8E;
+	width: 29%;
+	vertical-align: bottom;
+	border-right: 4px solid #542C8E;
+	padding-right: 2%;
+	margin-bottom: 10%;
+	margin-left: 10%;
+}
+
+
+
+.lbx5 h5 {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 19px;
+	color: #542C8E;
+	padding: 0 0%;
+	line-height: 25px;
+}
 /*****************************EVENTS*********************************/
 
 #Events img {
@@ -614,7 +947,7 @@ footer ul ul li {
 }
 
 #social a {
-	color: #191919;
+	color: #191919 !important;
 }
 
 .smGlobalBtn {
