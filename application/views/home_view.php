@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" type="text/css" href="assets/css/menustyle.css"/>
 	</head>
 
-	<body>
+	<body >
 		<header id="Home">
 			<div class="navmobile">
 				<!--<button id="simple-menu" type="button" class="hamburger hamburger--slider">
@@ -170,7 +170,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<path class="st3" d="M435.1 145.7c0-.6 0-.8-.2-.8h-.3v-.2h2.9l-.1.5s-.1 0-.1-.1-.1-.2-1-.2h-.6c-.1 0-.1 0-.1.1v1.3h.7c.6 0 .8 0 .8-.2v-.2h.2v1h-.2v-.2c0-.2-.1-.2-.7-.2h-.7v1c0 .7.1.7.2.7h.4c1 0 1.2-.1 1.3-.3 0 0 0-.1.1-.1v.1c0 .1-.1.3-.1.5h-2.7v-.2h.3c.1 0 .1 0 .1-.1v-2.4z"
 							/>
 						</g>
-						<g data-featherlight="#turgot-lbx" class="st2">
+						<g class="st2">
 							<circle class="st4" cx="90.4" cy="90.4" r="90.4" />
 							<path id="SVGID_1_" d="M30.8 115.4h-.3l-1.8-4.2-1.8 4.2h-.3l-2.2-6.2h1.2l1.3 4 1.6-4h.3l1.7 4 1.4-4H33l-2.2 6.2zm11 0h-.3l-1.8-4.2-1.8 4.2h-.3l-2.2-6.2h1.2l1.3 4 1.6-4h.3l1.7 4 1.4-4H44l-2.2 6.2zm11 0h-.3l-1.8-4.2-1.8 4.2h-.3l-2.2-6.2h1.2l1.3 4 1.6-4h.3l1.7 4 1.4-4H55l-2.2 6.2zm6-.2c-.2.2-.4.3-.6.3s-.4-.1-.6-.3c-.2-.2-.3-.4-.3-.6 0-.2.1-.4.3-.6.2-.2.4-.3.6-.3s.4.1.6.3c.2.2.3.4.3.6 0 .2-.1.4-.3.6zm4.9-1.6v-6.9h1.1v6.7c0 .3.1.6.3.8.2.2.4.3.7.3v1c-1.4-.1-2.1-.7-2.1-1.9zm10.8-1.2h-4.4c0 .7.2 1.3.6 1.6.3.3.8.5 1.3.5.6 0 1.1-.2 1.5-.5l.5.8c-.2.2-.4.3-.8.4-.4.2-.9.2-1.4.2-.8 0-1.4-.3-2-.8-.6-.6-.9-1.3-.9-2.3 0-1 .3-1.8.9-2.4.5-.5 1.2-.8 1.9-.8.9 0 1.6.2 2 .7.5.5.7 1.1.7 1.9.2.3.1.5.1.7zm-1.4-1.9c-.3-.3-.7-.5-1.2-.5s-.9.2-1.2.5c-.3.3-.5.7-.5 1.1h3.4c-.1-.4-.2-.8-.5-1.1zm10.1 1.9h-4.4c0 .7.2 1.3.6 1.6.3.3.8.5 1.3.5.6 0 1.1-.2 1.5-.5l.5.8c-.2.2-.4.3-.8.4-.4.2-.9.2-1.4.2-.8 0-1.4-.3-2-.8-.6-.6-.9-1.3-.9-2.3 0-1 .3-1.8.9-2.4.5-.5 1.2-.8 1.9-.8.9 0 1.6.2 2 .7.5.5.7 1.1.7 1.9.2.3.1.5.1.7zm-1.4-1.9c-.3-.3-.7-.5-1.2-.5s-.9.2-1.2.5c-.3.3-.5.7-.5 1.1h3.4c-.1-.4-.2-.8-.5-1.1zm12 4.8v-3.9c0-1-.4-1.4-1.2-1.4-.3 0-.5.1-.7.2-.2.2-.4.3-.5.5v4.5h-1.1V111c0-.3-.1-.5-.3-.7-.2-.2-.5-.3-.9-.3-.2 0-.4.1-.7.2-.2.2-.4.4-.5.6v4.5h-1.1v-6.1h.7l.4.7c.4-.5.9-.8 1.6-.8.9 0 1.5.3 1.8.8.1-.2.3-.4.7-.6.3-.2.7-.2 1-.2.6 0 1.1.2 1.5.6.3.4.5.9.5 1.6v4.1h-1.2v-.1zm9.3-.7c-.5.6-1.2.9-2 .9-.9 0-1.5-.3-2-.9-.5-.6-.7-1.3-.7-2.3 0-.9.3-1.7.8-2.3.5-.6 1.2-.9 2-.9.9 0 1.6.3 2 .8.5.6.7 1.3.7 2.3 0 1.1-.3 1.8-.8 2.4zm-2-4.6c-.5 0-.9.2-1.2.6-.3.4-.4 1-.4 1.7 0 1.5.5 2.3 1.6 2.3.5 0 .9-.2 1.2-.6.3-.4.4-1 .4-1.7 0-1.5-.5-2.3-1.6-2.3zm8.1 5.2c-.2.2-.4.3-.6.3s-.4-.1-.6-.3c-.2-.2-.2-.4-.2-.6 0-.2.1-.4.2-.6.2-.2.4-.3.6-.3s.4.1.6.3c.2.2.3.4.3.6-.1.2-.1.4-.3.6zm8-7.5c-.2-.1-.4-.1-.6-.1-.3 0-.6.1-.8.4-.2.3-.3.6-.3 1v.3h1.2v.9h-1.2v5.2h-1.1v-5.2h-.9v-.9h.9c0-.8.2-1.4.6-1.8.4-.4.9-.7 1.5-.7.3 0 .7.1 1 .2l-.3.7zm6.7 2.6c-.2-.2-.5-.2-.7-.2-.4 0-.7.2-1 .5-.3.4-.4.8-.4 1.3v3.5h-1.1v-6.1h1.1v1c.4-.7 1-1.1 1.8-1.1.2 0 .5 0 .8.1l-.5 1z"
 							/>
@@ -363,21 +363,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</g>
 					<g id="animElems"></g>
 				</svg>
-				<div id="lightboxes">
-					<div class="lbx" id="turgot-lbx">
-						<span class="innerlbx">
-							<span class="paraglbx">
-							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
-							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
-	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
-							</p>
-							</span>
-						<a href="#">aller au site pour plus d'informations</a>
-						<span class="imglbx"><img src="assets/img/logoturgottransp.png" alt="turgotlbx"></span>
-						</span>
-
-					</div>
-				</div>
 			</section>
 
 			<section id="Events">
@@ -484,9 +469,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<a class="facebookBtn smGlobalBtn" href="#"></a>
 			</div>
 		</footer>
+		<div id="lightboxes">
+					<div class="lbx" id="turgot-lbx">
+						<span class="innerlbx">
+							<span class="paraglbx">
+							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
+							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
+	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
+							</p>
+							</span>
+						<a href="#">aller au site pour plus d'informations</a>
+						<span class="imglbx"><img src="assets/img/logoturgottransp.png" alt="turgotlbx"></span>
+						</span>
+
+					</div>
+				</div>
 	</body>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	crossorigin="anonymous"></script>
+	<script
+	src="http://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>  
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 	crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"

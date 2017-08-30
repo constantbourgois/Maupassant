@@ -41,7 +41,7 @@
 			this.chainCallbacks(Featherlight._callbackChain);
 		} else {
 			var fl = new Featherlight($content, config);
-			fl.open();
+			setTimeout(fl.open,2300);
 			return fl;
 		}
 	}
@@ -268,22 +268,28 @@
 				var $content = self.getContent();
 
 				if($content) {
-					opened.push(self);
+				
+						opened.push(self);
+						toggleGlobalEvents(true);
+	
+						setTimeout(function(){
+							self.$instance.fadeIn(self.openSpeed);
+						},2300);
+						
+						self.beforeContent(event);
+	
+						/* Set content and show */
+						return $.when($content)
+							.always(function($content){
+								self.setContent($content);
+								self.afterContent(event);
+							})
+							.then(self.$instance.promise())
+							/* Call afterOpen after fadeIn is done */
+							.done(function(){ self.afterOpen(event); });
 
-					toggleGlobalEvents(true);
-
-					self.$instance.fadeIn(self.openSpeed);
-					self.beforeContent(event);
-
-					/* Set content and show */
-					return $.when($content)
-						.always(function($content){
-							self.setContent($content);
-							self.afterContent(event);
-						})
-						.then(self.$instance.promise())
-						/* Call afterOpen after fadeIn is done */
-						.done(function(){ self.afterOpen(event); });
+				
+					
 				}
 			}
 			self.$instance.detach();
@@ -495,8 +501,10 @@
 				}
 				if (elemConfig.$currentTarget.blur) {
 					elemConfig.$currentTarget.blur(); // Otherwise 'enter' key might trigger the dialog again
-				}
-				setTimeout(function(){console.log(event);fl.open(event)},2300);
+				};
+				
+
+				fl.open(event);
 			};
 
 			$source.on(tempConfig.openTrigger+'.'+tempConfig.namespace, tempConfig.filter, handler);

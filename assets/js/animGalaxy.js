@@ -293,7 +293,7 @@ $(document).ready(function () {
   
 	  }
   
-	}*/
+	}
 	pauseFloat();
 	resumeFloat();
 
@@ -310,7 +310,7 @@ $(document).ready(function () {
 
 			tweenCircle.play();
 		});
-	}
+	}*/
 
 	function floatElements(targets) {
 		var speed = 2.5;
