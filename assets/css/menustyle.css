@@ -44,13 +44,13 @@
     opacity: .7; }
   .button_container.active .top {
     transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #FFF; }
+    background: #FFF!important; }
   .button_container.active .middle {
     opacity: 0;
-    background: #FFF; }
+    background: #FFF!important; }
   .button_container.active .bottom {
     transform: translateY(-5px) translateX(0) rotate(-45deg);
-    background: #FFF; }
+    background: #FFF!important; }
   .button_container span {
     background: #F5F5F5;
     border: none;

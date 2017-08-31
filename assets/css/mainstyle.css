@@ -42,6 +42,10 @@ h3 {
 	letter-spacing: 3px;
 }
 
+svg g:hover{
+	cursor: pointer;
+}
+
 .sectionactive {
 	color: gray!important;
 }
@@ -226,7 +230,7 @@ background-image: url("../../assets/img/mp.constelation.png");
 }
 
 .st2 {
-	opacity: 1;
+	opacity: .9;
 }
 
 .st3 {

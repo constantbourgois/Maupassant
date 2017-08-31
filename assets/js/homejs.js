@@ -40,19 +40,26 @@ $(document).ready(function () {
            
         }
 
-		var offsetLinks = menuLinks.offset().top;
+		var offsetLinks = $('.button_container').offset().top;
+
+		console.log(offsetLinks);
+	
 
 		if ((offsetLinks >= headerOffset && offsetLinks <= acteursOffset) /*|| offsetLinks >= contactOffset*/ ) {
 			$('.navfull .categories a').removeClass('black');
 			$('.navfull .categories a').addClass('white');
 			$('.navfull .categories').removeClass('black-border');
 			$('.navfull .categories').addClass('white-border');
+			$('.button_container:not(.active) span').css('background-color','#F5F5F5');
+
 
 		} else if (offsetLinks >= acteursOffset && offsetLinks <= eventsOffset) {
 			$('.navfull .categories a').removeClass('white');
 			$('.navfull .categories a').addClass('black');
 			$('.navfull .categories').removeClass('white-border');
 			$('.navfull .categories').addClass('black-border');
+			$('.button_container:not(.active) span').css('background-color','#191919');
+			
 
 		} else if (offsetLinks >= eventsOffset && offsetLinks <= contactOffset) {
 			$('.navfull .categories a').removeClass('black');

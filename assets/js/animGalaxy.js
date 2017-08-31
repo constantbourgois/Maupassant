@@ -1,12 +1,19 @@
 $(document).ready(function () {
 	var animTime = 2.6;
+	var animTimeS = animTime * 1000;
 	var paths;
 	var targetsAnim;
 	var circles;
 	var animStage;
+	var animMoving = false;
 	var animCount = 0;
 	var tweenFloat;
 	var tweenCircle;
+	var tweenScale;
+	var animRounds;
+	var dataFeatherlight;
+
+
 
 	targetsAnim = $('#circles > g');
 	circles = $('#circles > g').find('circle');
@@ -20,23 +27,109 @@ $(document).ready(function () {
 
 	});
 
-
 	getDistances();
-		floatElements($(targetsAnim));
-		runEngine();
+	floatElements();
+	animHover();
 
-	$(targetsAnim).click(function () {
-		tweenCircle.play();
+
+	//start floating //
+	tweenFloat.play();
+
+
+
+	$(targetsAnim).click(function (event) {
+		event.preventDefault();
+
+		animMoving = true;
+
 		tweenFloat.kill();
+
+		//bind event to button to restart floating on lightbox closes
+
+		if (animCount === 0) {
+			dataFeatherlight = $(this).attr('data-featherlight');
+
+			switch ($(this).attr('data-path')) {
+				case '6':
+					animRounds = 1;
+					animTime = 1.5;
+
+					break;
+
+				case '5':
+					animRounds = 2;
+					animTime = 2;
+
+					break;
+
+				case '4':
+					animRounds = 3;
+
+					break;
+
+				case '3':
+					animRounds = 1;
+
+					break;
+
+				case '2':
+					animRounds = 2;
+					animTime = 2;
+
+					break;
+
+				case '1':
+					animRounds = 3;
+					animTime = 1.5;
+
+					break;
+
+			}
+		}
+
+		runEngine();
 
 
 	});
 
 	function animHover() {
 
-		$(circles).each(function (i) {
 
-			var r = parseInt($(circles[i]).attr('r'));
+
+		$(targetsAnim).each(function (index, element) {
+
+			tweenScale = new TimelineMax({
+				paused: true
+			});
+
+			tweenScale.to(element, 0.2, {
+				scale: "+=0.1",
+				opacity: 1,
+				transformOrigin: "50% 50%"
+			})
+			element.animation = tweenScale;
+		})
+
+		//toggle play and reverse of each .feature element's timeline on hover 
+		$(targetsAnim).hover(over, out);
+
+		function over() {
+			if (animMoving === false)
+				this.animation.play();
+		}
+
+		function out() {
+			if (animMoving === false)
+				this.animation.reverse();
+		}
+
+
+
+
+
+
+
+		/*var r = parseInt($(circles[i]).attr('r'));
 
 			console.log($(this));
 
@@ -78,7 +171,7 @@ $(document).ready(function () {
 
 		$(targetsAnim).mouseenter(function () {
 			$('.plain').attr('stroke', 'black');
-			console.log('enter',this);
+			console.log('enter', this);
 			var t = $(this).find('.plain');
 			TweenMax.to(t, 1, {
 				delay: 0,
@@ -90,16 +183,15 @@ $(document).ready(function () {
 
 		$(targetsAnim).mouseout(function () {
 			var t = $(this).find('.plain');
-			console.log('leave',this);
+			console.log('leave', this);
 			TweenMax.to(t, 1, {
 				delay: 0,
 				drawSVG: '0%',
 				strokeDashoffset: 3,
 				ease: Expo.easeInOut
-			});
-		});
+			});*/
 
-		
+
 
 	}
 
@@ -146,9 +238,64 @@ $(document).ready(function () {
 
 	}
 
+	function resetAnim() {
+
+		tweenCircle.kill();
+		tweenScale.kill();
+
+		var newAnimstage = parseInt($('#circles').attr('data-animStage')) + 1;
+
+		$(targetsAnim).each(function () {
+
+			var currentPath = parseInt($(this).attr('data-path'));
+
+			if (currentPath == $(targetsAnim).length) {
+				$(this).attr('data-path', 1);
+				//$(this).attr('id',  '#target'+ 1);//
+
+			} else {
+				$(this).attr('data-path', currentPath + 1);
+				//$(this).attr('id',  '#target' + (parseInt($(this).attr('data-target')) + 1));//
+
+			}
+
+		});
+
+		animCount++;
+
+		if (animCount == animRounds) {
+
+			$.featherlight(dataFeatherlight, {
+				afterContent: function (event) {
+					//to restart float//
+					$('.featherlight-close-icon').on("click", function () {
+						console.log("az");
+						floatElements();
+						tweenFloat.play();
+
+					});
+				}
+			});
+
+			animCount = 0;
+
+			animMoving = false;
+
+			animHover();
+
+			return;
+
+		}
+
+		$('#target1').click();
+
+
+	}
+
 	function runEngine() {
-		floatElements($(targetsAnim));
-		tweenFloat.play();
+		//********** circle and scale animation *************//
+		//****************************************//
+
 		var pathTarget;
 		var target;
 		var nextTarget;
@@ -160,88 +307,54 @@ $(document).ready(function () {
 
 		});
 
-
-
 		tweenCircle.add('go');
 
-		runTweens();
+		$(targetsAnim).each(function () {
 
-		//********** circle and scale animation *************//
-		//****************************************//
-		//********** set the variables *************//
-		//****************************************//
+			pathTarget = ('#Path' + $(this).attr('data-path'));
+			target = document.getElementById($(this).attr('id'));
+			if (parseInt($(this).attr('data-target')) == $(targetsAnim).length) {
+				nextTarget = document.getElementById('target1');
+			} else {
+				nextTarget = document.getElementById(('target' + (parseInt($(this).attr('data-target')) + 1)));
+			}
 
-		function resetAnim() {
+			var circleR = $(target).attr('data-target-width');
+			var nextCircleR = nextTarget.getBoundingClientRect().width;
 
-			tweenCircle.kill();
-
-			var newAnimstage = parseInt($('#circles').attr('data-animStage')) + 1;
-
-			$(targetsAnim).each(function () {
-
-				var currentPath = parseInt($(this).attr('data-path'));
-
-				if (currentPath == $(targetsAnim).length) {
-					$(this).attr('data-path', 1);
-					//$(this).attr('id',  '#target'+ 1);//
-
-				} else {
-					$(this).attr('data-path', currentPath + 1);
-					//$(this).attr('id',  '#target' + (parseInt($(this).attr('data-target')) + 1));//
-
-				}
-
+			var path = MorphSVGPlugin.pathDataToBezier(pathTarget, {
+				align: target
 			});
-			runEngine();
+
+			var scale = (parseInt(nextCircleR) / parseInt(circleR));
+
+			//********** set the tweens *************//
+			//****************************************//
+
+			tweenCircle.set(target, {
+					xPercent: -50,
+					yPercent: -50
+				}, 'go')
+
+				.to(target, animTime, {
+					bezier: {
+						values: path,
+						type: "cubic"
+					},
+					ease: Linear.easeNone,
+					repeat: 0
+				}, 'go')
+
+				.to(target, animTime, {
+					scale: scale,
+					transformOrigin: "50% 50%"
+				}, 'go');
+
+		});
+
+		tweenCircle.play();
 
 
-		}
-		//********** circle and scale animation *************//
-		//****************************************//
-		function runTweens() {
-			$(targetsAnim).each(function () {
-
-				pathTarget = ('#Path' + $(this).attr('data-path'));
-				target = document.getElementById($(this).attr('id'));
-				if (parseInt($(this).attr('data-target')) == $(targetsAnim).length) {
-					nextTarget = document.getElementById('target1');
-				} else {
-					nextTarget = document.getElementById(('target' + (parseInt($(this).attr('data-target')) + 1)));
-				}
-
-				var circleR = $(target).attr('data-target-width');
-				var nextCircleR = nextTarget.getBoundingClientRect().width;
-
-				var path = MorphSVGPlugin.pathDataToBezier(pathTarget, {
-					align: target
-				});
-
-				var scale = (parseInt(nextCircleR) / parseInt(circleR));
-
-				//********** set the tweens *************//
-				//****************************************//
-
-				tweenCircle.set(target, {
-						xPercent: -50,
-						yPercent: -50
-					}, 'go')
-
-					.to(target, animTime, {
-						bezier: {
-							values: path,
-							type: "cubic"
-						},
-						ease: Linear.easeNone,
-						repeat: 0
-					}, 'go')
-
-					.to(target, animTime, {
-						scale: scale,
-						transformOrigin: "50% 50%"
-					}, 'go');
-
-			});
-		}
 
 
 	}
@@ -312,8 +425,11 @@ $(document).ready(function () {
 		});
 	}*/
 
-	function floatElements(targets) {
+	function floatElements() {
+
+		//*float*//
 		var speed = 2.5;
+		var targets = $(targetsAnim);
 		var my = 13;
 
 		var target;
@@ -340,7 +456,6 @@ $(document).ready(function () {
 				v = v + v2;
 
 			});
-
 	}
 
 

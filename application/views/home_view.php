@@ -443,6 +443,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 				</div>
+				<div id="event-info">
+					<h6></h6>
+					<img src="#" alt="eventinfopicture">
+					<p></p><
+					<div class="event-info-date"></div>
+					<a class="event-info-link" href="#"></a>
+					<a class="event-info-logo" href="#"><img src="#" alt="eventinfologo"></a>
+							</div>
+				</div>
 			</section>
 			<section id="Contact">
 				<h3> Contact</h3>
@@ -489,8 +498,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</span>
 
 					</div>
-				</div>
-        <div id="lightboxes">
+		
+
 					<div class="lbx5" id="fiducee-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
@@ -504,8 +513,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</span>
 
 					</div>
-				</div>
-        <div id="lightboxes">
+		
 					<div class="lbx2" id="orelis-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
@@ -519,8 +527,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</span>
 
 					</div>
-				</div>
-        <div id="lightboxes">
+		
+      
 					<div class="lbx4" id="fundee-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
@@ -534,8 +542,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</span>
 
 					</div>
-				</div>
-        <div id="lightboxes">
+			
+      
 					<div class="lbx3" id="vingtrois-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
@@ -549,8 +557,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</span>
 
 					</div>
-				</div>
-        <div id="lightboxes">
+			
+   
 					<div class="lbx" id="leemo-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
@@ -564,7 +572,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</span>
 
 					</div>
-				</div>
+			</div>
 	</body>
 	<script
 	src="http://code.jquery.com/jquery-3.2.1.min.js"
