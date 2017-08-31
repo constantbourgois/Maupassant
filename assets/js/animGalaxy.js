@@ -20,8 +20,10 @@ $(document).ready(function () {
 
 	});
 
-	animHover();
-	
+
+	getDistances();
+		floatElements($(targetsAnim));
+		runEngine();
 
 	$(targetsAnim).click(function () {
 		tweenCircle.play();
@@ -97,9 +99,7 @@ $(document).ready(function () {
 			});
 		});
 
-		getDistances();
-		floatElements($(targetsAnim));
-		runEngine();
+		
 
 	}
 
