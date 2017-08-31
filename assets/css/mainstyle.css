@@ -186,14 +186,14 @@ h2 span {
 /****************************ANIMATION**********************************/
 
 
-#Acteurs{
+/*#Acteurs{
 background-image: url("../../assets/img/mp.constelation.png");
      -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   
-    }
+    }*/
 
 #Acteurs svg {
 	height: 100vh;
@@ -703,7 +703,7 @@ background-image: url("../../assets/img/mp.constelation.png");
 }
 
 #img-bg {
-	background-image: url("../../assets/img/fondevents.png");
+	background-image: url("../../assets/img/backgroundevents.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
