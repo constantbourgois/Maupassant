@@ -68,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<path class="cls-1" d="M.02 0v276.28h290.95V.02H.02zm82.61 184.46a288.12 288.12 0 0 1-6.11 41.2 285.59 285.59 0 0 1-6.12-41.19c-1.14-13.74-1.66-27.47-1.65-41.2s.54-27.46 1.68-41.19a293.17 293.17 0 0 1 6.09-41.2 289.76 289.76 0 0 1 6.09 41.2c1.15 13.73 1.66 27.46 1.68 41.2s-.53 27.45-1.66 41.18zm65.82-77.36c-3.62 5.51-7.48 10.82-11.51 16l-4.14 5.29-5.89-5.19a258.78 258.78 0 0 1-27.9-28.66c-4.27-5.13-8.33-10.44-12.1-16A127.45 127.45 0 0 1 76.59 60.9a134.52 134.52 0 0 1 17.35 11.24q8.1 6.12 15.52 12.89a259.13 259.13 0 0 1 23.15 24.22c3-2.68 6-5.41 9.23-7.93a150.33 150.33 0 0 1 16.56-11.53 146.34 146.34 0 0 1-9.96 17.3zm79.58 53.26a54.41 54.41 0 0 1-36.4 13.05c-.21 3.69-.37 7.37-.68 11.06a286.25 286.25 0 0 1-6.1 41.19 286.28 286.28 0 0 1-6.11-41.19q-1.71-20.6-1.65-41.2c0-13.74.54-27.47 1.67-41.2a295.63 295.63 0 0 1 6-40.78c15-3.29 30.78 1.05 43.26 11.73a57.29 57.29 0 0 1 0 87.34z"
 						/>
 					</svg>
-					<img src="<?php echo base_url()?>assets/img/logoAnim.gif" alt="logoAnimMaupassant"> </a>
+					<img src="<?php echo base_url()?>assets/img/mp.gif" alt="logoAnimMaupassant"> </a>
 				<ul class="categories">
 					<li><a href="#Acteurs"> L'equipe </a></li>
 					<li><a href="#Events"> Evements </a></li>
@@ -443,12 +443,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				<div id="event-info">
-					<h6></h6>
-					<img src="#" alt="eventinfopicture">
-					<p></p><
-					<div class="event-info-date"></div>
-					<a class="event-info-link" href="#"></a>
-					<a class="event-info-logo" href="#"><img src="#" alt="eventinfologo"></a>
+                    <div class="background-event-info">
+					<h6>Webinar Fundee/Nordea</h6>
+					<img src="assets/img/fundee.news.png" alt="eventinfopicture">
+					<p class="event-info-info">
+Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au cours duquel nous réaliserons un point macro/gestion et nous aurons la chance de recevoir Michael Reiner, Sales Manager du Stable Return Fund et du Multi Asset Fund.</p>
+					<div class="event-info-date"><p>Date de la conférence 18 septembre <br>Début de la conférence à 10h<br>Durée : 1 heure </p></div>
+					<a class="event-info-link" href="#">Inscription</a>
+					<a class="event-info-logo" href="#"><img src="assets/img/fundee.png" alt="eventinfologo"></a>
+                        </div>
 							</div>
 				</div>
 			</section>
