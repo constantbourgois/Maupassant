@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+body{
+    background-color: #F4F2F2;
+}
+
 a,
 a:link {
 	text-decoration: none;
@@ -116,6 +120,7 @@ header {
     max-width: 88%;
     padding-top: 6.5% !important;
     margin-left: 8%;
+    opacity: .8;
 }
 
 .fondh1 span {
@@ -131,12 +136,14 @@ header {
 h1 {
 	font-size: 77px;
 	font-weight: Bold;
+
 }
 
 h2 {
 	font-family: 'Playfair Display', sans-serif;
 	font-size: 28px;
 	display: inline;
+   
 }
 
 h2 span {
@@ -187,7 +194,7 @@ h2 span {
 
 
 /*#Acteurs{
-background-image: url("../../assets/img/mp.constelation.png");
+background-image: url("../../assets/img/testmotifmp2.png");
      -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -362,11 +369,11 @@ background-image: url("../../assets/img/mp.constelation.png");
 
 /************ Orelis lbx ***************/
 .lbx2 {
-	height: 92vh;
+	height: 100vh;
 	background-image: url("../../assets/img/fondturgotlbx_0003_fondorelislbx.png");
 	background-position: 18% center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 60%;
 	padding-left: 10%;
 	position: relative;
 	display: none;
@@ -445,11 +452,11 @@ background-image: url("../../assets/img/mp.constelation.png");
 
 /************ 23 lbx ***************/
 .lbx3 {
-	height: 92vh;
+	height: 100vh;
 	background-image: url("../../assets/img/fondturgotlbx_0001_23.png");
 	background-position: 18% center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 60%;
 	padding-left: 10%;
 	position: relative;
 	display: none;
@@ -527,11 +534,11 @@ background-image: url("../../assets/img/mp.constelation.png");
 
 /************ fundee lbx ***************/
 .lbx4 {
-	height: 92vh;
+	height: 100vh;
 	background-image: url("../../assets/img/fondturgotlbx_0000_fundee.png");
 	background-position: 18% center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 60%;
 	padding-left: 10%;
 	position: relative;
 	display: none;
@@ -609,11 +616,11 @@ background-image: url("../../assets/img/mp.constelation.png");
 
 /************ fiducee lbx ***************/
 .lbx5 {
-	height: 92vh;
+	height: 100vh;
 	background-image: url("../../assets/img/fondturgotlbx_0002_fiducee.png");
 	background-position: 18% center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 60%;
 	padding-left: 10%;
 	position: relative;
 	display: none;
@@ -656,7 +663,7 @@ background-image: url("../../assets/img/mp.constelation.png");
 	opacity: .83;
 	padding: 6%;
 	padding-top: 3%;
-	padding-bottom: 25%;
+	padding-bottom: 20%;
 	max-width: 30%;
 	position: absolute;
 	top: -70px;
@@ -703,7 +710,7 @@ background-image: url("../../assets/img/mp.constelation.png");
 }
 
 #img-bg {
-	background-image: url("../../assets/img/backgroundevents.png");
+	background-image: url("../../assets/img/backgroundevents.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -720,7 +727,7 @@ background-image: url("../../assets/img/mp.constelation.png");
 	display: block;
 	position: absolute;
 	text-align: center;
-	background-image: url("../../assets/img/fondevents.png");
+	background-image: url("../../assets/img/backgroundevents.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -755,7 +762,7 @@ background-image: url("../../assets/img/mp.constelation.png");
 	text-align: center;
 	margin: 0 auto;
 	padding: 3%;
-	padding-top: 5%;
+	padding-top: 3%;
 	font-size: 18px;
 }
 
@@ -1007,6 +1014,7 @@ footer ul ul li {
 /* Responsive 15" */
 
 @media only screen and (min-width: 1200px) {
+    
 	/* Home page */
 	.navfull li,
 	navfull li a {
@@ -1019,6 +1027,13 @@ footer ul ul li {
 	.backhome {
 		width: 5vw;
 	}
+    
+      /* .fondh1 img {
+    max-width: 90%;
+    padding-top: 15.5% !important;
+    margin-left: 7%;
+    opacity: .8;
+}*/
 	h1 {
 		font-size: 70px;
 	}
@@ -1028,18 +1043,438 @@ footer ul ul li {
 	/* Galaxie page */
 	.lbx {
 		height: 92vh;
-		background-image: url("../../assets/img/fondturgotlbx.png");
-		background-repeat: no-repeat;
 		background-size: 50%;
-		position: relative;
-		display: none;
-		overflow: hidden;
+
+	
+	}
+    
+    
+    .lbx2 {
+    height: 92vh;
+	background-size: 50%;
+
+	}
+    
+    .lbx3 {
+	height: 92vh;
+	background-size: 50%;
+	
+    
+}
+    
+    .lbx4 {
+		height: 92vh;
+		background-size: 50%;
+	
+	}
+    
+    .lbx5 {
+	height: 92vh;
+	background-size: 50%;
+	
+}
+    .lbx6 {
+		height: 92vh;
+		background-size: 50%;
+		
 	}
 	/* Events */
+    
+    
+    
 }
 
-@media only screen and (max-width: 768px) {
-	.navfull {
+/* tablets */
+
+@media only screen and (min-width: 1024px) {
+    
+	/* Home page */
+     
+  /* .fondh1 img {
+    max-width: 91%;
+    padding-top: 10.5% !important;
+    margin-left: 7%;
+    opacity: .8;
+}*/
+	.navfull li,
+	navfull li a {
+		font-size: 14px;
+	}
+	header div img {
+		max-width: 83%;
+		padding-top: 9%;
+	}
+	.backhome {
+		width: 5vw;
+	}
+	h1 {
+    font-size: 65px;
+}
+	h2 {
+		font-size: 26px;
+	}
+	/* Galaxie page */
+/*	.lbx {
+		height: 70vh;
+		background-size: 53%;
+        background-position: 12% center;
+        padding-left: 4%;
+}
+    
+ .lbx .innerlbx {
+    width: 72%;
+    height: 62vh;
+    }
+    
+    .lbx a {
+    margin-bottom:16%;
+    margin-left: 8%;
+}
+    
+    .lbx2 {
+    height: 70vh;
+	background-size: 53%;
+    background-position: 12% center;
+        padding-left: 4%;    
+
+	}
+     .lbx2 .innerlbx {
+    width: 72%;
+    height: 62vh;
+    }
+    
+        .lbx2 a {
+    margin-bottom: 16%;
+    margin-left: 8%;
+}    
+
+    
+    .lbx3 {
+	height: 70vh;
+	background-size: 53%;
+    background-position: 12% center;
+	    padding-left: 4%;
+    
+}
+     .lbx3 .innerlbx {
+    width: 72%;
+    height: 62vh;
+    }
+    
+        .lbx3 a {
+    margin-bottom: 16%;
+    margin-left: 8%;
+            
+}
+    .lbx4 {
+		height: 70vh;
+		background-size: 53%;
+	   background-position: 12% center;
+            padding-left: 4%;
+	}
+     .lbx4 .innerlbx {
+    width: 72%;
+    height: 62vh;
+    }
+    
+        .lbx4 a {
+    margin-bottom: 16%;
+    margin-left: 8%;
+}
+    
+    .lbx5 {
+	height: 70vh;
+	background-size: 53%;
+	background-position: 12% center;
+            padding-left: 4%;
+}
+     .lbx5 .innerlbx {
+    width: 72%;
+    height: 62vh;     
+    }
+    
+        .lbx5 a {
+    margin-bottom: 16%;
+    margin-left: 8%;
+}
+    
+    .lbx6 {
+		height: 70vh;
+		background-size: 53%;
+		background-position: 12% center;
+            padding-left: 4%;
+	}
+     .lbx6 .innerlbx {
+    width: 72%;
+    height: 62vh;     
+    }
+    
+        .lbx6 a {
+    margin-bottom: 16%;
+    margin-left: 8%;
+}*/
+	/* Events */
+    
+    .eventsdata h4 {
+        font-size: 1.2em;
+    }
+    
+    .eventdescription {
+    font-size: 12px;
+    padding-left: 24%;
+    padding-top: 2%;
+    
+}
+    
+}
+
+/* Medium Devices, Desktops */ 
+
+@media only screen and (max-width : 992px) 
+
+
+
+{
+    
+    header {
+
+    padding: 0%;
+
+}
+   .fondh1 {
+   
+     padding: 0 ;
+} 
+    .fondh1 img {
+    max-width: 100%;
+    padding-top: 12.5% !important;
+    margin-left: 0%;
+}
+    .navfull{
+         padding: 6% 2%;
+    }
+    
+   
+    .navfull li,
+	navfull li a {
+		font-size: 16px;
+           
+	}
+	header div img {
+		max-width: 83%;
+		padding-top: 9%;
+	}
+	.backhome {
+    width: 6vw;
+    left: 3%;
+}
+    
+    .button_container {
+    right: 4%;
+    height: 27px;
+    width: 35px;
+    }
+    .fondh1 span {
+    position: absolute;
+    color: white;
+    left: 0%;
+    right: 0;
+    top: 33%;
+    bottom: 0;
+    text-align: center;
+}
+	h1 {
+		font-size: 75px;
+	}
+	h2 {
+		font-size: 29px;
+	}
+	/* Galaxie page */
+    
+    #Acteurs svg {
+    margin-bottom: 0%;
+}
+    
+	.lbx {
+		height: 82vh;
+		background-size: 59%;
+        background-position: 15% center;
+		
+	}
+    
+    .lbx a {
+    width: 36%;
+    padding-right: 6%;
+    margin-left: 55%;
+}
+    .lbx .paraglbx {
+    width: 78%;
+    margin-top: 26%;
+}
+    .lbx2 {
+    height: 82vh;
+	background-size: 59%;
+        background-position: 15% center;
+
+	}
+        .lbx2 a {
+    width: 36%;
+    padding-right: 6%;
+    margin-left: 55%;
+}
+      .lbx2 .paraglbx {
+    width: 78%;
+    margin-top: 26%;
+}
+    
+    .lbx3 {
+	height: 82vh;
+	background-size: 50%;
+        background-position: 15% center;
+	
+    
+}
+        .lbx3 a {
+    width: 36%;
+    padding-right: 6%;
+    margin-left: 55%;
+}
+      .lbx3 .paraglbx {
+    width: 78%;
+    margin-top: 26%;
+}
+    
+    .lbx4 {
+		height: 82vh;
+	background-size: 59%;
+        background-position: 15% center;
+	
+	}
+        .lbx4 a {
+    width: 36%;
+    padding-right: 6%;
+    margin-left: 55%;
+}
+  
+        .lbx4 .paraglbx {
+    width: 78%;
+    margin-top: 26%;
+}
+    lbx5 {
+	height: 82vh;
+	background-size: 59%;
+        background-position: 15% center;
+	
+}
+        .lbx5 a {
+    width: 36%;
+    padding-right: 6%;
+    margin-left: 55%;
+}
+        .lbx5 .paraglbx {
+    width: 78%;
+    margin-top: 26%;
+}
+  
+    .lbx6 {
+		height: 82vh;
+		background-size: 59%;
+        background-position: 15% center;
+		
+	}
+    
+        .lbx6 a {
+    width: 36%;
+    padding-right: 6%;
+    margin-left: 55%;
+}
+  
+        .lbx6 .paraglbx {
+    width: 78%;
+    margin-top: 26%;
+}
+
+    .imglbx {
+    max-width: 35%;
+    top: -70px;
+    right: 85px;
+        padding-bottom: 19%;
+ 
+}
+   .imglbx2 {
+    max-width: 35%;
+    top: -70px;
+    right: 85px;
+       padding-bottom: 19%;
+ 
+}
+       .imglbx3 {
+    max-width: 35%;
+    top: -70px;
+    right: 85px;
+           padding-bottom: 19%;
+ 
+}
+       .imglbx4 {
+    max-width: 35%;
+    top: -70px;
+    right: 85px;
+           padding-bottom: 19%;
+ 
+}
+       .imglbx5 {
+    max-width: 35%;
+    top: -70px;
+    right: 85px;
+           padding-bottom: 19%;
+ 
+}
+       .imglbx6 {
+    max-width: 35%;
+    top: -70px;
+    right: 85px;
+           padding-bottom: 19%;
+ 
+}
+    #Contact h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    padding-top: 0%;
+}
+    
+    #Contact a {
+    font-size: 21.5px;
+}
+}
+
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width : 768px) {
+    
+    .navfull {
 		display: none;
 	}
+    
+    
+    
+} 
+
+
+/* Extra Small Devices, Phones */ 
+
+@media only screen and (max-width : 480px) { 
+
+
+} 
+
+/* Custom, iPhone Retina */ 
+
+@media only screen and (max-width : 320px) {
+
+
 }
+
+

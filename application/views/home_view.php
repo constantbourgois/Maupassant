@@ -77,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
 			</nav>
 			<div class="fondh1">
-				<img src="assets/img/backgroundtestdark.png" alt="fondhome">
+				<img src="assets/img/backgroundtest1.jpg" alt="fondhome">
 				<span><h1> A little bit<br> about the hotel </h1>
 			<h2> <span>here is where the </span><br><span>welcome line comes </span></h2>
 				</span>
