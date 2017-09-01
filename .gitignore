@@ -28,12 +28,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-workspace
 *.sublime-project
 
-assets/js/animGalaxy.js
 
-assets/js/animGalaxy.js
-
-application/controllers/Adminevents.php
-
-application/models/Eventsadmin.php
-
-application/views/admin_events_view.php
