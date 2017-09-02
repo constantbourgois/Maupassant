@@ -160,15 +160,16 @@ class Adminevents extends CI_Controller
     {
 
         $data = array(
-        'title' => $this->input->post('title'),
-        'description' => $this->input->post('description'),
-        'date' => $this->input->post('date'),
-        'picture' => $this->input->post('picture'),
-        'logo' => $this->input->post('logo'),
-        'linklogo'=>   $this->input->post('link'),
+        'title' => $this->input->post('title_event_info'),
+        'description' => $this->input->post('description_event_info'),
+        'date' => $this->input->post('date_event_info'),
+        'picture' => $this->input->post('picture_event_info'),
+        'logo' => $this->input->post('logo_event_info'),
+        'linklogo'=>   $this->input->post('link_event_info'),
+        'linklogo'=>   $this->input->post('linklogo_event_info'),
         );
 
-        $this->Eventsadmin->event_update($data);
+        $this->Eventsadmin->event_info_update($data);
 
         echo json_encode(array("status" => true));
         $data['events'] = $this -> Eventsadmin -> listEvents();

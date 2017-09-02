@@ -444,6 +444,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div id="event-info">
                     <div class="background-event-info">
+					<h6><?php echo $event_info->title ?></h6>
+					<img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->picture; ?>" alt="eventinfopicture">
+					<p class="event-info-info">
+					<?php echo $event_info->description ?>					
+					<div class="event-info-date"><?php echo $event_info->date ?></div>
+					<a class="event-info-link" href="<?php echo $event_info->link; ?>">Inscription</a>
+					<a class="event-info-logo" href="<?php echo $event_info->linklogo; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->logo; ?>"></a>
+                        </div>
+							</div>
+				</div>
+				<!--<div id="event-info">
+                    <div class="background-event-info">
 					<h6>Webinar Fundee/Nordea</h6>
 					<img src="assets/img/fundee.news.png" alt="eventinfopicture">
 					<p class="event-info-info">
@@ -453,7 +465,7 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 					<a class="event-info-logo" href="#"><img src="assets/img/fundee.png" alt="eventinfologo"></a>
                         </div>
 							</div>
-				</div>
+				</div>-->
 			</section>
 			<section id="Contact">
 				<h3> Contact</h3>

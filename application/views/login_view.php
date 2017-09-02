@@ -25,7 +25,7 @@
         <input id="email" name="email" class="form-control" placeholder="Email address" required="" autofocus="" type="email">
         <label for="inputPassword" class="sr-only">Password</label>
         <input name="password" id="password" class="form-control" placeholder="Password" required="" type="password">
-        <div class="checkbox">
+        <div class="checkbox" style="display:none">
           <label>
             <input value="remember-me" type="checkbox"> Remember me
           </label>

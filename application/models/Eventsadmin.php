@@ -27,7 +27,7 @@ Class Eventsadmin extends CI_Model {
   function getEventinfo() {
     
         $query = $this->db->get('event_info');
-        return $query->result();
+        return $query->row();
     
       }
 
@@ -44,7 +44,7 @@ Class Eventsadmin extends CI_Model {
   }
   public function event_info_update($data)
   {
-    $this->db->update($this->table2, $data);
+    $this->db->update($this->table2, $data,"id = 1");
     return $this->db->affected_rows();
   }
 
