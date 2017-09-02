@@ -13,6 +13,7 @@ class Adminevents extends CI_Controller
         $this->load->library('session');
         $this->load->helper('url');
         $this->load->helper('form');
+        $this->load->helper('directory');
     }
 
     public function index()
@@ -20,11 +21,13 @@ class Adminevents extends CI_Controller
         if ($this->session->userdata('name')) {
             $sess = $this->session->userdata('name');
             $data['email'] = $this->session->userdata('email');
-            // get the events registered by admin //
+    
 
             $data['events'] = $this -> Eventsadmin -> listEvents();
             $data['event_info'] = $this -> Eventsadmin -> getEventinfo();
             $data['error'] = array('error'=>'');
+            $data['pictures'] = $this->listUploadedfiles();
+            $data['thumbnails'] = $this->listUploadedthumbnails();
 
             $this->load->view('admin_events_view', $data);
         } else {
@@ -73,10 +76,8 @@ class Adminevents extends CI_Controller
 
         if (! $this->upload->do_upload()) {
             $error = array('error' => $this->upload->display_errors());
-
         } else {
             $data = array('upload_data' => $this->upload->data());
-
         }
     }
     public function do_upload_background()
@@ -91,23 +92,29 @@ class Adminevents extends CI_Controller
 
         if (! $this->upload->do_upload()) {
             $error = array('error' => $this->upload->display_errors());
-
         } else {
             $data = array('upload_data' => $this->upload->data());
-
         }
     }
     public function add_event()
     {
+        if ($this->input->post('background_select') == 'background_image') {
+            $background_image_displayed = $this->input->post('background_image');
+        } else {
+            $background_image_displayed = $this->input->post('background_image_2');
+        }
 
         $data = array(
-        'date' => $this->input->post('date'),
-        'title' => $this->input->post('title'),
-        'description' => $this->input->post('description'),
-        'background_image' => $this->input->post('background_image'),
-        'logo' => $this->input->post('logo'),
-        'link'=>   $this->input->post('link'),
-        'view_rank' => $this->input->post('view_rank'),
+            'date' => $this->input->post('date'),
+            'title' => $this->input->post('title'),
+            'description' => $this->input->post('description'),
+            'background_image' => $this->input->post('background_image'),
+            'background_image_2' => $this->input->post('background_image_2'),
+            'background_select' => $this->input->post('background_select'),
+            'background_image_displayed' => $background_image_displayed,
+            'logo' => $this->input->post('logo'),
+            'link'=>   $this->input->post('link'),
+            'view_rank' => $this->input->post('view_rank'),
         );
 
         $insert = $this->Eventsadmin->createEvent($data);
@@ -127,15 +134,23 @@ class Adminevents extends CI_Controller
 
     public function event_update()
     {
+        if ($this->input->post('background_select') == 'background_image_1') {
+            $background_image_displayed = $this->input->post('background_image');
+        } else {
+            $background_image_displayed = $this->input->post('background_image_2');
+        }
 
         $data = array(
-        'date' => $this->input->post('date'),
-        'title' => $this->input->post('title'),
-        'description' => $this->input->post('description'),
-        'background_image' => $this->input->post('background_image'),
-        'logo' => $this->input->post('logo'),
-        'link'=>   $this->input->post('link'),
-        'view_rank' => $this->input->post('view_rank'),
+            'date' => $this->input->post('date'),
+            'title' => $this->input->post('title'),
+            'description' => $this->input->post('description'),
+            'background_image' => $this->input->post('background_image'),
+            'background_image_2' => $this->input->post('background_image_2'),
+            'background_select' => $this->input->post('background_select'),
+            'background_image_displayed' => $background_image_displayed,
+            'logo' => $this->input->post('logo'),
+            'link'=>   $this->input->post('link'),
+            'view_rank' => $this->input->post('view_rank'),
         );
 
 
@@ -165,9 +180,10 @@ class Adminevents extends CI_Controller
         'date' => $this->input->post('date_event_info'),
         'picture' => $this->input->post('picture_event_info'),
         'logo' => $this->input->post('logo_event_info'),
-        'linklogo'=>   $this->input->post('link_event_info'),
+        'link'=>   $this->input->post('link_event_info'),
         'linklogo'=>   $this->input->post('linklogo_event_info'),
         );
+
 
         $this->Eventsadmin->event_info_update($data);
 
@@ -175,5 +191,30 @@ class Adminevents extends CI_Controller
         $data['events'] = $this -> Eventsadmin -> listEvents();
         $data['event_info'] = $this -> Eventsadmin -> getEventinfo();
         $this->load->view('admin_events_view', $data);
+    }
+
+    public function listUploadedfiles()
+    {
+        $pictures = directory_map(APPPATH . '../uploads/files/');
+        return $pictures;
+    }
+
+    public function listUploadedthumbnails()
+    {
+        $thumbnails = directory_map(APPPATH . '../uploads/files/thumbnail');
+        return $thumbnails;
+    }
+
+    public function delete_files()
+    {
+        $files = $this->input->post('deletePictures[]');
+      
+        foreach ($files as $file) {
+            unlink('uploads/files/thumbnail/'.$file);
+            unlink('uploads/files/'.$file);
+          
+        }
+
+        echo json_encode(array("status" => true));
     }
 }

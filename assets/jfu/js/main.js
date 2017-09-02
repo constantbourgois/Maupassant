@@ -56,7 +56,7 @@ $(function () {
                     .appendTo('#fileupload');
             });
         }
-    } else {
+    } else {/*
         // Load existing files:
         $('#fileupload').addClass('fileupload-processing');
         $.ajax({
@@ -70,7 +70,7 @@ $(function () {
         }).done(function (result) {
             $(this).fileupload('option', 'done')
                 .call(this, $.Event('done'), {result: result});
-        });
+        });*/
     }
 
 });

@@ -1,5 +1,7 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 ?>
 	<!DOCTYPE html>
 	<html lang="en">
@@ -37,8 +39,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				max-width: 100%;
 			}
 
-			#table_events,#table_event_info {
+			#table_events,#databasepic,#table_event_info {
 				background-color: #f2f2f2;
+			}
+			#databasepic{
+				background-color:lightgrey;
+				display:inline-block;
+
+				
+			}
+			#databasepic .pic-container{
+				border:1px solid #ddd;
 			}
 
 			.logo-cell {
@@ -71,7 +82,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<th>title</th>
 								<th>description</th>
 								<th>logo</th>
-								<th>background image</th>
+								<th>background image 1</th>
+								<th>background image 2 </th>
+								<th>selected background </th>
 								<th>link</th>
 								<th>view_rank</th>
 								<th style="width:125px;">Action</th>
@@ -94,6 +107,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</td>
 								<td class="logo-cell"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo; ?>" alt="logo"></td>
 								<td><img src="<?php echo base_url()?>uploads/files/<?php echo $event->background_image; ?>" alt="bg_image"></td>
+								<td><img src="<?php echo base_url()?>uploads/files/<?php echo $event->background_image_2; ?>" alt="bg_image"></td>
+								<td><?php echo $event->background_select;?></td>
 								<td><?php echo $event->link;?></td>
 								<td><?php echo $event->view_rank;?></td>
 								<td>
@@ -111,6 +126,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<th>description</th>
 								<th>logo</th>
 								<th>background image</th>
+								<th>background image 2</th>
 								<th>link</th>
 								<th>view_rank</th>
 								<th>Action</th>
@@ -142,6 +158,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														<i class="glyphicon glyphicon-plus"></i>
 														<span>Add files...</span>
 														<input id="file_background" type="file" name="files" multiple>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">background image 2</label>
+													<div class="btn btn-success fileinput-button">
+														<i class="glyphicon glyphicon-plus"></i>
+														<span>Add files...</span>
+														<input id="file_background_2" type="file" name="files" multiple>
 													</div>
 												</div>
 												<div class="form-group">
@@ -192,15 +216,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<button class="btn btn-danger delete" id="delete-bg"><i class="glyphicon glyphicon-trash"></i></button>
 											<div class="col-md-9">
 												<img id="background_image_input" src="//" alt="image">
-												<input name="background_image" placeholder="event date" class="form-control" type="hidden">
+												name <input name="background_image"  class="form-control">
 											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3">background image 2</label>
+											<button class="btn btn-danger delete" id="delete-bg-2"><i class="glyphicon glyphicon-trash"></i></button>
+											<div class="col-md-9">
+												<img id="background_image_input_2" src="//" alt="image">
+												name<input name="background_image_2"  class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3">choose background to display </label>
+											<select name="background_select" id="background_select">
+												<option value="background_image_1">background image 1</option> 
+												<option value="background_image_2">background image 2</option>
+										  	</select>
 										</div>
 										<div class="form-group">
 											<label class="control-label col-md-3">logo</label>
 											<button class="btn btn-danger delete" id="delete-logo" ><i class="glyphicon glyphicon-trash"></i></button>
 											<div class="col-md-9">
 												<img id="logo_input" src="//" alt="logo">
-												<input name="logo" placeholder="event date" class="form-control" type="hidden">
+												<input name="logo" class="form-control" type="hidden">
 											</div>
 										</div>
 										<div class="form-group">
@@ -227,7 +266,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												<input name="link" placeholder="link" class="form-control" type="text">
 											</div>
 										</div>
-										<div style="display:none" class="form-group">
+										<div class="form-group">
 											<label class="control-label col-md-3">view rank</label>
 											<div class="col-md-9">
 												<input name="view_rank" placeholder="view_rank" class="form-control" type="number">
@@ -421,6 +460,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				
 
 			</section>
+			<section id="picture_database">
+				<div class="container">
+				</center>
+				<h3>Pictures database</h3>
+				<form id="databasepic" action="#" >
+					<?php for ($i = 0; $i < count($thumbnails)-1;$i++) { ?>
+					<div class="pic-container col-md-4 bg-faded">
+						<label class="control-label"><?php echo $thumbnails[$i] ?></label>
+						<div class="">
+							<div class="text-center">
+							<span class="">
+										<img class="img-thumbnail center-block" src="<?php echo base_url()?>uploads/files/thumbnail/<?php echo $thumbnails[$i]; ?>" alt="picture">
+								</span>
+								<input class="text-center" name="deletePictures[]" value="<?php echo $thumbnails[$i]?>" type="checkbox">
+								
+							</div>
+						</div>
+					</div>
+					<?}?>
+						<div class="form-group col-md-12 ">
+							<button id="subdelFiles" class="btn btn-danger delete">Delete</button>
+						</div>
+
+				</form></div>
+			</section>
+
 			<!-- /.content -->
 		</div>
 		<!-- /.content-wrapper -->
@@ -542,13 +607,35 @@ immediately after the control sidebar -->
 				var save_method;
 				var table;
 				var whichForm;
-				$('#editBtneventinfo').click(function(){update_event_info();});
-				$('.btnEditevent').click(function(){edit_event($(this).attr('data-event-id'));});
-				$('.btnDeleteevent').click(function(){delete_event($(this).attr('data-event-id'));});
-				$('#btnAddevent').click(function(){add_event();});
-				$('#btnSave').click(function(){save();});
-				$('#btnSaveeventinfo').click(function(){save('event_info');});
-				$('#delete-bg, #delete-logo').click(function(){delete_element(event)});
+				$('#editBtneventinfo').click(function () {
+					update_event_info();
+				});
+				$('.btnEditevent').click(function () {
+					edit_event($(this).attr('data-event-id'));
+				});
+				$('.btnDeleteevent').click(function () {
+					delete_event($(this).attr('data-event-id'));
+				});
+				$('#btnAddevent').click(function () {
+					add_event();
+				});
+				$('#btnSave').click(function () {
+					save();
+				});
+				$('#btnSaveeventinfo').click(function () {
+					save('event_info');
+				});
+				$('#delete-bg, #delete-logo, #delete-bg-2').click(function () {
+					delete_element(event)
+				});
+				$("#subdelFiles").click(function(e){
+					e.preventDefault();
+					if (window.confirm("Are you sure?")) {
+						deletepicturesdb();
+					}
+					
+				
+				})
 
 				// initiates plugins //
 				$(function () {
@@ -557,25 +644,30 @@ immediately after the control sidebar -->
 					});
 				});
 
-				
+
 				$('.fileupload').each(function () {
-    $(this).fileupload({
-		dropZone: $(this),
-		limitMultiFileUploads: 1,
-					maxNumberOfFiles: 2
-    });
-});
+					$(this).fileupload({
+						dropZone: $(this),
+						limitMultiFileUploads: 1,
+						maxNumberOfFiles: 2
+					});
+				});
 
 				$('#table_events').DataTable();
-				
-				$('#table_event_info').DataTable();
+
+				$('#table_event_info').DataTable({
+					"paging": false,
+					"ordering": false,
+					"info": false,
+					"searching": false
+				});
 
 
 				//************************************* for the event_info form ***************************************************************************//
 				//pictures upload//
 				$('#fileupload_event_info')
 					.bind('fileuploaddone', function (e, data) {
-						
+
 						if (data.fileInput[0].id == "file_picture") {
 							var im = data.files[0].name;
 							$('[name="picture_event_info"]').val(im);
@@ -590,11 +682,12 @@ immediately after the control sidebar -->
 
 						}
 
+
 						$("table tbody.files").empty();
 
 					});
 
-					$('#fileupload2')
+				$('#fileupload2')
 					.bind('fileuploaddone', function (e, data) {
 
 						if (data.fileInput[0].id == "file_background") {
@@ -610,10 +703,18 @@ immediately after the control sidebar -->
 
 						}
 
+						if (data.fileInput[0].id == "file_background_2") {
+							imageBackground = data.files[0].name;
+							$('[name="background_image_2"]').val(imageBackground);
+							$('#background_image_input_2').attr('src', "<?php echo base_url()?>" + "uploads/files/" + imageBackground);
+
+
+						}
+
 						$("table tbody.files").empty();
 
 					});
-					
+
 
 				function update_event_info() {
 
@@ -623,8 +724,8 @@ immediately after the control sidebar -->
 					$('#fileupload2')[0].reset();
 					$("table tbody.files").empty();
 					// reset form on modals
-					var linklogo =  $("#lglink").text();
-					var link =   $('#evlink').text();
+					var linklogo = $("#lglink").text();
+					var link = $('#evlink').text();
 
 					$('[name="date_event_info"]').val('<?php echo $event_info->date; ?>');
 					$('[name="title_event_info"]').val('<?php echo $event_info->title; ?>');
@@ -638,14 +739,11 @@ immediately after the control sidebar -->
 					$('#modal_form_event_info').modal('show'); // show bootstrap modal when complete loaded
 					$('.modal-title').text('Edit Event'); // Set title to Bootstrap modal title
 
-				
+
 				};
 
+				//************************************* for the events ***************************************************************************//
 
-
-
-//************************************* for the events ***************************************************************************//
-	
 
 				function add_event() {
 					save_method = 'add';
@@ -679,6 +777,8 @@ immediately after the control sidebar -->
 							$('[name="description"]').val(data.description);
 							$('[name="logo"]').val(data.logo);
 							$('[name="background_image"]').val(data.background_image);
+							$('[name="background_image_2"]').val(data.background_image_2);
+							$('[name="background_select"]').val(data.background_select);
 							$('[name="link"]').val(data.link);
 							$('[name="view_rank"]').val(data.view_rank);
 							$('#background_image_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + data.background_image);
@@ -700,37 +800,37 @@ immediately after the control sidebar -->
 					if (save_method == 'add') {
 						url = "<?php echo site_url('/adminevents/add_event')?>";
 					} else {
-						if (whichForm === 'event_info'){
+						if (whichForm === 'event_info') {
 							url = "<?php echo site_url('/adminevents/event_info_update') ?>";
 							dataForm = $('#form_event_info');
-						}
-						else{
-						url = "<?php echo site_url('/adminevents/event_update') ?>";
-						dataForm = $('#form');
+						} else {
+							url = "<?php echo site_url('/adminevents/event_update') ?>";
+							dataForm = $('#form');
 						}
 					}
 
-						// ajax adding data to database
-						$.ajax({
-							url: url,
-							type: "POST",
-							data: dataForm.serialize(),
-							dataType: "html",
-							success: function (data) {
-								//if success close modal and reload ajax table
-								$('#modal_form').modal('hide');
-								$('#modal_form_event_info').modal('hide');
-								location.reload(); // for reload a page
-							},
-							error: function (jqXHR, textStatus, errorThrown) {
-								alert('Error adding / update data');
-							}
-						});
+					// ajax adding data to database
+					$.ajax({
+						url: url,
+						type: "POST",
+						data: dataForm.serialize(),
+						dataType: "html",
+						success: function (data) {
+				
+							//if success close modal and reload ajax table
+							$('#modal_form').modal('hide');
+							$('#modal_form_event_info').modal('hide');
+							location.reload(); // for reload a page
+						},
+						error: function (jqXHR, textStatus, errorThrown) {
+							alert('Error adding / update data');
+						}
+					});
 				}
 
 				function delete_element(event) {
 					event.preventDefault();
-		
+
 					id = $('[name="id"]').val();
 
 					if (event.target.id == 'delete-bg') {
@@ -746,7 +846,7 @@ immediately after the control sidebar -->
 				}
 
 				function delete_event(id) {
-				
+
 					if (confirm('Are you sure delete this data?')) {
 						// ajax delete data from database
 						$.ajax({
@@ -754,7 +854,7 @@ immediately after the control sidebar -->
 							type: "POST",
 							dataType: "JSON",
 							success: function (data) {
-								
+
 
 								location.reload();
 							},
@@ -765,7 +865,33 @@ immediately after the control sidebar -->
 
 					}
 				}
+
+				function deletepicturesdb() {
+					
+					var url;
+					var dataForm;
+					dataForm = $("#databasepic");
+					
+						url = "<?php echo site_url('/adminevents/delete_files')?>";
+				
+					// ajax adding data to database
+					$.ajax({
+						url: url,
+						type: "POST",
+						data: dataForm.serialize(),
+						dataType: "html",
+						success: function (data) {
+							
+						location.reload();
+					
+						},
+						error: function (jqXHR, textStatus, errorThrown) {
+							alert('Error adding / update data');
+						}
+					});
+				}
 			});
+
 
 		</script>
 

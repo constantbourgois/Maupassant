@@ -377,7 +377,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="col-events">
 							<article>
 								<div class="wrapevents">
-									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->background_image; ?>" alt="backgroundevent">
+									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->background_image_displayed; ?>" alt="backgroundevent">
 									<div class="eventsdata">
 										<h4>
 											<?php echo $events[0]->title; ?>
@@ -398,7 +398,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<?php for ($i = 1; $i <= 2;$i++){?>
 							<article>
 								<div class="wrapevents">
-									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image; ?>" alt="backgroundevent">
+									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
 									<div class="eventsdata">
 										<h4>
 											<?php echo $events[$i]->title; ?>
@@ -421,7 +421,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="col-events">
 								<article>
 									<div class="wrapevents">
-										<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image; ?>" alt="backgroundevent">
+										<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
 										<div class="eventsdata">
 											<h4>
 												<?php echo $events[$i]->title; ?>
@@ -444,12 +444,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div id="event-info">
                     <div class="background-event-info">
+
 					<h6><?php echo $event_info->title ?></h6>
+
 					<img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->picture; ?>" alt="eventinfopicture">
+					
 					<p class="event-info-info">
-					<?php echo $event_info->description ?>					
+
+						<?php echo $event_info->description ?>
+					</p>
+
 					<div class="event-info-date"><?php echo $event_info->date ?></div>
+					
 					<a class="event-info-link" href="<?php echo $event_info->link; ?>">Inscription</a>
+					
 					<a class="event-info-logo" href="<?php echo $event_info->linklogo; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->logo; ?>"></a>
                         </div>
 							</div>
