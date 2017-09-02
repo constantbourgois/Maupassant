@@ -78,8 +78,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</nav>
 			<div class="fondh1">
 				<img src="assets/img/backgroundtest1.jpg" alt="fondhome">
-				<span><h1> A little bit<br> about the hotel </h1>
-			<h2> <span>here is where the </span><br><span>welcome line comes </span></h2>
+				<span><h1>Seulement ici il n'y a <br>pas de frontières</h1>
+			<h2> <span>MAUPASSANT PARTENAIRES est la plateforme  </span><br><span>de distribution des sociétés Orelis, Turgot AM et Leemo. </span></h2>
 				</span>
 			</div>
 
