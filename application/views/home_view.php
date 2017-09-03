@@ -52,8 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<nav class="overlay-menu">
 						<ul>
 							<li><a href="#Home">Home</a></li>
-							<li><a href="#Acteurs">L'equipe</a></li>
-							<li><a href="#Events">Evements</a></li>
+							<li><a href="#Acteurs">L'équipe</a></li>
+							<li><a href="#Events">Evénements</a></li>
 							<li><a href="#Contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -70,8 +70,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</svg>
 					<img src="<?php echo base_url()?>assets/img/mp3.gif" alt="logoAnimMaupassant"> </a>
 				<ul class="categories">
-					<li><a href="#Acteurs"> L'equipe </a></li>
-					<li><a href="#Events"> Evements </a></li>
+					<li><a href="#Acteurs"> L'équipe </a></li>
+					<li><a href="#Events"> Evénements </a></li>
 					<li><a href="#Contact"> Contact </a></li>
 				</ul>
 				<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
@@ -368,10 +368,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</g>
 					<g id="animElems"></g>
 				</svg>
+				<article id="acteurs-mobile">
+					<ul>
+						<li><a href="#"><img src="assets/img/orelis.svg" alt="orelis"></a></li>
+						<li><a href="#"><img src="assets/img/fiducee.svg" alt="fiducee"></a></li>
+						<li><a href="#"><img src="assets/img/turgot.svg" alt="turgot"></a></li>
+						<li><a href="#"><img src="assets/img/fundee.svg" alt="fundee"></a></li>
+						<li><a href="#"><img src="assets/img/leemo.svg" alt="leemo"></a></li>
+						<li><a href="#"><img src="assets/img/23.svg" alt="23"></a></li>				
+					</ul>
+				</article>
 			</section>
 
 			<section id="Events">
-				<h3>Events</h3>
+				<h3>Evénements</h3>
 				<div class="background">
 					<div id="background-transp">
 						<div class="col-events">
@@ -389,7 +399,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<?php echo $events[0]->description; ?>
 										</div>
 										<a class="eventlinklogo" href="<?php echo $events[0]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
-										<a href="#" class="eventcontact">Contact</a>
+										<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
 									</div>
 								</div>
 							</article>
@@ -410,7 +420,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<?php echo $events[$i]->description; ?>
 										</div>
 										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
-										<a href="#" class="eventcontact">Contact</a>
+										<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
 									</div>
 								</div>
 							</article>
@@ -432,8 +442,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<div class="eventdescription">
 												<?php echo $events[$i]->description; ?>
 											</div>
-											<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
-											<a href="#" class="eventcontact">Contact</a>
+											<a  class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
+											<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
 										</div>
 									</div>
 								</article>
@@ -445,23 +455,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div id="event-info">
                     <div class="background-event-info">
 
-					<h6><?php echo $event_info->title ?></h6>
+						<h6><?php echo $event_info->title ?></h6>
 
-					<img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->picture; ?>" alt="eventinfopicture">
-					
-					<p class="event-info-info">
+						<img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->picture; ?>" alt="eventinfopicture">
+						
+						<p class="event-info-info">
 
-						<?php echo $event_info->description ?>
-					</p>
+							<?php echo $event_info->description ?>
+						</p>
 
-					<div class="event-info-date"><?php echo $event_info->date ?></div>
-					
-					<a class="event-info-link" href="<?php echo $event_info->link; ?>">Inscription</a>
-					
-					<a class="event-info-logo" href="<?php echo $event_info->linklogo; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->logo; ?>"></a>
-                        </div>
-							</div>
+						<div class="event-info-date"><?php echo $event_info->date ?></div>
+								
+						<a class="event-info-link" href="<?php echo $event_info->link; ?>">Inscription</a>
+								
+							<a class="event-info-logo" href="<?php echo $event_info->linklogo; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->logo; ?>"></a>
+						</div>
 				</div>
+				
+			
 				<!--<div id="event-info">
                     <div class="background-event-info">
 					<h6>Webinar Fundee/Nordea</h6>
@@ -595,7 +606,8 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 
 					</div>
 			</div>
-	</body>
+
+</body>
 	<script
 	src="http://code.jquery.com/jquery-3.2.1.min.js"
 	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
