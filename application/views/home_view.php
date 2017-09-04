@@ -517,9 +517,8 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 					<div class="lbx5" id="fiducee-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
-							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
-							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
-	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
+							<h5>Fiducée Gestion Privée</h5>
+							<p>Fiducée Gestion Privée place l’indépendance et l’éthique au centre d’une relation de qualité, au service de la gestion de patrimoine des clients. Ses conseillers en gestion de patrimoine indépendants bénéficient de services, de compétences, d’informations en temps réel ainsi que d’un accompagnement permanent sur l’ensemble des problématiques patrimoniales, auxquels ils ne pourraient avoir accès de manière isolée (ingénierie patrimoniale, conseil juridique, expertise et sélection produits, veille de l’actualité en matière de gestion patrimoniale des professionnels de santé et des professions libérales…).
 							</p>
 							</span>
 						<a target="_blank" href="http://www.fiducee.com/">aller au site pour plus d'informations</a>
@@ -561,9 +560,9 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 					<div class="lbx3" id="vingtrois-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
-							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
-							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
-	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
+							<h5>Agence digitale Vingtrois</h5>
+							<p>L’agence digitale VINGTROIS propulse les acteurs de la gestion privée aux avant-postes de la révolution numérique. En portant trois regards croisés : technique, graphique et éditorial, VINGTROIS développe une connaissance précise des enjeux et opportunités numériques de ces différents métiers.
+Créations et déclinaisons d’identité visuelle, présence et réputation numérique (sites internet, vidéos, newsletters), réseaux sociaux privés, agrégation et rédaction de contenus à forte valeur ajoutée, valorisation des expertises, marketing relationnel, CRM, centres d’appels automatisés et distribués, simulations financières, back-offices numériques, automatisation de la documentation réglementaire, business intelligence, facturation… 
 							</p>
 							</span>
 						<a target="_blank" href="http://www.vingtrois.fr/" >aller au site pour plus d'informations</a>
