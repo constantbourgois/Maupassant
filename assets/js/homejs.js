@@ -13,7 +13,13 @@ $(document).ready(function () {
 				scrollTop: newScroll
 
 			}, 1000);
+			
 		}
+	});
+
+	$('.navmobile a').on('click', function (event) {
+		$('#toggle').click(); // close the mobile menu when click on links
+		
 	});
 
 
@@ -26,7 +32,7 @@ $(document).ready(function () {
     var menuLinks = $(".navfull .categories a");
     
     $('.navfull').show();
-    $('.navmobile').hide();
+	$('.navmobile').hide();
 
 	$(window).scroll(function () {
         if(window.scrollY === 0){
@@ -66,12 +72,14 @@ $(document).ready(function () {
 			$('.navfull .categories a').addClass('white');
 			$('.navfull .categories').removeClass('black-border');
 			$('.navfull .categories').addClass('white-border');
+			$('.button_container:not(.active) span').css('background-color','#F5F5F5');
 
 		} else if (offsetLinks >= contactOffset) {
 			$('.navfull .categories a').removeClass('white');
 			$('.navfull .categories a').addClass('black');
 			$('.navfull .categories').removeClass('white-border');
 			$('.navfull .categories').addClass('black-border');
+			$('.button_container:not(.active) span').css('background-color','#191919');
 
 		};
 		if (window.scrollY >= headerOffset && window.scrollY < acteursOffset) {
