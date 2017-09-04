@@ -23,7 +23,6 @@ class Home extends CI_Controller {
 		$this->load->model('Eventsadmin', '', true);
 
 		$data['events'] = $this -> Eventsadmin -> listEvents();
-		$data['event_info'] = $this -> Eventsadmin -> getEventinfo();
 
 		$this->load->view('home_view',$data);
 	}

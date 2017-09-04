@@ -8,7 +8,7 @@ class Eventsadmin extends CI_Model
 {
 
     public $table = 'events';
-    public $table2 = 'event_info';
+    /*public $table2 = 'event_info';*/
 
     public function get_by_id($id)
     {
@@ -26,12 +26,12 @@ class Eventsadmin extends CI_Model
         return $query->result();
     }
 
-    function getEventinfo()
+    /*function getEventinfo()
     {
     
         $query = $this->db->get('event_info');
         return $query->row();
-    }
+    }*/
 
     public function createEvent($data)
     {
@@ -44,11 +44,11 @@ class Eventsadmin extends CI_Model
         $this->db->update($this->table, $data, $where);
         return $this->db->affected_rows();
     }
-    public function event_info_update($data)
+    /*public function event_info_update($data)
     {
         $this->db->update($this->table2, $data, "id = 1");
         return $this->db->affected_rows();
-    }
+    }*/
 
     public function delete_by_id($id)
     {

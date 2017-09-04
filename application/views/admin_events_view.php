@@ -1,10 +1,10 @@
-
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 ?>
 	<!DOCTYPE html>
 	<html lang="en">
+
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,21 +39,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				max-width: 100%;
 			}
 
-			#table_events,#databasepic,#table_event_info {
+			#table_events,
+			#databasepic,
+			#table_event_info {
 				background-color: #f2f2f2;
 			}
-			#databasepic{
-				background-color:lightgrey;
-				display:inline-block;
 
-				
+			#databasepic {
+				background-color: lightgrey;
+				display: inline-block;
 			}
-			#databasepic .pic-container{
-				border:1px solid #ddd;
+
+			#databasepic .pic-container {
+				border: 1px solid #ddd;
 			}
 
 			.logo-cell {
-				background-color: lightgrey;
+				
+			}
+			.modal-dialog{
+
+				width:90%!important;
+			}
+
+			.modal-dialog img{
+				max-width:70%!important;
+				margin:3%;
+				
+				background-color:#efefea;
+
+			}
+
+			img{
+				
+				
+			}
+
+			#logo_input{
+				
 			}
 
 		</style>
@@ -87,6 +110,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<th>selected background </th>
 								<th>link</th>
 								<th>view_rank</th>
+								<th> event info title </th>
+								<th> event info description </th>
+								<th> event info date </th>
+								<th> event info logo </th>
+								<th> event info picture </th>
+								<th> event info link </th>
+								<th> event info link logo </th>
 								<th style="width:125px;">Action</th>
 							</tr>
 						</thead>
@@ -108,12 +138,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<td class="logo-cell"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo; ?>" alt="logo"></td>
 								<td><img src="<?php echo base_url()?>uploads/files/<?php echo $event->background_image; ?>" alt="bg_image"></td>
 								<td><img src="<?php echo base_url()?>uploads/files/<?php echo $event->background_image_2; ?>" alt="bg_image"></td>
-								<td><?php echo $event->background_select;?></td>
-								<td><?php echo $event->link;?></td>
-								<td><?php echo $event->view_rank;?></td>
 								<td>
-									<button data-event-id="<?php echo $event->id; ?>" class="btn btn-warning btnEditevent" ><i class="glyphicon glyphicon-pencil"></i></button>
-									<button data-event-id="<?php echo $event->id; ?>" class="btn btn-danger btnDeleteevent" ><i class="glyphicon glyphicon-remove"></i></button>
+									<?php echo $event->background_select;?>
+								</td>
+								<td>
+									<?php echo $event->link;?>
+								</td>
+								<td>
+									<?php echo $event->view_rank;?>
+								</td>
+
+								<td>
+									<?php echo $event->title_event_info; ?>
+								</td>
+								<td>
+									<?php echo $event->description_event_info; ?>
+								</td>
+								<td>
+									<?php echo $event->date_event_info; ?>
+								</td>
+								<td class="logo-cell"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo_event_info; ?>" alt="logo"></td>
+								<td><img src="<?php echo base_url()?>uploads/files/<?php echo $event->picture_event_info; ?>" alt="picture"></td>
+								<td id="evlink">
+									<?php echo $event->link_event_info;?>
+								</td>
+								<td id="lglink">
+									<?php echo $event->linklogo_event_info;?>
+								</td>
+								<td>
+									<button data-event-id="<?php echo $event->id; ?>" class="btn btn-warning btnEditevent"><i class="glyphicon glyphicon-pencil"></i></button>
+									<button data-event-id="<?php echo $event->id; ?>" class="btn btn-danger btnDeleteevent"><i class="glyphicon glyphicon-remove"></i></button>
 								</td>
 							</tr>
 							<?php } ?>
@@ -176,18 +230,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														<input id="file_logo" type="file" name="files" multiple>
 													</div>
 												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">logo event info</label>
+													<div class="btn btn-success fileinput-button">
+														<i class="glyphicon glyphicon-plus"></i>
+														<span>Add files...</span>
+														<input id="file_logo_event_info" type="file" name="files" multiple>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">picture event info</label>
+													<div class="btn btn-success fileinput-button">
+														<i class="glyphicon glyphicon-plus"></i>
+														<span>Add files...</span>
+														<input id="file_picture" type="file" name="files" multiple>
+													</div>
+												</div>
 												<button type="submit" class="btn btn-primary start">
-										<i class="glyphicon glyphicon-upload"></i>
-										<span>Start upload</span>
-									</button>
+													<i class="glyphicon glyphicon-upload"></i>
+													<span>Start upload</span>
+												</button>
 												<button type="reset" class="btn btn-warning cancel">
-										<i class="glyphicon glyphicon-ban-circle"></i>
-										<span>Cancel upload</span>
-									</button>
+													<i class="glyphicon glyphicon-ban-circle"></i>
+													<span>Cancel upload</span>
+												</button>
 												<button type="button" class="btn btn-danger delete">
-										<i class="glyphicon glyphicon-trash"></i>
-										<span>Delete</span>
-									</button>
+													<i class="glyphicon glyphicon-trash"></i>
+													<span>Delete</span>
+												</button>
 												<input type="checkbox" class="toggle">
 												<!-- The global file processing state -->
 												<span class="fileupload-process"></span>
@@ -215,16 +285,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<label class="control-label col-md-3">background image</label>
 											<button class="btn btn-danger delete" id="delete-bg"><i class="glyphicon glyphicon-trash"></i></button>
 											<div class="col-md-9">
-												<img id="background_image_input" src="//" alt="image">
-												name <input name="background_image"  class="form-control">
+												<img id="background_image_input" class="img-responsive" src="//" alt="image"> 
+												<div class="col-md-12">file name <input name="background_image" class="form-control" ></div>
+		
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="control-label col-md-3">background image 2</label>
 											<button class="btn btn-danger delete" id="delete-bg-2"><i class="glyphicon glyphicon-trash"></i></button>
 											<div class="col-md-9">
-												<img id="background_image_input_2" src="//" alt="image">
-												name<input name="background_image_2"  class="form-control">
+												<img id="background_image_input_2" class="img-responsive" src="//" alt="image"> 
+												<div class="col-md-12">file name <input name="background_image_2" class="form-control" ></div>
 											</div>
 										</div>
 										<div class="form-group">
@@ -236,16 +307,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										</div>
 										<div class="form-group">
 											<label class="control-label col-md-3">logo</label>
-											<button class="btn btn-danger delete" id="delete-logo" ><i class="glyphicon glyphicon-trash"></i></button>
+											<button class="btn btn-danger delete" id="delete-logo"><i class="glyphicon glyphicon-trash"></i></button>
 											<div class="col-md-9">
 												<img id="logo_input" src="//" alt="logo">
-												<input name="logo" class="form-control" type="hidden">
+												<div class="col-md-12">file name <input name="logo" class="form-control" ></div>
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="control-label col-md-3">date</label>
 											<div class="col-md-9">
-												<input class="datepicker" name="date" placeholder="event date" class="form-control" type="text">
+												<input class="datepicker form-control" name="date" placeholder="event date" type="text">
 											</div>
 										</div>
 										<div class="form-group">
@@ -272,153 +343,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												<input name="view_rank" placeholder="view_rank" class="form-control" type="number">
 											</div>
 										</div>
-
-									</div>
-									<div class="modal-footer">
-										<button type="button" id="btnSave" class="btn btn-primary">Save</button>
-										<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-									</div>
-								</form>
-							</div>
-							<!-- /.modal-content -->
-						</div>
-						<!-- /.modal-dialog -->
-					</div>
-				</div>
-				<!-- /.modal -->
-				<!-- End Bootstrap modal -->
-				<!-- ./col -->
-				<!-- /.row -->
-				<!-- Main row -->
-				<!-- /.row (main row) -->
-			</section>
-			<section class="content event_info">
-				<div class="container">
-						</center>
-						<h3>Event info</h3>
-				<table id="table_event_info" class="table table-bordered" cellspacing="2" width="100%">
-						<thead>
-							<tr>
-								<th>title</th>
-								<th>description</th>
-								<th>date</th>
-								<th>picture</th>
-								<th>logo</th>
-								<th>link</th>
-								<th>link logo</th>
-								<th style="width:125px;">Action</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<?php echo $event_info->title; ?>
-								</td>
-								<td>
-								<?php echo $event_info->description; ?>
-							</td>
-							<td>
-							<?php echo $event_info->date; ?>
-						</td>
-								<td class="logo-cell"><img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->logo; ?>" alt="logo"></td>
-								<td><img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->picture; ?>" alt="picture"></td>
-								<td id="evlink"><?php echo $event_info->link;?></td>
-								<td id="lglink"><?php echo $event_info->linklogo;?></td>
-								<td>
-									<button id="editBtneventinfo" class="btn btn-warning" ><i class="glyphicon glyphicon-pencil"></i></button>
-								</td>
-							</tr>
-						</tbody>
-						<tfoot style="display:none">
-							
-						</tfoot>
-					</table>
-				</div>
-				<div class="modal fade" id="modal_form_event_info" role="dialog">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h3 class="modal-title">Event Info Form</h3>
-							</div>
-							<div class="modal-body form">
-								<div class="form-group">
-									<form id="fileupload_event_info" class="fileupload" action="adminevents/json" method="POST" enctype="multipart/form-data">
-										<!-- Redirect browsers with JavaScript disabled to the origin page -->
-										<noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
-										<!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
-										<div class="row fileupload-buttonbar">
-											<div class="col-md-6">
-												<!-- The fileinput-button span is used to style the file input field as button -->
-
-												<div class="form-group">
-													<label class="control-label col-md-3">logo</label>
-													<div class="btn btn-success fileinput-button">
-														<i class="glyphicon glyphicon-plus"></i>
-														<span>Add files...</span>
-														<input id="file_logo_event_info" type="file" name="files" multiple>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3">picture</label>
-													<div class="btn btn-success fileinput-button">
-														<i class="glyphicon glyphicon-plus"></i>
-														<span>Add files...</span>
-														<input id="file_picture" type="file" name="files" multiple>
-													</div>
-												</div>
-												<button type="submit" class="btn btn-primary start">
-										<i class="glyphicon glyphicon-upload"></i>
-										<span>Start upload</span>
-									</button>
-												<button type="reset" class="btn btn-warning cancel">
-										<i class="glyphicon glyphicon-ban-circle"></i>
-										<span>Cancel upload</span>
-									</button>
-												<button type="button" class="btn btn-danger delete">
-										<i class="glyphicon glyphicon-trash"></i>
-										<span>Delete</span>
-									</button>
-												<input type="checkbox" class="toggle">
-												<!-- The global file processing state -->
-												<span class="fileupload-process"></span>
-											</div>
-											<!-- The global progress state -->
-											<div class="col-lg-5 fileupload-progress fade">
-												<!-- The global progress bar -->
-												<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-													<div class="progress-bar progress-bar-success" style="width:0%;"></div>
-												</div>
-												<!-- The extended global progress state -->
-												<div class="progress-extended">&nbsp;</div>
-											</div>
-										</div>
-										<!-- The table listing the files available for upload/download -->
-										<table role="presentation" class="table table-striped">
-											<tbody class="files"></tbody>
-										</table>
-									</form>
-								</div>
-								<form action="#" id="form_event_info" class="form-horizontal">
-									<div class="form-body">
+										<!-- Event info -->
+										<div class="col-md-12 bg-info text-center"> LIGHTBOX EVENT INFO</div>
 										<div class="form-group">
 											<label class="control-label col-md-3">logo</label>
 											<div class="col-md-9">
+												<button class="btn btn-danger delete" id="delete-logo-event_info"><i class="glyphicon glyphicon-trash"></i></button>
 												<img id="logo_event_info_input" src="//" alt="image">
-												<input name="logo_event_info" placeholder="logo_event" class="form-control" type="hidden">
+												<div class="col-md-9"> file name <input name="logo_event_info" class="form-control"></div>
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="control-label col-md-3">picture</label>
 											<div class="col-md-9">
-												<img id="picture_input" src="//" alt="picture">
-												<input name="picture_event_info" placeholder="event date" class="form-control" type="hidden">
+												<button class="btn btn-danger delete" id="delete-picture_event_info"><i class="glyphicon glyphicon-trash"></i></button>
+												<img id="picture_input" class="col-md-9" src="//" alt="picture">
+												<div class="col-md-9">file name <input name="picture_event_info" class="form-control"></div>
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="control-label col-md-3">date</label>
 											<div class="col-md-9">
-												<input class="datepicker" name="date_event_info" placeholder="event date" class="form-control" type="text">
+												<input name="date_event_info" placeholder="event date" class="form-control" type="text">
 											</div>
 										</div>
 										<div class="form-group">
@@ -445,9 +391,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												<input name="linklogo_event_info" placeholder="linklogo_event_info" class="form-control" type="text">
 											</div>
 										</div>
+
 									</div>
 									<div class="modal-footer">
-										<button type="button" id="btnSaveeventinfo" class="btn btn-primary">Save</button>
+										<button type="button" id="btnSave" class="btn btn-primary">Save</button>
 										<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
 									</div>
 								</form>
@@ -457,33 +404,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- /.modal-dialog -->
 					</div>
 				</div>
-				
-
+				<!-- /.modal -->
+				<!-- End Bootstrap modal -->
+				<!-- ./col -->
+				<!-- /.row -->
+				<!-- Main row -->
+				<!-- /.row (main row) -->
 			</section>
 			<section id="picture_database">
 				<div class="container">
-				</center>
-				<h3>Pictures database</h3>
-				<form id="databasepic" action="#" >
-					<?php for ($i = 0; $i < count($thumbnails)-1;$i++) { ?>
-					<div class="pic-container col-md-4 bg-faded">
-						<label class="control-label"><?php echo $thumbnails[$i] ?></label>
-						<div class="">
-							<div class="text-center">
-							<span class="">
+					</center>
+					<h3>Pictures database</h3>
+					<form id="databasepic" action="#">
+						<?php for ($i = 0; $i < count($thumbnails)-1;$i++) { ?>
+						<div class="pic-container col-md-4 bg-faded">
+							<label class="control-label"><?php echo $thumbnails[$i] ?></label>
+							<div class="">
+								<div class="text-center">
+									<span class="">
 										<img class="img-thumbnail center-block" src="<?php echo base_url()?>uploads/files/thumbnail/<?php echo $thumbnails[$i]; ?>" alt="picture">
 								</span>
-								<input class="text-center" name="deletePictures[]" value="<?php echo $thumbnails[$i]?>" type="checkbox">
-								
+									<input class="text-center" name="deletePictures[]" value="<?php echo $thumbnails[$i]?>" type="checkbox">
+
+								</div>
 							</div>
 						</div>
-					</div>
-					<?}?>
-						<div class="form-group col-md-12 ">
-							<button id="subdelFiles" class="btn btn-danger delete">Delete</button>
-						</div>
+						<?}?>
+							<div class="form-group col-md-12 ">
+								<button id="subdelFiles" class="btn btn-danger delete">Delete</button>
+							</div>
 
-				</form></div>
+					</form>
+				</div>
 			</section>
 
 			<!-- /.content -->
@@ -606,7 +558,8 @@ immediately after the control sidebar -->
 			$(document).ready(function () {
 				var save_method;
 				var table;
-				var whichForm;
+
+				// set the events on clicks //
 				$('#editBtneventinfo').click(function () {
 					update_event_info();
 				});
@@ -622,19 +575,16 @@ immediately after the control sidebar -->
 				$('#btnSave').click(function () {
 					save();
 				});
-				$('#btnSaveeventinfo').click(function () {
-					save('event_info');
-				});
-				$('#delete-bg, #delete-logo, #delete-bg-2').click(function () {
+				$('#delete-bg, #delete-logo, #delete-bg-2,#delete-logo-event_info,#delete-picture_event_info').click(function () {
 					delete_element(event)
 				});
-				$("#subdelFiles").click(function(e){
+				$("#subdelFiles").click(function (e) {
 					e.preventDefault();
 					if (window.confirm("Are you sure?")) {
 						deletepicturesdb();
 					}
-					
-				
+
+
 				})
 
 				// initiates plugins //
@@ -653,19 +603,21 @@ immediately after the control sidebar -->
 					});
 				});
 
-				$('#table_events').DataTable();
+				$('#table_events').DataTable({
+					"scrollX": true,
+				});
 
-				$('#table_event_info').DataTable({
+				/*$('#table_event_info').DataTable({
 					"paging": false,
 					"ordering": false,
 					"info": false,
 					"searching": false
-				});
+				});*/
 
 
 				//************************************* for the event_info form ***************************************************************************//
 				//pictures upload//
-				$('#fileupload_event_info')
+				/*$('#fileupload_event_info')
 					.bind('fileuploaddone', function (e, data) {
 
 						if (data.fileInput[0].id == "file_picture") {
@@ -685,62 +637,45 @@ immediately after the control sidebar -->
 
 						$("table tbody.files").empty();
 
-					});
+					});*/
 
 				$('#fileupload2')
 					.bind('fileuploaddone', function (e, data) {
 
 						if (data.fileInput[0].id == "file_background") {
-							imageBackground = data.files[0].name;
-							$('[name="background_image"]').val(imageBackground);
-							$('#background_image_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + imageBackground);
+							var im = data.files[0].name;
+							$('[name="background_image"]').val(im);
+							$('#background_image_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + im);
 
 
 						} else if (data.fileInput[0].id == "file_logo") {
-							imageLogo = data.files[0].name;
+							var im = data.files[0].name;
 							$('[name="logo"]').val(imageLogo);
-							$('#logo_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + imageLogo);
+							$('#logo_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + im);
 
-						}
+						} else if (data.fileInput[0].id == "file_background_2") {
+							var im = data.files[0].name;
+							$('[name="background_image_2"]').val(im);
+							$('#background_image_input_2').attr('src', "<?php echo base_url()?>" + "uploads/files/" + im);
 
-						if (data.fileInput[0].id == "file_background_2") {
-							imageBackground = data.files[0].name;
-							$('[name="background_image_2"]').val(imageBackground);
-							$('#background_image_input_2').attr('src', "<?php echo base_url()?>" + "uploads/files/" + imageBackground);
 
+						} else if (data.fileInput[0].id == "file_picture") {
+							var im = data.files[0].name;
+							$('[name="picture_event_info"]').val(im);
+							$('#picture_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + im);
+
+
+
+						} else if (data.fileInput[0].id == "file_logo_event_info") {
+							var im = data.files[0].name;
+							$('[name="logo_event_info"]').val(im);
+							$('#logo_event_info_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + im);
 
 						}
 
 						$("table tbody.files").empty();
 
 					});
-
-
-				function update_event_info() {
-
-					save_method = 'update';
-					$('#form_event_info')[0].reset();
-					$('#fileupload_event_info')[0].reset();
-					$('#fileupload2')[0].reset();
-					$("table tbody.files").empty();
-					// reset form on modals
-					var linklogo = $("#lglink").text();
-					var link = $('#evlink').text();
-
-					$('[name="date_event_info"]').val('<?php echo $event_info->date; ?>');
-					$('[name="title_event_info"]').val('<?php echo $event_info->title; ?>');
-					$('[name="description_event_info"]').val('<?php echo $event_info->description; ?>');
-					$('[name="logo_event_info"]').val('<?php echo $event_info->logo; ?>');
-					$('[name="picture_event_info"]').val('<?php echo $event_info->picture; ?>');
-					$('[name="link_event_info"]').val(link);
-					$('[name="linklogo_event_info"]').val(linklogo);
-					$('#picture_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + '<?php echo $event_info->picture; ?>');
-					$('#logo_event_info_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + '<?php echo $event_info->logo; ?>');
-					$('#modal_form_event_info').modal('show'); // show bootstrap modal when complete loaded
-					$('.modal-title').text('Edit Event'); // Set title to Bootstrap modal title
-
-
-				};
 
 				//************************************* for the events ***************************************************************************//
 
@@ -750,6 +685,7 @@ immediately after the control sidebar -->
 					$('#form')[0].reset();
 					$('#fileupload2')[0].reset();
 					$("table tbody.files").empty();
+					$("form img").attr('src','');
 					// reset form on modals
 					$('#modal_form').modal('show'); // show bootstrap modal
 					//$('.modal-title').text('Add Person'); // Set Title to Bootstrap modal title
@@ -760,7 +696,7 @@ immediately after the control sidebar -->
 					save_method = 'update';
 					$('#form')[0].reset();
 					$('#fileupload2')[0].reset();
-					$('#fileupload_event_info')[0].reset();
+					/*$('#fileupload_event_info')[0].reset();*/
 					$("table tbody.files").empty();
 					// reset form on modals
 
@@ -770,7 +706,7 @@ immediately after the control sidebar -->
 						type: "GET",
 						dataType: "JSON",
 						success: function (data) {
-
+							// fill the form//
 							$('[name="id"]').val(data.id);
 							$('[name="date"]').val(data.date);
 							$('[name="title"]').val(data.title);
@@ -781,9 +717,20 @@ immediately after the control sidebar -->
 							$('[name="background_select"]').val(data.background_select);
 							$('[name="link"]').val(data.link);
 							$('[name="view_rank"]').val(data.view_rank);
+							$('[name="date_event_info"]').val(data.date_event_info);
+							$('[name="title_event_info"]').val(data.title_event_info);
+							$('[name="description_event_info"]').val(data.description_event_info);
+							$('[name="logo_event_info"]').val(data.logo_event_info);
+							$('[name="picture_event_info"]').val(data.picture_event_info);
+							$('[name="link_event_info"]').val(data.link_event_info);
+							$('[name="linklogo_event_info"]').val(data.linklogo_event_info);
+							// links of images//
+							$('#picture_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + data.picture_event_info);
+							$('#logo_event_info_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + data.logo_event_info);
 							$('#background_image_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + data.background_image);
+							$('#background_image_input_2').attr('src', "<?php echo base_url()?>" + "uploads/files/" + data.background_image_2);
 							$('#logo_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + data.logo);
-
+							// show modal//
 							$('#modal_form').modal('show'); // show bootstrap modal when complete loaded
 							$('.modal-title').text('Edit Event'); // Set title to Bootstrap modal title
 
@@ -794,19 +741,15 @@ immediately after the control sidebar -->
 					});
 				}
 
-				function save(whichForm) {
+				function save() {
 					var url;
 					var dataForm;
 					if (save_method == 'add') {
 						url = "<?php echo site_url('/adminevents/add_event')?>";
 					} else {
-						if (whichForm === 'event_info') {
-							url = "<?php echo site_url('/adminevents/event_info_update') ?>";
-							dataForm = $('#form_event_info');
-						} else {
-							url = "<?php echo site_url('/adminevents/event_update') ?>";
-							dataForm = $('#form');
-						}
+
+						url = "<?php echo site_url('/adminevents/event_update') ?>";
+						dataForm = $('#form');
 					}
 
 					// ajax adding data to database
@@ -816,10 +759,9 @@ immediately after the control sidebar -->
 						data: dataForm.serialize(),
 						dataType: "html",
 						success: function (data) {
-				
+
 							//if success close modal and reload ajax table
 							$('#modal_form').modal('hide');
-							$('#modal_form_event_info').modal('hide');
 							location.reload(); // for reload a page
 						},
 						error: function (jqXHR, textStatus, errorThrown) {
@@ -836,12 +778,21 @@ immediately after the control sidebar -->
 					if (event.target.id == 'delete-bg') {
 						$('[name="background_image"]').val("");
 						$('#background_image_input').attr('src', "");
+					} else if (event.target.id == "delete-bg2") {
+						$('[name="background_image_2"]').val("");
+						$('#background_image_input_2').attr('src', "");
 
-					} else {
-						$('[name="logo"]').val("");
-						$('#logo_input').attr('src', "");
+					} else if (event.target.id == "delete-picture-event_info") {
+						$('[name="picture_event_info"]').val("");
+						$('#picture_input').attr('src', "");
+
+
+					} else if (event.target.id == "delete-logo-event_info") {
+						$('[name="logo_event_info"]').val("");
+						$('#logo_event_info_input').attr('src', "");
 
 					}
+
 
 				}
 
@@ -867,13 +818,13 @@ immediately after the control sidebar -->
 				}
 
 				function deletepicturesdb() {
-					
+
 					var url;
 					var dataForm;
 					dataForm = $("#databasepic");
-					
-						url = "<?php echo site_url('/adminevents/delete_files')?>";
-				
+
+					url = "<?php echo site_url('/adminevents/delete_files')?>";
+
 					// ajax adding data to database
 					$.ajax({
 						url: url,
@@ -881,9 +832,9 @@ immediately after the control sidebar -->
 						data: dataForm.serialize(),
 						dataType: "html",
 						success: function (data) {
-							
-						location.reload();
-					
+
+							location.reload();
+
 						},
 						error: function (jqXHR, textStatus, errorThrown) {
 							alert('Error adding / update data');
@@ -891,7 +842,6 @@ immediately after the control sidebar -->
 					});
 				}
 			});
-
 
 		</script>
 
