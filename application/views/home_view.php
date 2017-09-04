@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="fondh1">
 				<img src="assets/img/backgroundtest1.jpg" alt="fondhome">
 				<span><h1>Seulement ici il n'y a <br>pas de frontières</h1>
-			<h2> <span>MAUPASSANT PARTENAIRES est la plateforme  </span><br><span>de distribution des sociétés Orelis, Turgot AM et Leemo. </span></h2>
+			<h2> <span>MAUPASSANT PARTENAIRES est la plateforme  </span><br><span>de distribution des sociétés Orelis, Turgot AM, Leemo,<br>Fiducee et Vingtrois. </span></h2>
 				</span>
 			</div>
 
@@ -607,9 +607,11 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 					<div class="lbx2" id="orelis-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
-							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
-							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
-	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
+							<h5>L'indépendance est une valeur d'avenir</h5>
+							<p>Nous nous engageons à vos côtés depuis bientôt 15 ans pour garantir à vos clients une qualité de back-office irréprochable associée à une recherche permanente des dernières innovations disponibles sur le marché de l’assurance vie, de la capitalisation et de l’épargne retraite.
+                                
+
+Nous favorisons l’ouverture à la diversité des compétences et des profils, afin d’entendre et de valoriser chaque point de vue, qui est depuis le premier jour, unique à nos yeux.
 							</p>
 							</span>
 						<a target="_blank" href="https://www.orelis.fr/">aller au site pour plus d'informations</a>
@@ -622,9 +624,9 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 					<div class="lbx4" id="fundee-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
-							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
-							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
-	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
+							<h5>Fundee, nouvel outil de gestion financière des contrats d’assurance-vie destiné aux CGP</h5>
+							<p>Premier outil d’aide à la gestion financière des contrats d’assurance-vie destiné aux Professionnels du Conseil Patrimonial et aux Groupements de CGPI, Fundee accompagne les mutations profondes du métier de CGPI en permettant de remettre le conseil au centre de la relation avec l’investisseur.
+
 							</p>
 							</span>
 						<a target="_blank" href="http://www.fundee.fr/">aller au site pour plus d'informations</a>
