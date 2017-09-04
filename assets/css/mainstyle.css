@@ -123,7 +123,7 @@ header {
 
 .fondh1 img {
 	max-width: 88%;
-	padding-top: 6.5% !important;
+	padding-top: 5% !important;
 	margin-left: 8%;
 	opacity: .8;
 }
@@ -236,11 +236,11 @@ background-image: url("../../assets/img/testmotifmp2.png");
 }
 
 .st1 {
-	fill: #520A76;
+	fill: #502B8D;
 }
 
 .st2 {
-	opacity: .9;
+	opacity: 1;
 }
 
 .st3 {

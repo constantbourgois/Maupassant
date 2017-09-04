@@ -85,9 +85,17 @@ $(document).ready(function () {
 					break;
 
 			}
+            
+           
 		}
-
-		runEngine();
+        
+        //remove to loop//
+        animRounds = 1;
+        animTime = 1.5;
+        animCount = 0;
+        ////////////////
+		
+        runEngine();
 
 
 	});
@@ -104,7 +112,7 @@ $(document).ready(function () {
 
 			tweenScale.to(element, 0.2, {
 				scale: "+=0.1",
-				opacity: 1,
+				opacity: 0.65,
 				transformOrigin: "50% 50%"
 			})
 			element.animation = tweenScale;
@@ -287,7 +295,7 @@ $(document).ready(function () {
 
 		}
 
-		$('#target1').click();
+		$('#target1').click(); 
 
 
 	}
