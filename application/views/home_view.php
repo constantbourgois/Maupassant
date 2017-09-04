@@ -384,7 +384,65 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h3>Evénements</h3>
 				<div class="background">
 					<div id="background-transp">
+                        <div class="col-events">
+                            <?php 
+                                
+                                $l = count($events); 
+                                
+                                for ($i = 0; $i <$l; $i++){
+                                    if ($i & 1 ){} else{ ?>
+                                        <article>
+								<div class="wrapevents">
+									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
+									<div class="eventsdata">
+										<h4>
+											<?php echo $events[$i]->title; ?>
+										</h4>
+										<div class="eventdate">
+											<?php echo $events[$i]->date; ?>
+										</div>
+										<div class="eventdescription">
+											<?php echo $events[$i]->description; ?>
+										</div>
+										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
+										<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
+									</div>
+								</div>
+							</article><?php      
+                                    }
+                                }
+                            ?>
+                        </div>
 						<div class="col-events">
+                            <?php 
+                                
+                                $l = count($events); 
+                                
+                                for ($i = 0; $i <$l; $i++){
+                                    if ($i & 1 ){ ?>
+                                        <article>
+								<div class="wrapevents">
+									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
+									<div class="eventsdata">
+										<h4>
+											<?php echo $events[$i]->title; ?>
+										</h4>
+										<div class="eventdate">
+											<?php echo $events[$i]->date; ?>
+										</div>
+										<div class="eventdescription">
+											<?php echo $events[$i]->description; ?>
+										</div>
+										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
+										<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
+									</div>
+								</div>
+							</article><?php      
+                                    }
+                                }
+                            ?>
+                        </div>
+                       		<!--
 							<article>
 								<div class="wrapevents">
 									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->background_image_displayed; ?>" alt="backgroundevent">
@@ -449,7 +507,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</article>
 							</div>
 							<? }?>
-						</div>
+						</div>-->
 					</div>
 				</div>
 				<div id="event-info">
