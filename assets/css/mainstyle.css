@@ -888,13 +888,13 @@ h3 {
 .featherlight .featherlight-content{
 
 }
-#event-info {
+.event-info {
 	background-color: #F4F2F2;
 	position: relative;
 	display: none;
 }
 
-#event-info .background-event-info {
+.event-info .background-event-info {
 	width: 100%;
 	display: inline-block;
 	background-color: white;
@@ -907,7 +907,7 @@ h3 {
 	background-color: white;
 }
 
-#event-info h6 {
+.event-info h6 {
 	width: 100%;
 	text-align: left;
 	margin: 0 auto;
@@ -917,7 +917,7 @@ h3 {
 	color: black;
 }
 
-#event-info img {
+.event-info img {
 	width: 65%;
 	text-align: left;
 	margin: 0 auto;
@@ -928,7 +928,7 @@ h3 {
 	box-shadow: 7px 7px 55px #888888;
 }
 
-#event-info .event-info-info {
+.event-info .event-info-info {
 	width: 85%;
 	text-align: left;
 	margin: 0 auto;

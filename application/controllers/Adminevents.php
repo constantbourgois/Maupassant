@@ -21,10 +21,9 @@ class Adminevents extends CI_Controller
         if ($this->session->userdata('name')) {
             $sess = $this->session->userdata('name');
             $data['email'] = $this->session->userdata('email');
-    
 
             $data['events'] = $this -> Eventsadmin -> listEvents();
-            $data['event_info'] = $this -> Eventsadmin -> getEventinfo();
+           /* $data['event_info'] = $this -> Eventsadmin -> getEventinfo();*/
             $data['error'] = array('error'=>'');
             $data['pictures'] = $this->listUploadedfiles();
             $data['thumbnails'] = $this->listUploadedthumbnails();
@@ -115,6 +114,13 @@ class Adminevents extends CI_Controller
             'logo' => $this->input->post('logo'),
             'link'=>   $this->input->post('link'),
             'view_rank' => $this->input->post('view_rank'),
+            'title_event_info' => $this->input->post('title_event_info'),
+            'description_event_info' => $this->input->post('description_event_info'),
+            'date_event_info' => $this->input->post('date_event_info'),
+            'picture_event_info' => $this->input->post('picture_event_info'),
+            'logo_event_info' => $this->input->post('logo_event_info'),
+            'link_event_info'=>   $this->input->post('link_event_info'),
+            'linklogo_event_info'=>   $this->input->post('linklogo_event_info'),
         );
 
         $insert = $this->Eventsadmin->createEvent($data);
@@ -151,6 +157,13 @@ class Adminevents extends CI_Controller
             'logo' => $this->input->post('logo'),
             'link'=>   $this->input->post('link'),
             'view_rank' => $this->input->post('view_rank'),
+            'title_event_info' => $this->input->post('title_event_info'),
+            'description_event_info' => $this->input->post('description_event_info'),
+            'date_event_info' => $this->input->post('date_event_info'),
+            'picture_event_info' => $this->input->post('picture_event_info'),
+            'logo_event_info' => $this->input->post('logo_event_info'),
+            'link_event_info'=>   $this->input->post('link_event_info'),
+            'linklogo_event_info'=>   $this->input->post('linklogo_event_info'),
         );
 
 
@@ -171,7 +184,7 @@ class Adminevents extends CI_Controller
         echo json_encode(array("status" => true));
     }
 
-    public function event_info_update()
+    /*public function event_info_update()
     {
 
         $data = array(
@@ -191,7 +204,7 @@ class Adminevents extends CI_Controller
         $data['events'] = $this -> Eventsadmin -> listEvents();
         $data['event_info'] = $this -> Eventsadmin -> getEventinfo();
         $this->load->view('admin_events_view', $data);
-    }
+    }*/
 
     public function listUploadedfiles()
     {

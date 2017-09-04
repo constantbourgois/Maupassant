@@ -404,8 +404,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="eventdescription">
 											<?php echo $events[$i]->description; ?>
 										</div>
-										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
-										<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
+										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
+										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Contact</a>
 									</div>
 								</div>
 							</article><?php      
@@ -433,8 +433,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="eventdescription">
 											<?php echo $events[$i]->description; ?>
 										</div>
-										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
-										<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
+										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
+										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Contact</a>
 									</div>
 								</div>
 							</article><?php      
@@ -442,95 +442,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 }
                             ?>
                         </div>
-                       		<!--
-							<article>
-								<div class="wrapevents">
-									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->background_image_displayed; ?>" alt="backgroundevent">
-									<div class="eventsdata">
-										<h4>
-											<?php echo $events[0]->title; ?>
-										</h4>
-										<div class="eventdate">
-											<?php echo $events[0]->date; ?>
-										</div>
-										<div class="eventdescription">
-											<?php echo $events[0]->description; ?>
-										</div>
-										<a class="eventlinklogo" href="<?php echo $events[0]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
-										<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
-									</div>
-								</div>
-							</article>
-						</div>
-						<div class="col-events">
-							<?php for ($i = 1; $i <= 2;$i++){?>
-							<article>
-								<div class="wrapevents">
-									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
-									<div class="eventsdata">
-										<h4>
-											<?php echo $events[$i]->title; ?>
-										</h4>
-										<div class="eventdate">
-											<?php echo $events[$i]->date; ?>
-										</div>
-										<div class="eventdescription">
-											<?php echo $events[$i]->description; ?>
-										</div>
-										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[0]->logo; ?>" alt="logoevents"></a>
-										<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
-									</div>
-								</div>
-							</article>
-							<? }?>
-						</div>
-						<div class="new-events">
-							<?php if (count($events) > 3) for ($i = 3; $i < count($events);$i++){?>
-							<div class="col-events">
-								<article>
-									<div class="wrapevents">
-										<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
-										<div class="eventsdata">
-											<h4>
-												<?php echo $events[$i]->title; ?>
-											</h4>
-											<div class="eventdate">
-												<?php echo $events[$i]->date; ?>
-											</div>
-											<div class="eventdescription">
-												<?php echo $events[$i]->description; ?>
-											</div>
-											<a  class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
-											<a data-featherlight="#event-info" href="#" class="eventcontact">Contact</a>
-										</div>
-									</div>
-								</article>
-							</div>
-							<? }?>
-						</div>-->
 					</div>
 				</div>
-				<div id="event-info">
-                    <div class="background-event-info">
+				<div id="event-info-lbx">
+					<?php foreach ($events as $event) { ?>
+					
+					<div class="event-info" id="<?php echo $event->id;?>">
+						<div class="background-event-info">
 
-						<h6><?php echo $event_info->title ?></h6>
+							<h6><?php echo $event->title_event_info ?></h6>
 
-						<img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->picture; ?>" alt="eventinfopicture">
-						
-						<p class="event-info-info">
+							<img src="<?php echo base_url()?>uploads/files/<?php echo $event->picture_event_info; ?>" alt="eventinfopicture">
+							
+							<p class="event-info-info">
 
-							<?php echo $event_info->description ?>
-						</p>
+								<?php echo $event->description_event_info ?>
+							</p>
 
-						<div class="event-info-date"><?php echo $event_info->date ?></div>
-								
-						<a class="event-info-link" href="<?php echo $event_info->link; ?>">Inscription</a>
-								
-							<a class="event-info-logo" href="<?php echo $event_info->linklogo; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event_info->logo; ?>"></a>
-						</div>
+							<div class="event-info-date"><?php echo $event->date_event_info ?></div>
+									
+							<a class="event-info-link" href="<?php echo $event->link_event_info; ?>">Inscription</a>
+									
+								<a class="event-info-logo" href="<?php echo $event->linklogo_event_info; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo_event_info; ?>"></a>
+							</div>
+					</div>
+					<?php }?>
 				</div>
-				
-			
 				<!--<div id="event-info">
                     <div class="background-event-info">
 					<h6>Webinar Fundee/Nordea</h6>
@@ -624,9 +561,15 @@ Nous favorisons l’ouverture à la diversité des compétences et des profils, 
 					<div class="lbx4" id="fundee-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
+<<<<<<< HEAD
 							<h5>Fundee, nouvel outil de gestion financière des contrats d’assurance-vie destiné aux CGP</h5>
 							<p>Premier outil d’aide à la gestion financière des contrats d’assurance-vie destiné aux Professionnels du Conseil Patrimonial et aux Groupements de CGPI, Fundee accompagne les mutations profondes du métier de CGPI en permettant de remettre le conseil au centre de la relation avec l’investisseur.
 
+=======
+							<h5>Unfe gestion diversifiée, indépendante et reconnue</h5>
+							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
+	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
+>>>>>>> origin/master
 							</p>
 							</span>
 						<a target="_blank" href="http://www.fundee.fr/">aller au site pour plus d'informations</a>
