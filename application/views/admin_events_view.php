@@ -55,6 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			}
 
 			.logo-cell {
+				background-color:lightgrey;
 				
 			}
 			.modal-dialog{
@@ -618,7 +619,7 @@ immediately after the control sidebar -->
 
 						} else if (data.fileInput[0].id == "file_logo") {
 							var im = data.files[0].name;
-							$('[name="logo"]').val(imageLogo);
+							$('[name="logo"]').val(im);
 							$('#logo_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + im);
 
 						} else if (data.fileInput[0].id == "file_background_2") {
