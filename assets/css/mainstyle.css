@@ -67,7 +67,7 @@ body {
 }
 
 header {
-	background-color: #191919;
+	background-color: #1C0C1C;
 	width: 100%;
 	position: relative;
 	padding: 3%;
@@ -224,7 +224,7 @@ h2 span {
 
 
 #Acteurs{
-background-image: url("../../assets/img/background-galaxie-circle2.png");
+background-image: url("../../assets/img/background-galaxie-circle.png");
      -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -791,7 +791,7 @@ background-image: url("../../assets/img/background-galaxie-circle2.png");
 	content: ' ';
 	display: block;
 	position: absolute;
-	height: 85px;
+	height: 63px;
 	background-color: rgba(25, 25, 25, .67);
 	text-align: center;
 	width: 90%;
@@ -1128,7 +1128,7 @@ h3 {
 	padding: 0;
 	margin: 0;
 	font-size: 18px;
-	padding-top: 13%;
+	
 }
 
 #Contact a {
