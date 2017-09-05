@@ -104,8 +104,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ul><b class="button open" id="button"><span class="barra"></span> <span class="barra"></span> <span class="barra"></span></b>
 			</div>-->
 		</header>
-		<main>
+		<main>    
 			<section id="Acteurs">
+            
 				<svg id="animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-60 -50 1000 600">
 					<g id="paths">
 						<path class="st0" d="M95.7 89.5c109-38.7 170.1 39.4 308.4 39.4" />
@@ -405,7 +406,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<?php echo $events[$i]->description; ?>
 										</div>
 										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
-										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Contact</a>
+										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Plus d'informations</a>
 									</div>
 								</div>
 							</article><?php      
@@ -434,7 +435,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<?php echo $events[$i]->description; ?>
 										</div>
 										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
-										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Contact</a>
+										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Plus d'informations</a>
 									</div>
 								</div>
 							</article><?php      
@@ -452,7 +453,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 							<h6><?php echo $event->title_event_info ?></h6>
 
-							<img src="<?php echo base_url()?>uploads/files/<?php echo $event->picture_event_info; ?>" alt="eventinfopicture">
+							<img class="img-event" src="<?php echo base_url()?>uploads/files/<?php echo $event->picture_event_info; ?>" alt="eventinfopicture">
 							
 							<p class="event-info-info">
 
@@ -463,7 +464,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									
 							<a class="event-info-link" target="_blank" href="<?php echo $event->link_event_info; ?>">Inscription</a>
 									
-								<a class="event-info-logo" href="<?php echo $event->linklogo_event_info; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo_event_info; ?>"></a>
+								<a target="_blank" class="event-info-logo" href="<?php echo $event->linklogo_event_info; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo_event_info; ?>"></a>
 							</div>
 					</div>
 					<?php }?>
@@ -561,15 +562,10 @@ Nous favorisons l’ouverture à la diversité des compétences et des profils, 
 					<div class="lbx4" id="fundee-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
-<<<<<<< HEAD
+
 							<h5>Fundee, nouvel outil de gestion financière des contrats d’assurance-vie destiné aux CGP</h5>
 							<p>Premier outil d’aide à la gestion financière des contrats d’assurance-vie destiné aux Professionnels du Conseil Patrimonial et aux Groupements de CGPI, Fundee accompagne les mutations profondes du métier de CGPI en permettant de remettre le conseil au centre de la relation avec l’investisseur.
-
-=======
-							<h5>Unfe gestion diversifiée, indépendante et reconnue</h5>
-							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
-	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
->>>>>>> origin/master
+					
 							</p>
 							</span>
 						<a target="_blank" href="http://www.fundee.fr/">aller au site pour plus d'informations</a>

@@ -205,14 +205,14 @@ h2 span {
 /****************************ANIMATION**********************************/
 
 
-/*#Acteurs{
-background-image: url("../../assets/img/testmotifmp2.png");
+#Acteurs{
+background-image: url("../../assets/img/background-galaxie-circle2.png");
      -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   
-    }*/
+    }
 
 #Acteurs svg {
 	height: 100vh;
@@ -773,7 +773,7 @@ background-image: url("../../assets/img/testmotifmp2.png");
 	content: ' ';
 	display: block;
 	position: absolute;
-	height: 75px;
+	height: 85px;
 	background-color: rgba(25, 25, 25, .67);
 	text-align: center;
 	width: 90%;
@@ -792,8 +792,7 @@ background-image: url("../../assets/img/testmotifmp2.png");
 	width: 90%;
 	text-align: center;
 	margin: 0 auto;
-	padding: 3%;
-	padding-top: 7%;
+	padding: 4%;
 	font-size: 18px;
     height: 75px;
 }
@@ -928,15 +927,21 @@ h3 {
 }
 
 .event-info img {
-	width: 65%;
-	text-align: left;
-	margin: 0 auto;
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
+    margin-left: 15%;
 	padding: 3% 3%;
 	font-size: 30px;
 	color: black;
 	-webkit-box-shadow: 7px 7px 55px #888888;
 	box-shadow: 7px 7px 55px #888888;
 }
+.event-info img a{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
 
 .event-info .event-info-info {
 	width: 85%;
@@ -962,13 +967,14 @@ h3 {
 }
 
 .event-info-link {
-	width: 50%;
+	width: 100%;
 	text-align: center;
 	color: #101B56 !important;
-	-webkit-box-shadow: 7px 7px 55px #888888;
-	box-shadow: 7px 7px 55px #888888;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 	font-weight: 700;
 	font-size: 17px;
+    display: inline-block;
 }
 
 .event-info-link:hover {
@@ -976,13 +982,19 @@ h3 {
 }
 
 .event-info-logo {
-	width: 100%;
-	text-align: left;
+	    width: 30%;
+    margin-top: 7%;
+    text-align: left;
+    display: inline-block;
+    -webkit-box-shadow: none !important;
+	box-shadow: none !important;
 }
 
 #event-info .event-info-logo {
 	width: 100%;
 	display: inline-block;
+    	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 #event-info .event-info-logo img {
@@ -1295,6 +1307,11 @@ footer ul ul li {
     margin-left: 7%;
     opacity: .8;
 }*/
+    
+    .col-events {
+        width: 47%;
+    margin-bottom: 5%;} 
+    
 	.navfull li,
 	navfull li a {
 		font-size: 14px;
@@ -1741,8 +1758,191 @@ font-size: 15px
 
 @media only screen and (max-width: 480px) {
 	#Contact a {
-	font-size: 18.5px;
+	font-size: 15.5px;
 	
+}
+    .lbx .innerlbx {
+    width: 98%;
+    margin-left: 0%;
+    margin-top: 7%;
+    padding: 38px;
+    height: 105vh;
+}
+     .lbx .paraglbx {
+    width: 100%;
+    margin-top: 15%;
+}
+    .lbx a {
+    width: 62%;
+    padding-right: 0%;
+    margin-left: 29%;
+    font-size: 15px;
+}
+    .imglbx {
+    width: 100%;
+    top: -12px;
+    right: 150px;
+    max-width: 35%;
+    padding: 7%;
+    padding-bottom: 9%;
+}
+    .lbx2 .innerlbx {
+    width: 98%;
+    margin-left: 0%;
+    margin-top: 7%;
+    padding: 38px;
+    height: 95vh;
+}
+    
+    .lbx2 .paraglbx {
+    width: 100%;
+    margin-top: 15%;
+}
+    .lbx2 a {
+    width: 62%;
+    padding-right: 0%;
+    margin-left: 29%;
+    font-size: 15px;
+}
+    .imglbx2 {
+    width: 100%;
+    top: -12px;
+    right: 150px;
+    max-width: 35%;
+    padding: 7%;
+    padding-bottom: 9%;
+}
+    .lbx3 .innerlbx {
+    width: 98%;
+    margin-left: 0%;
+    margin-top: 7%;
+    padding: 38px;
+    height: 120vh;
+}
+     .lbx3 .paraglbx {
+    width: 100%;
+    margin-top: 21%;
+}
+    .lbx3 a {
+    width: 62%;
+    padding-right: 0%;
+    margin-left: 29%;
+    font-size: 15px;
+}
+    .imglbx3 {
+    width: 180%;
+    top: -12px;
+    right: 150px;
+    max-width: 35%;
+    padding: 7%;
+    padding-bottom: 9%;
+}
+    .imglbx3 img {
+    max-width: 85%;
+}
+    .lbx4 .innerlbx {
+    width: 98%;
+    margin-left: 0%;
+    margin-top: 7%;
+    padding: 38px;
+    height: 95vh;
+}
+  .lbx4 a {
+    width: 62%;
+    padding-right: 0%;
+    margin-left: 29%;
+    font-size: 15px;
+} 
+    .lbx4 .paraglbx {
+    width: 100%;
+    margin-top: 15%;
+}
+    .imglbx4 {
+    width: 100%;
+    top: -12px;
+    right: 150px;
+    max-width: 35%;
+    padding: 7%;
+    padding-bottom: 9%;
+}
+    .lbx5 .innerlbx {
+    width: 98%;
+    margin-left: 0%;
+    margin-top: 7%;
+    padding: 38px;
+    height: 108vh;
+}
+    .lbx5 a {
+    width: 62%;
+    padding-right: 0%;
+    margin-left: 29%;
+    font-size: 15px;
+}
+     .lbx5 .paraglbx {
+    width: 100%;
+    margin-top: 21%;
+}
+    .imglbx5 {
+    width: 100%;
+    top: -12px;
+    right: 150px;
+    max-width: 35%;
+    padding: 7%;
+    padding-bottom: 9%;
+}
+    .lbx6 .innerlbx {
+    width: 98%;
+    margin-left: 0%;
+    margin-top: 7%;
+    padding: 38px;
+    height: 95vh;
+}
+    .lbx6 a {
+    width: 62%;
+    padding-right: 0%;
+    margin-left: 29%;
+    font-size: 15px;
+}
+     .lbx6 .paraglbx {
+    width: 100%;
+    margin-top: 15%;
+}
+    .imglbx6 {
+    width: 100%;
+    top: -12px;
+    right: 150px;
+    max-width: 35%;
+    padding: 7%;
+    padding-bottom: 9%;
+}
+    
+    
+    .event-info {
+    width: 100%;
+    margin-left: 0%;
+}
+    .event-info img {
+    margin: 0 auto;
+         width: 100%;
+   
+}
+    .event-info .event-info-info {
+    width: 100%;
+    padding-top: 12%;
+    font-size: 16px;
+
+}
+    .event-info-date {
+    width: 100%;
+    font-size: 16px;
+    padding-top: 18%;
+}
+    event-info-logo a {
+    width: 56%;
+    text-align: left;
+    margin-top: 12%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 }
 
