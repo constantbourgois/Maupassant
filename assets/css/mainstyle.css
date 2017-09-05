@@ -773,7 +773,7 @@ background-image: url("../../assets/img/testmotifmp2.png");
 	content: ' ';
 	display: block;
 	position: absolute;
-	height: 30px;
+	height: 75px;
 	background-color: rgba(25, 25, 25, .67);
 	text-align: center;
 	width: 90%;
@@ -793,8 +793,9 @@ background-image: url("../../assets/img/testmotifmp2.png");
 	text-align: center;
 	margin: 0 auto;
 	padding: 3%;
-	padding-top: 3%;
+	padding-top: 7%;
 	font-size: 18px;
+    height: 75px;
 }
 
 .col-events {
@@ -899,6 +900,9 @@ h3 {
 	background-color: #F4F2F2;
 	position: relative;
 	display: none;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 .event-info .background-event-info {
@@ -906,7 +910,6 @@ h3 {
 	display: inline-block;
 	background-color: white;
 	margin: 0 auto;
-	margin-top: 3%;
 	padding: 50px;
 	position: relative;
 	-webkit-box-shadow: 7px 7px 55px #888888;
