@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="overlay" id="overlay">
 					<nav class="overlay-menu">
 						<ul>
-							<li><a href="#Home">Home</a></li>
+							<li><a href="#Home"><img src="<?php echo base_url()?>assets/img/logompwhite.png" alt="logomaupassant"> </a></li>
 							<li><a href="#Acteurs">L'équipe</a></li>
 							<li><a href="#Events">Evénements</a></li>
 							<li><a href="#Contact">Contact</a></li>
@@ -370,12 +370,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</svg>
 				<article id="acteurs-mobile">
 					<ul>
-						<li><a href="#"><img src="assets/img/orelis.svg" alt="orelis"></a></li>
-						<li><a href="#"><img src="assets/img/fiducee.svg" alt="fiducee"></a></li>
-						<li><a href="#"><img src="assets/img/turgot.svg" alt="turgot"></a></li>
-						<li><a href="#"><img src="assets/img/fundee.svg" alt="fundee"></a></li>
-						<li><a href="#"><img src="assets/img/leemo.svg" alt="leemo"></a></li>
-						<li><a href="#"><img src="assets/img/23.svg" alt="23"></a></li>				
+						<li><a href="#" data-featherlight="#orelis-lbx"><img src="assets/img/orelis.svg" alt="orelis"></a></li>
+						<li><a href="#" data-featherlight="#fiducee-lbx"><img src="assets/img/fiducee.svg" alt="fiducee"></a></li>
+						<li><a href="#" data-featherlight="#turgot-lbx"><img src="assets/img/turgot.svg" alt="turgot"></a></li>
+						<li><a href="#" data-featherlight="#fundee-lbx"><img src="assets/img/fundee.svg" alt="fundee"></a></li>
+						<li><a href="#" data-featherlight="#leemo-lbx"><img src="assets/img/leemo.svg" alt="leemo"></a></li>
+						<li><a href="#" data-featherlight="#vingtrois-lbx"><img src="assets/img/23.svg" alt="23"></a></li>				
 					</ul>
 				</article>
 			</section>
@@ -461,7 +461,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 							<div class="event-info-date"><?php echo $event->date_event_info ?></div>
 									
-							<a class="event-info-link" href="<?php echo $event->link_event_info; ?>">Inscription</a>
+							<a class="event-info-link" target="_blank" href="<?php echo $event->link_event_info; ?>">Inscription</a>
 									
 								<a class="event-info-logo" href="<?php echo $event->linklogo_event_info; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo_event_info; ?>"></a>
 							</div>

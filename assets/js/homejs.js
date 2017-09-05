@@ -82,6 +82,7 @@ $(document).ready(function () {
 			$('.button_container:not(.active) span').css('background-color','#191919');
 
 		};
+		/* change link colors when on view
 		if (window.scrollY >= headerOffset && window.scrollY < acteursOffset) {
 			$('.navfull .categories a').removeClass('sectionactive');
 			menuLinks[0].classList.add('sectionactive');
@@ -99,7 +100,7 @@ $(document).ready(function () {
 		if (window.scrollY >= contactOffset) {
 			$('.navfull .categories a').removeClass('sectionactive');
 			menuLinks[3].classList.add('sectionactive');
-		}
+		}*/
 
 	})
 

@@ -376,7 +376,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="form-group">
 											<label class="control-label col-md-3">description</label>
 											<div class="col-md-9">
-												<textarea name="description_event_info" form="form_event_info" rows="10" placeholder="description" class="form-control"></textarea>
+												<textarea name="description_event_info" form="form" rows="10" placeholder="description" class="form-control"></textarea>
 											</div>
 										</div>
 										<div class="form-group">
@@ -606,38 +606,6 @@ immediately after the control sidebar -->
 				$('#table_events').DataTable({
 					"scrollX": true,
 				});
-
-				/*$('#table_event_info').DataTable({
-					"paging": false,
-					"ordering": false,
-					"info": false,
-					"searching": false
-				});*/
-
-
-				//************************************* for the event_info form ***************************************************************************//
-				//pictures upload//
-				/*$('#fileupload_event_info')
-					.bind('fileuploaddone', function (e, data) {
-
-						if (data.fileInput[0].id == "file_picture") {
-							var im = data.files[0].name;
-							$('[name="picture_event_info"]').val(im);
-							$('#picture_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + im);
-
-
-
-						} else if (data.fileInput[0].id == "file_logo_event_info") {
-							var im = data.files[0].name;
-							$('[name="logo_event_info"]').val(im);
-							$('#logo_event_info_input').attr('src', "<?php echo base_url()?>" + "uploads/files/" + im);
-
-						}
-
-
-						$("table tbody.files").empty();
-
-					});*/
 
 				$('#fileupload2')
 					.bind('fileuploaddone', function (e, data) {

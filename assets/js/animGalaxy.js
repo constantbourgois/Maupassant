@@ -1,4 +1,11 @@
 $(document).ready(function () {
+	/* execute script only for desktop devices*/
+	if($(window).width() <= 768){
+		
+		return;
+	  }
+
+	  
 	var animTime = 2.6;
 	var animTimeS = animTime * 1000;
 	var paths;
