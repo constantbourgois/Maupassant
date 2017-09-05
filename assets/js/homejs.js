@@ -26,7 +26,7 @@ $(document).ready(function () {
 	// *************change menu link color and border*******************************//
 	var headerOffset = (Math.floor(($('header').offset()).top));
 	var acteursOffset = Math.floor(($('#Acteurs').offset()).top);
-	var eventsOffset = Math.floor(($('#Events').offset()).top);
+	var eventsOffset = Math.floor(($('#Events .background').offset()).top);
 	var contactOffset = Math.floor(($('#Contact').offset()).top);
 
     var menuLinks = $(".navfull .categories a");

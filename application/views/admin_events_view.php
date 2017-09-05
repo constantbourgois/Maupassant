@@ -576,8 +576,9 @@ immediately after the control sidebar -->
 				$('#btnSave').click(function () {
 					save();
 				});
-				$('#delete-bg, #delete-logo, #delete-bg-2,#delete-logo-event_info,#delete-picture_event_info').click(function () {
-					delete_element(event)
+				$('#delete-bg, #delete-logo, #delete-bg-2, #delete-logo-event_info, #delete-picture_event_info').click(function () {
+					
+					delete_element(event);
 				});
 				$("#subdelFiles").click(function (e) {
 					e.preventDefault();
@@ -591,7 +592,7 @@ immediately after the control sidebar -->
 				// initiates plugins //
 				$(function () {
 					$(".datepicker").datepicker({
-						dateFormat: "dd/mm/yyyy"
+						dateFormat: "dd/mm/yy"
 					});
 				});
 
@@ -745,22 +746,29 @@ immediately after the control sidebar -->
 					event.preventDefault();
 
 					id = $('[name="id"]').val();
+					console.log(event.currentTarget.id);
 
-					if (event.target.id == 'delete-bg') {
+					if (event.currentTarget.id == 'delete-bg') {
 						$('[name="background_image"]').val("");
 						$('#background_image_input').attr('src', "");
-					} else if (event.target.id == "delete-bg2") {
+						
+					} else if (event.currentTarget.id == "delete-bg-2") {
 						$('[name="background_image_2"]').val("");
 						$('#background_image_input_2').attr('src', "");
 
-					} else if (event.target.id == "delete-picture-event_info") {
+					} else if (event.currentTarget.id == "delete-picture_event_info") {
 						$('[name="picture_event_info"]').val("");
 						$('#picture_input').attr('src', "");
 
 
-					} else if (event.target.id == "delete-logo-event_info") {
+					} else if (event.currentTarget.id == "delete-logo-event_info") {
 						$('[name="logo_event_info"]').val("");
 						$('#logo_event_info_input').attr('src', "");
+
+					}
+					else if (event.currentTarget.id == "delete-logo") {
+						$('[name="logo"]').val("");
+						$('#logo_input').attr('src', "");
 
 					}
 

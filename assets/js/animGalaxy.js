@@ -127,6 +127,7 @@ $(document).ready(function () {
 
 		//toggle play and reverse of each .feature element's timeline on hover 
 		$(targetsAnim).hover(over, out);
+		$(targetsAnim).click(out);
 
 		function over() {
 			if (animMoving === false)
@@ -134,7 +135,6 @@ $(document).ready(function () {
 		}
 
 		function out() {
-			if (animMoving === false)
 				this.animation.reverse();
 		}
 
