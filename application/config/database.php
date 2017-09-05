@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
-	'database' => 'maupassant_events',
+	'hostname' => 'constantbourgois.com',
+	'username' => 'mtruckhostin_mtruckhostin',
+	'password' => 'MTruck4ever',
+	'database' => 'mtruckhostin_maupassantevents',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
