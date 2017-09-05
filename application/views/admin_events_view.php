@@ -717,8 +717,10 @@ immediately after the control sidebar -->
 					} else {
 
 						url = "<?php echo site_url('/adminevents/event_update') ?>";
-						dataForm = $('#form');
+						
 					}
+					
+					dataForm = $('#form');
 
 					// ajax adding data to database
 					$.ajax({
