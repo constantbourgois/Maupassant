@@ -36,12 +36,15 @@ $(document).ready(function () {
 
 	$(window).scroll(function () {
         if(window.scrollY === 0){
-            $('.navfull').show();
             $('.navmobile').hide();
+			$('.navfull').show();
+			$('.backhome').css('z-index','100000');
+
            
         }
         else{
             $('.navfull').hide();
+			$('.backhome').css('z-index','-100000');
             $('.navmobile').show();
            
         }

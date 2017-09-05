@@ -77,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
 			</nav>
 			<div class="fondh1">
-				<img src="assets/img/backgroundtest1.jpg" alt="fondhome">
+				<!--<img src="assets/img/backgroundtest1.jpg" alt="fondhome">-->
 				<span><h1>Seulement ici il n'y a <br>pas de frontières</h1>
 			<h2> <span>MAUPASSANT PARTENAIRES est la plateforme  </span><br><span>de distribution des sociétés Orelis, Turgot AM, Leemo,<br>Fiducee et Vingtrois. </span></h2>
 				</span>

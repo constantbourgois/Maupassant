@@ -101,6 +101,7 @@ header li:first-of-type a::after{
 	-ms-flex-align: center;
 	align-items: flex-start;
 	padding: 0 2%;
+	position:absolute;
 }
 
 .navfull li,
@@ -123,29 +124,46 @@ header li:first-of-type a::after{
 	border-bottom: 1px solid white;
 	position: fixed;
 	right: 5%;
+	z-index: 100000;
 }
 
 .fondh1 {
-	text-align: center;
-	padding: 0 5%;
+	height:100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+	color:white;
+	position:relative;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	
+}
+.fondh1:before {
+	content:'';
+	height: 80%;
+	width: 80%;
+    background-image: url('../../assets/img/backgroundtest1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity:0.8;
+	display: block;
+	position:absolute;
 }
 
-.fondh1 img {
-	max-width: 88%;
-	padding-top: 5% !important;
-	margin-left: 8%;
-	opacity: .8;
+.fondh1 span{
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+	z-index: 100;
 }
 
-.fondh1 span {
-	position: absolute;
-	color: white;
-	left: 5%;
-	right: 0;
-	top: 35%;
-	bottom: 0;
-	text-align: left;
-}
 
 h1 {
 	font-size: 77px;
@@ -1452,8 +1470,13 @@ footer ul ul li {
 	}
 	.fondh1 img {
 		max-width: 100%;
-		padding-top: 22.5% !important;
 		margin-left: 0%;
+	}
+	
+	.fondh1:before{
+		height: 62%;
+		width:100%;
+		background-size: cover;
 	}
 	.navfull {
 		padding: 6% 2%;
