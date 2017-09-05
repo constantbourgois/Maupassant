@@ -1661,6 +1661,9 @@ font-size: 15px
 	#Contact a {
 		font-size: 21.5px;
 	}
+     .col-events {
+        width: 47%;
+    margin-bottom: 5%;} 
 }
 
 
