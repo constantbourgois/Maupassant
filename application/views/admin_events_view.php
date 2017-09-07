@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
 ?>
 	<!DOCTYPE html>
 	<html lang="en">
@@ -113,7 +114,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<th>view_rank</th>
 								<th> event info title </th>
 								<th> event info description </th>
-								<th> event info date </th>
+								<th> event info date champ1</th>
+								<th> event info date champ2</th>
+								<th> event info date champ3</th>
 								<th> event info logo </th>
 								<th> event info picture </th>
 								<th> event info link </th>
@@ -128,7 +131,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<?php echo $event->id; ?>
 								</td>
 								<td>
-									<?php echo $event->date; ?>
+									<?php if (!empty($event->date))
+										echo $newDate = date("d/m/Y", strtotime($event->date));?>
 								</td>
 								<td>
 									<?php echo $event->title; ?>
@@ -157,6 +161,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</td>
 								<td>
 									<?php echo $event->date_event_info; ?>
+								</td>
+								<td>
+									<?php echo $event->champ2_event_info; ?>
+								</td>
+								<td>
+									<?php echo $event->champ3_event_info; ?>
 								</td>
 								<td class="logo-cell"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo_event_info; ?>" alt="logo"></td>
 								<td><img src="<?php echo base_url()?>uploads/files/<?php echo $event->picture_event_info; ?>" alt="picture"></td>
@@ -363,9 +373,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-md-3">date</label>
+											<label class="control-label col-md-3">date champ1</label>
 											<div class="col-md-9">
 												<input name="date_event_info" placeholder="event date" class="form-control" type="text">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3">date champ2</label>
+											<div class="col-md-9">
+												<input name="champ2_event_info" placeholder="event date" class="form-control" type="text">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3">date champ3</label>
+											<div class="col-md-9">
+												<input name="champ3_event_info" placeholder="event date" class="form-control" type="text">
 											</div>
 										</div>
 										<div class="form-group">
@@ -576,8 +598,8 @@ immediately after the control sidebar -->
 				$('#btnSave').click(function () {
 					save();
 				});
-				$('#delete-bg, #delete-logo, #delete-bg-2, #delete-logo-event_info, #delete-picture_event_info').click(function () {
-					
+				$('#delete-bg, #delete-logo, #delete-bg-2, #delete-logo-event_info, #delete-picture_event_info').click(function (event) {
+					event.preventDefault();
 					delete_element(event);
 				});
 				$("#subdelFiles").click(function (e) {
@@ -592,7 +614,9 @@ immediately after the control sidebar -->
 				// initiates plugins //
 				$(function () {
 					$(".datepicker").datepicker({
-						dateFormat: "dd/mm/yy"
+						dateFormat: 'dd/mm/yy',
+					
+						
 					});
 				});
 
@@ -688,6 +712,8 @@ immediately after the control sidebar -->
 							$('[name="link"]').val(data.link);
 							$('[name="view_rank"]').val(data.view_rank);
 							$('[name="date_event_info"]').val(data.date_event_info);
+							$('[name="champ2_event_info"]').val(data.champ2_event_info);
+							$('[name="champ3_event_info"]').val(data.champ3_event_info);
 							$('[name="title_event_info"]').val(data.title_event_info);
 							$('[name="description_event_info"]').val(data.description_event_info);
 							$('[name="logo_event_info"]').val(data.logo_event_info);
@@ -734,6 +760,7 @@ immediately after the control sidebar -->
 
 							//if success close modal and reload ajax table
 							$('#modal_form').modal('hide');
+							
 							location.reload(); // for reload a page
 						},
 						error: function (jqXHR, textStatus, errorThrown) {

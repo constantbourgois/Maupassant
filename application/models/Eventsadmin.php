@@ -15,15 +15,29 @@ class Eventsadmin extends CI_Model
         $this->db->from($this->table);
         $this->db->where('id', $id);
         $query = $this->db->get();
-
-        return $query->row();
+		$q = $query->row();
+		$q->date = date("d/m/Y",strtotime($q->date));
+		return $q;
     }
 
     function listEvents()
-    {  $this->db->from($this->table);
-       $this->db->order_by('view_rank','ASC');
-        $query = $this->db->get();
-        return $query->result();
+    { 
+	
+	//select your colum as new column name wich is converted as str ot date
+	   
+	 
+	 $this->db->where('date <>', '');
+	 $this->db->order_by('date','ASC');
+	 $q = $this->db->get('events')->result();
+		
+	
+	 $this->db->where('date =', '');
+	 $this->db->order_by('view_rank','ASC');
+	 $q2 = $this->db->get('events')->result();
+		
+	 $q3=array_merge($q,$q2);
+		
+	 return $q3;
     }
 
     /*function getEventinfo()

@@ -198,13 +198,13 @@ h2 span {
 	left: 0;
 }
 
-.backhome svg {
+.backhome svg:first-child {
 	width: 100%;
 	background-color: #191919;
 	fill: white;
 }
 
-.backhome img {
+.backhome img:last-child {
 	-webkit-transition: .25s cubic-bezier(.645, .045, .355, 1);
 	transition: .25s cubic-bezier(.645, .045, .355, 1);
 	clip: rect(0 0 8vw 0);
@@ -212,23 +212,24 @@ h2 span {
 	clip-path: inset(0 8vw 0 0)
 }
 
-.backhome:hover img {
+.backhome:hover img:last-child {
 	opacity: 1;
 	clip: rect(0 8vw 8vw 0);
 	-webkit-clip-path: inset(0 0 0 0);
 	clip-path: inset(0 0 0 0)
 }
 
+.backhome:hover svg:first-child {
+	opacity: 0;
+}
 
 /****************************ANIMATION**********************************/
 
 
 #Acteurs{
-background-image: url("../../assets/img/background-galaxie-circle.png");
-     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+background-image: url("../../assets/img/backgroundtest2defense-galaxie.png");
   background-size: cover;
+  background-position: center center;
   
     }
 

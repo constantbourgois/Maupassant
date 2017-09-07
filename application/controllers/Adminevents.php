@@ -103,8 +103,14 @@ class Adminevents extends CI_Controller
             $background_image_displayed = $this->input->post('background_image_2');
         }
 
+       // convert date to the right format //
+
+		$from = $this->input->post('date');
+		$date = DateTime::createFromFormat('d/m/Y',$from);
+		$from_date = $date->format("Y-m-d");
+	
         $data = array(
-            'date' => $this->input->post('date'),
+            'date' => $from_date,
             'title' => $this->input->post('title'),
             'description' => $this->input->post('description'),
             'background_image' => $this->input->post('background_image'),
@@ -116,7 +122,9 @@ class Adminevents extends CI_Controller
             'view_rank' => $this->input->post('view_rank'),
             'title_event_info' => $this->input->post('title_event_info'),
             'description_event_info' => $this->input->post('description_event_info'),
-            'date_event_info' => $this->input->post('date_event_info'),
+           	'date_event_info' => $this->input->post('date_event_info'),
+			'champ2_event_info' => $this->input->post('champ2_event_info'),
+			'champ3_event_info' => $this->input->post('champ3_event_info'),
             'picture_event_info' => $this->input->post('picture_event_info'),
             'logo_event_info' => $this->input->post('logo_event_info'),
             'link_event_info'=>   $this->input->post('link_event_info'),
@@ -145,9 +153,16 @@ class Adminevents extends CI_Controller
         } else {
             $background_image_displayed = $this->input->post('background_image_2');
         }
+		
+		
+		// convert date to the right format //
+		$from = $this->input->post('date');
+		$date = DateTime::createFromFormat('d/m/Y',$from);
+		$from_date = $date->format("Y-m-d");
+		
 
         $data = array(
-            'date' => $this->input->post('date'),
+            'date' => $from_date,
             'title' => $this->input->post('title'),
             'description' => $this->input->post('description'),
             'background_image' => $this->input->post('background_image'),
@@ -159,7 +174,9 @@ class Adminevents extends CI_Controller
             'view_rank' => $this->input->post('view_rank'),
             'title_event_info' => $this->input->post('title_event_info'),
             'description_event_info' => $this->input->post('description_event_info'),
-            'date_event_info' => $this->input->post('date_event_info'),
+           	'date_event_info' => $this->input->post('date_event_info'),
+			'champ2_event_info' => $this->input->post('champ2_event_info'),
+			'champ3_event_info' => $this->input->post('champ3_event_info'),
             'picture_event_info' => $this->input->post('picture_event_info'),
             'logo_event_info' => $this->input->post('logo_event_info'),
             'link_event_info'=>   $this->input->post('link_event_info'),
@@ -172,7 +189,10 @@ class Adminevents extends CI_Controller
         $this->Eventsadmin->event_update($where, $data);
 
         echo json_encode(array("status" => true));
+		
         $data['events'] = $this -> Eventsadmin -> listEvents();
+		
+		
         $this->load->view('admin_events_view', $data);
     }
 
