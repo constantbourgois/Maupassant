@@ -137,7 +137,7 @@ header li:first-of-type a::after{
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+        justify-content: center;
 	color:white;
 	position:relative;
 	-webkit-box-align: center;
