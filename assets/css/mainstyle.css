@@ -137,7 +137,9 @@ header li:first-of-type a::after{
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-pack: distribute;
-        justify-content: center;
+        -webkit-box-pack: space-around;
+			justify-content: space-around;
+			-webkit-justify-content: space-around;
 	color:white;
 	position:relative;
 	-webkit-box-align: center;
@@ -147,21 +149,28 @@ header li:first-of-type a::after{
 }
 .fondh1:before {
 	content:'';
-	height: 80%;
+	height: 100vh;
 	width: 80%;
     background-image: url('../../assets/img/backgroundtest1.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     opacity:0.8;
-	display: block;
-	position:absolute;
+	display: inline-block;
+	margin:10% 0;
+
+	
+	
+
+
 }
 
 .fondh1 span{
-	-ms-flex-item-align: start;
-	    align-self: flex-start;
+	-ms-flex-item-align: left;
+	    align-self: left;
 	z-index: 100;
+	position: absolute;
+	bottom:25%;
 }
 
 
@@ -799,6 +808,8 @@ background-image: url("../../assets/img/backgroundtest2defense-galaxie.png");
 	margin: 0 5%;
 	right: 0;
 	left: 0;
+	top: 100%;
+	bottom: 0;
 }
 
 #background-transp {
@@ -1476,6 +1487,7 @@ footer ul ul li {
 	
 	.fondh1:before{
 		height: 62%;
+		margin:20% 0;
 		width:100%;
 		background-size: cover;
 	}
