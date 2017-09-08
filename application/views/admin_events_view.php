@@ -625,7 +625,8 @@ immediately after the control sidebar -->
 					$(this).fileupload({
 						dropZone: $(this),
 						limitMultiFileUploads: 1,
-						maxNumberOfFiles: 2
+						maxNumberOfFiles: 2,
+						maxFileSize: 3000000,
 					});
 				});
 

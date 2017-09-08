@@ -40,20 +40,21 @@ class Adminevents extends CI_Controller
         $options = [
         'script_url' => site_url('Adminevents/json'),
         'upload_dir' => APPPATH . '../uploads/files/',
-        'upload_url' => site_url('uploads/files/')
+        'upload_url' => site_url('uploads/files/'),
+        'max_file_size' => 1000
         ];
         $this->load->library('UploadHandler', $options);
     }
 
 
-    public function do_upload()
+    /*public function do_upload()
     {
-
+       echo 'aeaze'
             # Started working with file upload.
             $validFiles = array(
                 'upload_path'   => 'assets',
                 'allowed_types' => 'jpg|png|gif',
-                'max_size'      => 250000
+                'max_size'      => 2048
             );
             $this->load->library('upload', $validFiles);
         if ($this->upload->do_upload('newsphoto')) {
@@ -68,7 +69,7 @@ class Adminevents extends CI_Controller
     {
             $config['upload_path']          = './uploads/';
             $config['allowed_types']        = 'gif|jpg|png';
-            $config['max_size']             = 100;
+            $config['max_size']             = 2048;
 
 
             $this->load->library('upload', $config);
@@ -83,9 +84,8 @@ class Adminevents extends CI_Controller
     {
             $config['upload_path']          = './uploads/';
             $config['allowed_types']        = 'gif|jpg|png';
-            $config['max_size']             = 100;
-            $config['max_width']            = 1024;
-            $config['max_height']           = 768;
+            $config['max_size']             = 2048;
+           
 
             $this->load->library('upload', $config);
 
@@ -94,7 +94,7 @@ class Adminevents extends CI_Controller
         } else {
             $data = array('upload_data' => $this->upload->data());
         }
-    }
+    }*/
     public function add_event()
     {
         if ($this->input->post('background_select') == 'background_image') {

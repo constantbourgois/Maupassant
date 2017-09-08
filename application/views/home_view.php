@@ -464,7 +464,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 							<div class="event-info-date"><?php echo $event->date_event_info ?></div>
 							<div class="event-info-date"><?php echo $event->champ2_event_info ?></div>
-							<div class="event-info-date"><?php echo $event->date_event_info ?></div>
+							<div class="event-info-date"><?php echo $event->champ3_event_info ?></div>
 									
 							<a class="event-info-link" target="_blank" href="<?php echo $event->link_event_info; ?>">Inscription</a>
 									
