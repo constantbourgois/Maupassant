@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<nav class="overlay-menu">
 						<ul>
 							<li><a href="#Home"><img src="<?php echo base_url()?>assets/img/logompwhite.png" alt="logomaupassant"> </a></li>
-							<li><a href="#Acteurs">L'équipe</a></li>
+							<li><a href="#Acteurs">Le Groupe</a></li>
 							<li><a href="#Events">Evénements</a></li>
 							<li><a href="#Contact">Contact</a></li>
 						</ul>
@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</svg>
 					<img src="<?php echo base_url()?>assets/img/mp3.gif" alt="logoAnimMaupassant"> </a>
 				<ul class="categories">
-					<li><a href="#Acteurs"> L'équipe </a></li>
+					<li><a href="#Acteurs"> Le Groupe </a></li>
 					<li><a href="#Events"> Evénements </a></li>
 					<li><a href="#Contact"> Contact </a></li>
 				</ul>
