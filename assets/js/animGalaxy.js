@@ -1,6 +1,6 @@
 $(document).ready(function () {
-	/* execute script only for desktop devices*/
-	if($(window).width() <= 768){
+	/* execute script only for desktop and tablets devices*/
+	if($(window).width() <= 480){
 		
 		return;
 	  }
@@ -47,8 +47,6 @@ $(document).ready(function () {
 	$(targetsAnim).click(function (event) {
 		event.preventDefault();
 		
-		
-
 		animMoving = true;
 
 		tweenFloat.kill();
@@ -60,7 +58,7 @@ $(document).ready(function () {
 			// load lightbox with delay//
 			dataFeatherlight = $(this).attr('data-featherlight');
 			
-			setTimeout(function(){
+			/*setTimeout(function(){
 			$.featherlight(dataFeatherlight, {
 				afterContent: function (event) {
 					//to restart float//
@@ -71,7 +69,7 @@ $(document).ready(function () {
 
 					});
 				}
-			});},350);
+			});},350);*/
 
 			switch ($(this).attr('data-path')) {
 				case '6':
@@ -297,7 +295,6 @@ $(document).ready(function () {
 
 		if (animCount == animRounds) {
 
-			
 
 			animCount = 0;
 
@@ -348,7 +345,9 @@ $(document).ready(function () {
 				align: target
 			});
 
-			var scale = (parseInt(nextCircleR) / parseInt(circleR));
+			console.log(nextTarget,' ',nextCircleR,' ',target,' ',parseInt(circleR));
+
+			var scale = (nextCircleR / parseInt(circleR));
 
 			//********** set the tweens *************//
 			//****************************************//

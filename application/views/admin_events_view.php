@@ -103,6 +103,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<thead>
 							<tr>
 								<th>ID</th>
+								<th style="width:125px;">Action</th>
 								<th>date</th>
 								<th>title</th>
 								<th>description</th>
@@ -121,7 +122,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<th> event info picture </th>
 								<th> event info link </th>
 								<th> event info link logo </th>
-								<th style="width:125px;">Action</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -129,6 +129,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<tr>
 								<td>
 									<?php echo $event->id; ?>
+								</td>
+								<td>
+									<button data-event-id="<?php echo $event->id; ?>" class="btn btn-warning btnEditevent"><i class="glyphicon glyphicon-pencil"></i></button>
+									<button data-event-id="<?php echo $event->id; ?>" class="btn btn-danger btnDeleteevent"><i class="glyphicon glyphicon-remove"></i></button>
 								</td>
 								<td>
 									<?php if (!empty($event->date))
@@ -175,10 +179,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</td>
 								<td id="lglink">
 									<?php echo $event->linklogo_event_info;?>
-								</td>
-								<td>
-									<button data-event-id="<?php echo $event->id; ?>" class="btn btn-warning btnEditevent"><i class="glyphicon glyphicon-pencil"></i></button>
-									<button data-event-id="<?php echo $event->id; ?>" class="btn btn-danger btnDeleteevent"><i class="glyphicon glyphicon-remove"></i></button>
 								</td>
 							</tr>
 							<?php } ?>
@@ -632,6 +632,11 @@ immediately after the control sidebar -->
 
 				$('#table_events').DataTable({
 					"scrollX": true,
+					"scrollY": "50vh",
+					"pageLength": 3,
+					"paging":false,
+				
+        "scrollCollapse": true,
 				});
 
 				$('#fileupload2')
