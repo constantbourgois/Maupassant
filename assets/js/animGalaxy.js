@@ -6,7 +6,7 @@ $(document).ready(function () {
 	  }
 
 	  
-	var animTime = 2.6;
+	var animTime = 1.6;
 	var animTimeS = animTime * 1000;
 	var paths;
 	var targetsAnim;
@@ -41,11 +41,13 @@ $(document).ready(function () {
 
 	//start floating //
 	tweenFloat.play();
-
-
+	
+	
 
 	$(targetsAnim).click(function (event) {
 		event.preventDefault();
+		
+		
 
 		animMoving = true;
 
@@ -54,7 +56,22 @@ $(document).ready(function () {
 		//bind event to button to restart floating on lightbox closes
 
 		if (animCount === 0) {
+			
+			// load lightbox with delay//
 			dataFeatherlight = $(this).attr('data-featherlight');
+			
+			setTimeout(function(){
+			$.featherlight(dataFeatherlight, {
+				afterContent: function (event) {
+					//to restart float//
+					$('.featherlight-close-icon').on("click", function () {
+						console.log("az");
+						floatElements();
+						tweenFloat.play();
+
+					});
+				}
+			});},350);
 
 			switch ($(this).attr('data-path')) {
 				case '6':
@@ -98,7 +115,7 @@ $(document).ready(function () {
         
         //remove to loop//
         animRounds = 1;
-        animTime = 1.5;
+        animTime = 1.6;
         animCount = 0;
         ////////////////
 		
@@ -280,17 +297,7 @@ $(document).ready(function () {
 
 		if (animCount == animRounds) {
 
-			$.featherlight(dataFeatherlight, {
-				afterContent: function (event) {
-					//to restart float//
-					$('.featherlight-close-icon').on("click", function () {
-						console.log("az");
-						floatElements();
-						tweenFloat.play();
-
-					});
-				}
-			});
+			
 
 			animCount = 0;
 

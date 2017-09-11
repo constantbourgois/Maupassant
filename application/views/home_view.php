@@ -400,7 +400,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<?php echo $events[$i]->title; ?>
 										</h4>
 										<div class="eventdate">
-											<?php echo $events[$i]->date; ?>
+											<?php if (!empty($events[$i]->date))
+										echo $newDate = date("d/m/Y", strtotime($events[$i]->date));?>
 										</div>
 										<div class="eventdescription">
 											<?php echo $events[$i]->description; ?>
@@ -429,7 +430,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<?php echo $events[$i]->title; ?>
 										</h4>
 										<div class="eventdate">
-											<?php echo $events[$i]->date; ?>
+											<?php if (!empty($events[$i]->date))
+										echo $newDate = date("d/m/Y", strtotime($events[$i]->date));?>
 										</div>
 										<div class="eventdescription">
 											<?php echo $events[$i]->description; ?>
@@ -461,6 +463,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</p>
 
 							<div class="event-info-date"><?php echo $event->date_event_info ?></div>
+							<div class="event-info-date"><?php echo $event->champ2_event_info ?></div>
+							<div class="event-info-date"><?php echo $event->champ3_event_info ?></div>
 									
 							<a class="event-info-link" target="_blank" href="<?php echo $event->link_event_info; ?>">Inscription</a>
 									
