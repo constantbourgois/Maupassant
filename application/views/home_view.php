@@ -77,12 +77,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
 			</nav>
 			<div class="fondh1">
-				<!--<img src="assets/img/backgroundtest1.jpg" alt="fondhome">-->
-				<span><h1>Seulement ici il n'y a <br>pas de frontières</h1>
-			<h2> <span>MAUPASSANT PARTENAIRES est la plateforme  </span><br><span>de distribution des sociétés Orelis, Turgot AM, Leemo,<br>Fiducee et Vingtrois. </span></h2>
+                <div class="videos">
+				<video poster="" id="bgvid" playsinline="" autoplay="" muted="" loop="">
+                <source src="assets/vid/VideoGerants_FundeeFinal.webm" type="video/webm">
+                <source src="assets/vid/VideoGerants_FundeeFinal.mp4" type="video/mp4">
+            </video></div>
+				<span><h1>Maupassant Partenaires</h1>
+			<h2> <span>Leader dans l’accompagnement des cabinets<br> de gestion de patrimoine.</span></h2>
 				</span>
 			</div>
-
+            
 			<!--<div class="navmobile">
 		<div id="homelogo">
 					<a class="logomobile" href="#home"> <img src="<?php echo base_url()?>assets/img/logompwhite.png" alt="logomaupassant"> </a>

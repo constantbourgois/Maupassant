@@ -151,7 +151,6 @@ header li:first-of-type a::after{
 	content:'';
 	height: 100vh;
 	width: 80%;
-    background-image: url('../../assets/img/backgroundtest1.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -160,17 +159,29 @@ header li:first-of-type a::after{
 	margin: 5% 0 5% 7%;
 
 	
-	
-
-
 }
 
+.videos{
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    width: 75%;
+    opacity:0.8;
+	display: inline-block;
+	margin: 5% 0 5% 7%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+video{
+    max-width: 100%;
+     opacity:0.4;
+}
 .fondh1 span{
 	-ms-flex-item-align: left;
 	    align-self: left;
 	z-index: 100;
 	position: absolute;
-	bottom:25%;
+	    bottom: 38%;
 }
 
 
@@ -183,6 +194,7 @@ h2 {
 	font-family: 'Playfair Display', sans-serif;
 	font-size: 28px;
 	display: inline;
+    line-height: 42px;
 }
 
 h2 span {
@@ -872,6 +884,7 @@ background-image: url("../../assets/img/backgroundtest2defense-galaxie.png");
 	letter-spacing: .3px;
 	padding-bottom: 5%;
 	padding-right: 5%;
+    line-height: 19px;
 }
 
 .eventcontact {
@@ -987,14 +1000,14 @@ h3 {
 
 
 .event-info .event-info-info {
-	width: 85%;
+	width: 90%;
 	text-align: left;
 	margin: 0 auto;
 	padding: 5%, 3%;
 	font-size: 15px;
 	color:  #1d1d1b;
 	font-family: 'Roboto Slab';
-	font-weight: 300;
+	font-weight: 400;
 	padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -1004,7 +1017,7 @@ h3 {
 	text-align: left;
 	font-size: 15px;
 	color:  #1d1d1b;
-	padding-top: 2%;
+	padding-top: .5%;
 	margin: 0 auto;
 	font-family: 'Roboto Slab';
 	font-weight: 700;
@@ -1382,10 +1395,10 @@ footer ul ul li {
 		width: 5vw;
 	}
 	h1 {
-		font-size: 65px;
+		font-size: 77px;
 	}
 	h2 {
-		font-size: 26px;
+		font-size: 35px;
 	}
 	/* Galaxie page */
 	/*	.lbx {
@@ -1492,7 +1505,7 @@ footer ul ul li {
 		font-size: 1.2em;
 	}
 	.eventdescription {
-		font-size: 12px;
+		font-size: 13px;
 		padding-left: 24%;
 		padding-top: 2%;
 	}
