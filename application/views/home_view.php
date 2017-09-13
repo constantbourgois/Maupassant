@@ -537,7 +537,7 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 						<span class="innerlbx">
 							<span class="paraglbx">
 							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
-                                <p>Turgot AM a été créé en novembre 2008 aux débuts d’une crise financière sans précédent et en plein milieu d’une révolution de marché chez les Accredited Financial Advisor en Grande Bretagne. Turgot AM a développé depuis bientôt 10 ans un savoir faire reconnu qui permet aux conseillers en gestion de patrimoine de parer aux nouveaux enjeux de la gestion d’actifs et aux exigences réglementaires. La méthodologie ? L’innovation ! Et la synthèse de cette stratégie basée sur la technologie se retrouve aujourd’hui à travers sa fintech Fundee.<a target="_blank" href="http://www.fundee.fr/"> www.fundee.fr</a>
+                                <p>Turgot AM a été créé en novembre 2008 aux débuts d’une crise financière sans précédent et en plein milieu d’une révolution de marché chez les Accredited Financial Advisor en Grande Bretagne. Turgot AM a développé depuis bientôt 10 ans un savoir faire reconnu qui permet aux conseillers en gestion de patrimoine de parer aux nouveaux enjeux de la gestion d’actifs et aux exigences réglementaires. La méthodologie ? L’innovation ! Et la synthèse de cette stratégie basée sur la technologie se retrouve aujourd’hui à travers sa fintech Fundee
 							</p>
 							</span>
 						<a target="_blank" href="http://www.turgot-am.fr/">www.turgot-am.fr</a>
