@@ -60,7 +60,18 @@ $(document).ready(function () {
 			// load lightbox with delay//
 			dataFeatherlight = $(this).attr('data-featherlight');
 			
-			
+			setTimeout(function(){
+			$.featherlight(dataFeatherlight, {
+				afterContent: function (event) {
+					//to restart float//
+					$('.featherlight-close-icon').on("click", function () {
+						console.log("az");
+						floatElements();
+						tweenFloat.play();
+
+					});
+				}
+			});},350);
 
 			switch ($(this).attr('data-path')) {
 				case '6':
@@ -281,20 +292,6 @@ $(document).ready(function () {
 			}
 
 		});
-
-		setTimeout(function(){
-			$.featherlight(dataFeatherlight, {
-				afterContent: function (event) {
-					//to restart float//
-					$('.featherlight-close-icon').on("click", function () {
-						console.log("az");
-						floatElements();
-						tweenFloat.play();
-
-					});
-				}
-			});},0);
-
 
 		animCount++;
 
