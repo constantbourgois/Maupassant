@@ -154,10 +154,12 @@ header li:first-of-type a::after {
     opacity:0.8;
 	display: inline-block;
 	margin: 5% 0 5% 7%;
+	background-image: url('../../assets/img/backgroundtest1.jpg');
+	
 
 	
 }
-
+/*
 .videos{
     position: absolute;
     top: 40%;
@@ -172,7 +174,7 @@ header li:first-of-type a::after {
 video{
     max-width: 100%;
      opacity:0.4;
-}
+}*/
 .fondh1 span{
 	-ms-flex-item-align: left;
 	align-self: left;
@@ -1602,6 +1604,7 @@ footer ul ul li {
 		height: 66%;
 		width: 100%;
 		background-size: cover;
+		margin:0;
 	}
 	.navfull {
 		padding: 6% 2%;
