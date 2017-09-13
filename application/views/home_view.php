@@ -77,11 +77,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
 			</nav>
 			<div class="fondh1">
-                <div class="videos">
+                <!--<div class="videos">
 				<video poster="" id="bgvid" playsinline="" autoplay="" muted="" loop="">
                 <source src="assets/vid/VideoGerants_FundeeFinal.webm" type="video/webm">
                 <source src="assets/vid/VideoGerants_FundeeFinal.mp4" type="video/mp4">
-            </video></div>
+            </video></div>-->
 				<span><h1>Leader dans l’accompagnement des cabinets de gestion de patrimoine.</h1>
 			<h2> <span>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier.</span></h2>
 				</span>
