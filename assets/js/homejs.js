@@ -31,9 +31,10 @@ $(document).ready(function () {
 
     var menuLinks = $(".navfull .categories a");
     
-    $('.navfull').hide();
-	$('.navmobile').show();
-	$('.backhome').css('z-index','-100000');
+    $('.navfull').show();
+	$('.navmobile').hide();
+	$('.backhome').css('z-index','100000');
+
 
 	$(window).scroll(function () {
         if(window.scrollY === 0){

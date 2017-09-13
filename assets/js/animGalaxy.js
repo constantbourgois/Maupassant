@@ -1,6 +1,6 @@
 $(document).ready(function () {
-	/* execute script only for desktop and tablets devices*/
-	if($(window).width() <= 480){
+	/* execute script only for desktop devices*/
+	if($(window).width() <= 768){
 		
 		return;
 	  }
@@ -47,6 +47,8 @@ $(document).ready(function () {
 	$(targetsAnim).click(function (event) {
 		event.preventDefault();
 		
+		
+
 		animMoving = true;
 
 		tweenFloat.kill();
@@ -58,18 +60,7 @@ $(document).ready(function () {
 			// load lightbox with delay//
 			dataFeatherlight = $(this).attr('data-featherlight');
 			
-			/*setTimeout(function(){
-			$.featherlight(dataFeatherlight, {
-				afterContent: function (event) {
-					//to restart float//
-					$('.featherlight-close-icon').on("click", function () {
-						console.log("az");
-						floatElements();
-						tweenFloat.play();
-
-					});
-				}
-			});},350);*/
+			
 
 			switch ($(this).attr('data-path')) {
 				case '6':
@@ -291,10 +282,25 @@ $(document).ready(function () {
 
 		});
 
+		setTimeout(function(){
+			$.featherlight(dataFeatherlight, {
+				afterContent: function (event) {
+					//to restart float//
+					$('.featherlight-close-icon').on("click", function () {
+						console.log("az");
+						floatElements();
+						tweenFloat.play();
+
+					});
+				}
+			});},0);
+
+
 		animCount++;
 
 		if (animCount == animRounds) {
 
+			
 
 			animCount = 0;
 
@@ -345,9 +351,7 @@ $(document).ready(function () {
 				align: target
 			});
 
-			console.log(nextTarget,' ',nextCircleR,' ',target,' ',parseInt(circleR));
-
-			var scale = (nextCircleR / parseInt(circleR));
+			var scale = (parseInt(nextCircleR) / parseInt(circleR));
 
 			//********** set the tweens *************//
 			//****************************************//
