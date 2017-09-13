@@ -78,10 +78,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</nav>
 			<div class="fondh1">
                 <div class="videos">
-				<video poster="" id="bgvid" playsinline="" autoplay="" muted="" loop="">
-                <source src="assets/vid/VideoGerants_FundeeFinal.webm" type="video/webm">
-                <source src="assets/vid/VideoGerants_FundeeFinal.mp4" type="video/mp4">
-            </video></div>
+				
+            </div>
 				<span><h1>Leader dans l’accompagnement des cabinets de gestion de patrimoine.</h1>
 			<h2> <span>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier.</span></h2>
 				</span>
@@ -111,15 +109,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</header>
 		<main> 
             
-            <!--	<section id="mp-text">
-				<h3> Contact</h3>
-				<a href="mailTo:Maupassant@maupassant.com">Maupassant@maupassant.com</a>
-				<div> Hôtel de Maupassant <br> 17 Rue Jacques Bingen <br>75017 Paris
-					<br>
-					<span>01 44 54 82 35</span>
+            <section id="mp-text">
+               
+                	<img src="assets/img/backgroundevents2.jpg" alt="turgotlbx">	
+				<h3> <span> <p>Leader dans l’accompagnement des cabinets de gestion de patrimoine.</p>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier.</span></h3>
 				</div>
 
-			</section>-->
+			</section>
 			<section id="Acteurs">
             
 				<svg id="animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-60 -50 1000 600">

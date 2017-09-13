@@ -198,6 +198,13 @@ h2 span {
 	display: inline-block;
 }
 
+/******************************about**********************************/
+
+.bio-img img{
+    width: 50%;
+}
+
+
 
 /*******************************LOGO ANIM**********************************/
 
@@ -242,7 +249,7 @@ h2 span {
 /***************************************mp-info********************************************/
 
 #mp-text { 
-    height: 50vh;
+    height: 70vh;
 	text-align: center;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -257,14 +264,33 @@ h2 span {
 }
 
 #mp-text h3 {
-	padding: 0;
 	margin: 0;
-	font-size: 18px;
+    text-align: left;
+    background-color: rgba(25, 25, 25, .85);
+    color: white;
+    width: 80%;
+    font-family: 'Roboto Slab';
+	font-size: 15px;
+	padding-left: 5%;
+	font-weight: 100;
+	letter-spacing: .3px;
+	padding-bottom: 3%;
+	padding-right: 5%;
+    padding-top: 3%;
+    line-height: 19px;
+    position: absolute;
+    left: 120px;
+    font-weight: 500;
 
     
 	
 }
-
+#mp-text img{
+    width: 35% !important;
+  
+    position: relative;
+    left: 100px;
+}
 #mp-text a {
 	font-size: 16.5px;
 	font-weight: bold;
