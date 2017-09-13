@@ -1101,8 +1101,15 @@ h3 {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
-.lbx-event{
-	background-color: blue;
+
+
+.lbx-event .featherlight-content{
+	background-color: rgba(25, 25, 25, .5)	
+}
+
+.lbx-event .featherlight-close-icon{
+	background:transparent;
+	color:white;
 }
 .lbx .innerlbx {
 	width: 68%;
