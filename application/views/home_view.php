@@ -422,7 +422,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<?php echo $events[$i]->description; ?>
 										</div>
 										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
-										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Plus d'informations</a>
+										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" data-featherlight-variant="lbx-event" href="#" class="eventcontact">Plus d'informations</a>
 									</div>
 								</div>
 							</article><?php      
@@ -452,7 +452,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<?php echo $events[$i]->description; ?>
 										</div>
 										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
-										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Plus d'informations</a>
+										<a  data-featherlight-variant="lbx-event" data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Plus d'informations</a>
 									</div>
 								</div>
 							</article><?php      
@@ -483,7 +483,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									
 							<a class="event-info-link" target="_blank" href="<?php echo $event->link_event_info; ?>">Inscription</a>
 									
-								<a target="_blank" class="event-info-logo" href="<?php echo $event->linklogo_event_info; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo_event_info; ?>"></a>
+							<a target="_blank" class="event-info-logo" href="<?php echo $event->linklogo_event_info; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $event->logo_event_info; ?>"></a>
 							</div>
 					</div>
 					<?php }?>

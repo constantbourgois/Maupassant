@@ -1097,7 +1097,9 @@ h3 {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
-
+.lbx-event{
+	background-color: blue;
+}
 .lbx .innerlbx {
 	width: 68%;
 	display: inline-block;
