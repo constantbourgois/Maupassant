@@ -82,8 +82,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <source src="assets/vid/VideoGerants_FundeeFinal.webm" type="video/webm">
                 <source src="assets/vid/VideoGerants_FundeeFinal.mp4" type="video/mp4">
             </video></div>
-				<span><h1>Maupassant Partenaires</h1>
-			<h2> <span>Leader dans l’accompagnement des cabinets<br> de gestion de patrimoine.</span></h2>
+				<span><h1>Leader dans l’accompagnement des cabinets de gestion de patrimoine.</h1>
+			<h2> <span>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier.</span></h2>
 				</span>
 			</div>
             
@@ -107,8 +107,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<!--<li><a href="#contact"> Contact</a></li>
 				</ul><b class="button open" id="button"><span class="barra"></span> <span class="barra"></span> <span class="barra"></span></b>
 			</div>-->
+            
 		</header>
-		<main>    
+		<main> 
+            
+            <!--	<section id="mp-text">
+				<h3> Contact</h3>
+				<a href="mailTo:Maupassant@maupassant.com">Maupassant@maupassant.com</a>
+				<div> Hôtel de Maupassant <br> 17 Rue Jacques Bingen <br>75017 Paris
+					<br>
+					<span>01 44 54 82 35</span>
+				</div>
+
+			</section>-->
 			<section id="Acteurs">
             
 				<svg id="animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-60 -50 1000 600">
@@ -526,11 +537,10 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 						<span class="innerlbx">
 							<span class="paraglbx">
 							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
-							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
-	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
+                                <p>Turgot AM a été créé en novembre 2008 aux débuts d’une crise financière sans précédent et en plein milieu d’une révolution de marché chez les Accredited Financial Advisor en Grande Bretagne. Turgot AM a développé depuis bientôt 10 ans un savoir faire reconnu qui permet aux conseillers en gestion de patrimoine de parer aux nouveaux enjeux de la gestion d’actifs et aux exigences réglementaires. La méthodologie ? L’innovation ! Et la synthèse de cette stratégie basée sur la technologie se retrouve aujourd’hui à travers sa fintech Fundee.<a target="_blank" href="http://www.fundee.fr/"> www.fundee.fr</a>
 							</p>
 							</span>
-						<a target="_blank" href="http://www.turgot-am.fr/">aller au site pour plus d'informations</a>
+						<a target="_blank" href="http://www.turgot-am.fr/">www.turgot-am.fr</a>
 						<span class="imglbx"><img src="assets/img/logoturgottransp.png" alt="turgotlbx"></span>
 						</span>
 
@@ -541,10 +551,10 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 						<span class="innerlbx">
 							<span class="paraglbx">
 							<h5>Fiducée Gestion Privée</h5>
-							<p>Fiducée Gestion Privée place l’indépendance et l’éthique au centre d’une relation de qualité, au service de la gestion de patrimoine des clients. Ses conseillers en gestion de patrimoine indépendants bénéficient de services, de compétences, d’informations en temps réel ainsi que d’un accompagnement permanent sur l’ensemble des problématiques patrimoniales, auxquels ils ne pourraient avoir accès de manière isolée (ingénierie patrimoniale, conseil juridique, expertise et sélection produits, veille de l’actualité en matière de gestion patrimoniale des professionnels de santé et des professions libérales…).
+							<p>Fiducée Fiducée Gestion Privée est le 1er réseau de franchise spécialisé dans le conseil en gestion de patrimoine. Créé en 2009, Fiducée Gestion Privé compte plus de 40 franchisés spécialisés dans le traitement patrimonial des professionnels de santé. Cette légitimité a permis à FGP de bénéficier de l’exceptionnelle recommandation de Caducia, gage de la qualité du réseau, de la fiabilité, ainsi que la transparence des procédures.
 							</p>
 							</span>
-						<a target="_blank" href="http://www.fiducee.com/">aller au site pour plus d'informations</a>
+						<a target="_blank" href="http://www.fiducee.com/">www.fiducee.com</a>
 						<span class="imglbx5"><img src="assets/img/logoturgottransp_0000_fiduceelogo.png" alt="fiduceelbx"></span>
 						</span>
 
@@ -554,13 +564,10 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 						<span class="innerlbx">
 							<span class="paraglbx">
 							<h5>L'indépendance est une valeur d'avenir</h5>
-							<p>Nous nous engageons à vos côtés depuis bientôt 15 ans pour garantir à vos clients une qualité de back-office irréprochable associée à une recherche permanente des dernières innovations disponibles sur le marché de l’assurance vie, de la capitalisation et de l’épargne retraite.
-                                
-
-Nous favorisons l’ouverture à la diversité des compétences et des profils, afin d’entendre et de valoriser chaque point de vue, qui est depuis le premier jour, unique à nos yeux.
+							<p>Orelis finance est une plate-forme qui conçoit, distribue et gère des solutions d’assurance vie capi et retraite à destination des conseillers en gestion de patrimoine. Depuis près de 15 ans Orelis a forgé sa réputation sur la qualité du back office et sur l’innovation. L’innovation est depuis toujours centrée sur l’offre financière, les options automatiques de gestion ou la multifiscalité des contrats qu’elle propose, aujourd’hui Orelis permet au cabinet de gestion de patrimoine de faire face aux enjeux d’aujourd’hui, qu’ils soient réglementaires ou digitaux.
 							</p>
 							</span>
-						<a target="_blank" href="https://www.orelis.fr/">aller au site pour plus d'informations</a>
+						<a target="_blank" href="https://www.orelis.fr/">www.orelis.fr</a>
 						<span class="imglbx2"><img src="assets/img/logoturgottransp_0003_orelislogo.png" alt="orelislbx"></span>
 						</span>
 
@@ -572,11 +579,17 @@ Nous favorisons l’ouverture à la diversité des compétences et des profils, 
 							<span class="paraglbx">
 
 							<h5>Fundee, nouvel outil de gestion financière des contrats d’assurance-vie destiné aux CGP</h5>
-							<p>Premier outil d’aide à la gestion financière des contrats d’assurance-vie destiné aux Professionnels du Conseil Patrimonial et aux Groupements de CGPI, Fundee accompagne les mutations profondes du métier de CGPI en permettant de remettre le conseil au centre de la relation avec l’investisseur.
+							<p>Fundee est né d’un double constat : des enjeux réglementaires qui bouleversent le métier d’intermédiaires financiers et une lecture de plus en plus complexe, des marchés en termes de gestion financière. Fundee permet aux conseillers financiers de répondre réglementairement et commercialement aux exigences de transparence qui sont les leurs à travers MIFID et PRIIPS. Ces enjeux sont :<br> 
+Le renforcement des diligences auprès du client<br>  
+La qualification du client<br> 
+L'exigence en matière de gouvernance produit<br> 
+Le niveau accru d’information apportée au client<br> 
+	L’approche Fundee apporte la structuration et le service associé au conseiller et plus de service au client final qui préservent le modèle économique des cabinets en gestion de patrimoine.
+
 					
 							</p>
 							</span>
-						<a target="_blank" href="http://www.fundee.fr/">aller au site pour plus d'informations</a>
+						<a target="_blank" href="http://www.fundee.fr/">www.fundee.fr</a>
 						<span class="imglbx4"><img src="assets/img/logoturgottransp_0002_fundeelogo.png" alt="fundeelbx"></span>
 						</span>
 
@@ -587,11 +600,10 @@ Nous favorisons l’ouverture à la diversité des compétences et des profils, 
 						<span class="innerlbx">
 							<span class="paraglbx">
 							<h5>Agence digitale Vingtrois</h5>
-							<p>L’agence digitale VINGTROIS propulse les acteurs de la gestion privée aux avant-postes de la révolution numérique. En portant trois regards croisés : technique, graphique et éditorial, VINGTROIS développe une connaissance précise des enjeux et opportunités numériques de ces différents métiers.
-Créations et déclinaisons d’identité visuelle, présence et réputation numérique (sites internet, vidéos, newsletters), réseaux sociaux privés, agrégation et rédaction de contenus à forte valeur ajoutée, valorisation des expertises, marketing relationnel, CRM, centres d’appels automatisés et distribués, simulations financières, back-offices numériques, automatisation de la documentation réglementaire, business intelligence, facturation… 
+							<p>L’agence digitale VINGTROIS propulse les acteurs de la gestion privée aux avant-postes de la révolution numérique. En portant trois regards croisés : technique, graphique et éditorial, VINGTROIS développe une connaissance précise des enjeux et opportunités numériques de ces différents métiers. Créations et déclinaisons d’identité visuelle, présence et réputation numérique (sites internet, vidéos, newsletters), réseaux sociaux privés, agrégation et rédaction de contenus à forte valeur ajoutée, valorisation des expertises, marketing relationnel, CRM, centres d’appels automatisés et distribués, simulations financières, back-offices numériques, automatisation de la documentation réglementaire, business intelligence, facturation… Autant de terrains de jeux [funky] pour l’équipe vitaminée de VINGTROIS ! Autant de projets [passionnants] au cœur de la transformation du cabinet de gestion de patrimoine. 
 							</p>
 							</span>
-						<a target="_blank" href="http://www.vingtrois.fr/" >aller au site pour plus d'informations</a>
+						<a target="_blank" href="http://www.vingtrois.fr/" >www.vingtrois.fr</a>
 						<span class="imglbx3"><img src="assets/img/logoturgottransp_0001_23logo.png" alt="vingtroislbx"></span>
 						</span>
 
@@ -601,9 +613,8 @@ Créations et déclinaisons d’identité visuelle, présence et réputation num
 					<div class="lbx" id="leemo-lbx">
 						<span class="innerlbx">
 							<span class="paraglbx">
-							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
-							<p>Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre approche de la gestion financière se décline sous différents formats pour être en permanence au plus proche du profil de nos clients investisseurs et des attentes particulières qui les caractérisent
-	Turgot Asset Management gère une gamme sélective de produits investis sur les principaux marchés d’actions et d’obligations pour le compte de clients privés et institutionnels. Notre ap
+							<h5>Leemo</h5>
+							<p>Leemo est la place de marché immobilière de référence exclusivement réservée aux conseillers en gestion de patrimoine. Leemo  agrège en temps réel le plus grand nombre de promoteurs, de programmes neufs, et de lots accessibles à la vente via son moteur de recherche. 160 promoteurs partenaires, plus de 300 partenaires distributeurs et près de 3000 lots vendus cette année. Le moteur et  les équipes permettent à nos partenaires de rechercher, sélectionner, vendre, et suivre les opérations proposées à leurs clients.
 							</p>
 							</span>
 						<a target="_blank" href="#">aller au site pour plus d'informations</a>
