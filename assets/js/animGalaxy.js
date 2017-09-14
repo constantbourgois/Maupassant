@@ -36,7 +36,7 @@ $(document).ready(function () {
 	
 		});
 	
-	totalTarget = targetsAnim.length - 1;// grow Anim //
+	totalTarget = targetsAnim.length;// grow Anim //
 	targetGrowAnimIndex = getRandomArbitrary(0, totalTarget);// grow Anim //
 	targetGrow = $(targetsAnim[targetGrowAnimIndex]);// grow Anim //
 
@@ -234,7 +234,7 @@ $(document).ready(function () {
 	}
 
 	function animGrow() {
-		console.log(targetGrow);
+		
 
 		var speed = 1;
 
@@ -253,7 +253,7 @@ $(document).ready(function () {
 
 
 		function reset() {
-			console.log(reset);
+		
 			tweenGrow.reverse();
 			getRandomTargetGrow();
 			setTimeout(animGrow, speed * 1000);
