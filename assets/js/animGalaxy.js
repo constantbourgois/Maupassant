@@ -1,11 +1,11 @@
 $(document).ready(function () {
 	/* execute script only for desktop devices*/
-	if($(window).width() <= 768){
-		
-		return;
-	  }
+	if ($(window).width() <= 768) {
 
-	  
+		return;
+	}
+
+
 	var animTime = 1.6;
 	var animTimeS = animTime * 1000;
 	var paths;
@@ -19,35 +19,43 @@ $(document).ready(function () {
 	var tweenScale;
 	var animRounds;
 	var dataFeatherlight;
+	var tweenGrow;
+	var totalTarget;
+	var targetGrowAnimIndex;
+	var targetGrow;
 
-
-
+	// set the first variables //
 	targetsAnim = $('#circles > g');
 	circles = $('#circles > g').find('circle');
 	circles.addClass('mainCircle');
 	paths = $('#paths path');
 	$('#circles').attr('data-animStage', 1);
+		// identify circles and paths//
+		$(paths).each(function (j) {
+			$(this).attr('id', 'Path' + ($(paths).length - j));
+	
+		});
+	
+	totalTarget = targetsAnim.length - 1;// grow Anim //
+	targetGrowAnimIndex = getRandomArbitrary(0, totalTarget);// grow Anim //
+	targetGrow = $(targetsAnim[targetGrowAnimIndex]);// grow Anim //
 
-	// identify circles and paths//
-	$(paths).each(function (j) {
-		$(this).attr('id', 'Path' + ($(paths).length - j));
 
-	});
 
-	getDistances();
+	//start the animations/
+	getDistances(); // called once only//
 	floatElements();
 	animHover();
+	animGrow();
 
 
 	//start floating //
 	tweenFloat.play();
-	
-	
+
+
 
 	$(targetsAnim).click(function (event) {
 		event.preventDefault();
-		
-		
 
 		animMoving = true;
 
@@ -56,10 +64,10 @@ $(document).ready(function () {
 		//bind event to button to restart floating on lightbox closes
 
 		if (animCount === 0) {
-			
+
 			// load lightbox with delay//
 			dataFeatherlight = $(this).attr('data-featherlight');
-			
+
 			setTimeout(function(){
 			$.featherlight(dataFeatherlight, {
 				afterContent: function (event) {
@@ -109,24 +117,22 @@ $(document).ready(function () {
 					break;
 
 			}
-            
-           
+
+
 		}
-        
-        //remove to loop//
-        animRounds = 1;
-        animTime = 1.6;
-        animCount = 0;
-        ////////////////
-		
-        runEngine();
+
+		//remove to loop//
+		animRounds = 1;
+		animTime = 1.6;
+		animCount = 0;
+		////////////////
+
+		runEngine();
 
 
 	});
 
 	function animHover() {
-
-
 
 		$(targetsAnim).each(function (index, element) {
 
@@ -152,7 +158,7 @@ $(document).ready(function () {
 		}
 
 		function out() {
-				this.animation.reverse();
+			this.animation.reverse();
 		}
 
 
@@ -227,6 +233,57 @@ $(document).ready(function () {
 
 	}
 
+	function animGrow() {
+		console.log(targetGrow);
+
+		var speed = 1;
+
+		tweenGrow = new TimelineMax({
+			paused: true
+		});
+
+		tweenGrow.to(targetGrow, speed, {
+			scale: "+=0.1",
+			opacity: 0.65,
+			transformOrigin: "50% 50%",
+			onComplete: reset
+		});
+
+		tweenGrow.play();
+
+
+		function reset() {
+			console.log(reset);
+			tweenGrow.reverse();
+			getRandomTargetGrow();
+			setTimeout(animGrow, speed * 1000);
+
+		}
+
+		function getRandomTargetGrow() {
+			let j;
+			let newTarget;
+
+			do {
+
+				j = parseInt(getRandomArbitrary(0, totalTarget));
+				newTarget = $(targetsAnim[j]);
+
+			} while ($(targetGrow).attr('id') == $(newTarget).attr('id'));
+
+			targetGrow = newTarget;
+
+			return targetGrow;
+
+		}
+
+
+
+	}
+
+
+
+
 	function getDistances() {
 
 		$(circles).each(function (i) {
@@ -238,6 +295,7 @@ $(document).ready(function () {
 			var coordCircle = new Point($(circles[i]).attr('cx'), $(circles[i]).attr('cy'));
 
 			$(targetsAnim[i]).attr('data-target-width', ($(targetsAnim[i])[0]).getBoundingClientRect().width);
+			console.log($(targetsAnim[i]), $(targetsAnim[i]).attr('data-target-width'));
 
 
 			$(paths).each(function (j) {
@@ -261,6 +319,7 @@ $(document).ready(function () {
 					$(targetsAnim[i]).attr('data-target', ($(paths).length - closestPathIndex));
 
 					$(targetsAnim[i]).find('.mainCircle').attr('id', 'circle' + ($(paths).length - closestPathIndex));
+
 
 				}
 
@@ -297,7 +356,7 @@ $(document).ready(function () {
 
 		if (animCount == animRounds) {
 
-			
+
 
 			animCount = 0;
 
@@ -309,7 +368,7 @@ $(document).ready(function () {
 
 		}
 
-		$('#target1').click(); 
+		$('#target1').click();
 
 
 	}
@@ -334,21 +393,28 @@ $(document).ready(function () {
 		$(targetsAnim).each(function () {
 
 			pathTarget = ('#Path' + $(this).attr('data-path'));
+
 			target = document.getElementById($(this).attr('id'));
+
 			if (parseInt($(this).attr('data-target')) == $(targetsAnim).length) {
+
 				nextTarget = document.getElementById('target1');
+
 			} else {
 				nextTarget = document.getElementById(('target' + (parseInt($(this).attr('data-target')) + 1)));
 			}
 
 			var circleR = $(target).attr('data-target-width');
+
 			var nextCircleR = nextTarget.getBoundingClientRect().width;
 
 			var path = MorphSVGPlugin.pathDataToBezier(pathTarget, {
 				align: target
 			});
 
-			var scale = (parseInt(nextCircleR) / parseInt(circleR));
+			console.log(target, '  ', parseFloat(circleR), '   ', parseFloat(nextCircleR))
+
+			var scale = (parseFloat(nextCircleR) / parseFloat(circleR));
 
 			//********** set the tweens *************//
 			//****************************************//
@@ -446,6 +512,9 @@ $(document).ready(function () {
 			tweenCircle.play();
 		});
 	}*/
+	function getRandomArbitrary(min, max) {
+		return Math.random() * (max - min) + min;
+	}
 
 	function floatElements() {
 
