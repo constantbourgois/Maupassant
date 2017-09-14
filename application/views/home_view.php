@@ -77,19 +77,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
 			</nav>
 			<div class="fondh1">
-<<<<<<< HEAD
-                <div class="videos">
-				
-            </div>
-=======
-                <!--<div class="videos">
-				<video poster="" id="bgvid" playsinline="" autoplay="" muted="" loop="">
-                <source src="assets/vid/VideoGerants_FundeeFinal.webm" type="video/webm">
-                <source src="assets/vid/VideoGerants_FundeeFinal.mp4" type="video/mp4">
-            </video></div>-->
->>>>>>> origin/master
-				<span><h1>Leader dans l’accompagnement des cabinets de gestion de patrimoine.</h1>
-			<h2> <span>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier.</span></h2>
+
+				<span><h1>Nous créons<br> des possibilités</h1>
+			<h2> <span>
+Découvrez un endroit<br> où  il n'y a pas de frontière</span></h2>
 				</span>
 			</div>
             
@@ -118,9 +109,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<main> 
             
             <section id="mp-text">
-               
-                	<img src="assets/img/backgroundevents2.jpg" alt="turgotlbx">	
-				<h3> <span> <p>Leader dans l’accompagnement des cabinets de gestion de patrimoine.</p>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier.</span></h3>
+               	
+        <p>Leader dans l’accompagnement des cabinets de<br> gestion de patrimoine.</p>
+				<h3> <span>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier.</span></h3>
 				</div>
 
 			</section>
@@ -507,7 +498,7 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 			</section>
 			<section id="Contact">
 				<h3> Contact</h3>
-				<a href="mailTo:Maupassant@maupassant.com">Maupassant@maupassant.com</a>
+				<a href="mailTo:contact@maupassant-partenaires.fr">contact@maupassant-partenaires.fr</a>
 				<div> Hôtel de Maupassant <br> 17 Rue Jacques Bingen <br>75017 Paris
 					<br>
 					<span>01 44 54 82 35</span>

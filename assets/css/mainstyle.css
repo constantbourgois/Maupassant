@@ -146,14 +146,14 @@ header li:first-of-type a::after {
 
 .fondh1:before {
 	content: '';
-	height: 100vh;
-	width: 80%;
+	height: 90vh;
+	width: 78%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     opacity:0.8;
 	display: inline-block;
-	margin: 5% 0 5% 7%;
+	margin: 5% 0 5% 8%;
 	background-image: url('../../assets/img/backgroundtest1.jpg');
 	
 
@@ -181,11 +181,13 @@ video{
 	z-index: 100;
 	position: absolute;
 	bottom: 38%;
+   
 }
 
 h1 {
 	font-size: 77px;
 	font-weight: Bold;
+     margin-left: 1.4%;
 }
 
 h2 {
@@ -193,6 +195,7 @@ h2 {
 	font-size: 28px;
 	display: inline;
     line-height: 42px;
+     margin-left: 1.4%;
 }
 
 h2 span {
@@ -251,8 +254,7 @@ h2 span {
 /***************************************mp-info********************************************/
 
 #mp-text { 
-    height: 70vh;
-	text-align: center;
+    height: 32vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -263,14 +265,16 @@ h2 span {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	overflow: hidden;
+    background: #F1F2F5;
+    position: relative;
 }
 
 #mp-text h3 {
 	margin: 0;
-    text-align: left;
-    background-color: rgba(25, 25, 25, .85);
-    color: white;
-    width: 80%;
+    text-align: justify;
+   
+    color: #1C0C1C;
+    width: 50%;
     font-family: 'Roboto Slab';
 	font-size: 15px;
 	padding-left: 5%;
@@ -280,24 +284,25 @@ h2 span {
 	padding-right: 5%;
     padding-top: 3%;
     line-height: 19px;
+    font-weight: 300;
+    margin-left: 40%;
     position: absolute;
-    left: 120px;
-    font-weight: 500;
+    top:67px;
+ 
 
     
 	
 }
-#mp-text img{
-    width: 35% !important;
-  
-    position: relative;
-    left: 100px;
-}
-#mp-text a {
-	font-size: 16.5px;
-	font-weight: bold;
-	color: #5C315E;
-	letter-spacing: 3px;
+#mp-text p {
+	font-size: 28px;
+	font-weight: 700;
+    font-family: 'Montserrat';
+    text-align: left;
+    margin-left: 17%;
+    margin-top: 1%;
+    position: absolute;
+    top:30px;
+	
 }
 
 #mp-text div {
@@ -461,7 +466,7 @@ h2 span {
 	color: #131f6b;
 	width: 29%;
 	vertical-align: bottom;
-	border-right: 4px solid #131f6b;
+	border-right: 3px solid #131f6b;
 	padding-right: 2%;
 	margin-bottom: 10%;
 	margin-left: 10%;
@@ -557,9 +562,9 @@ h2 span {
 	font-family: 'Montserrat';
 	font-weight: bold;
 	color: #004993;
-	width: 29%;
+	width: 24%;
 	vertical-align: bottom;
-	border-right: 4px solid #004993;
+	border-right: 3px solid #004993;
 	padding-right: 2%;
 	margin-bottom: 10%;
 	margin-left: 10%;
@@ -641,7 +646,7 @@ h2 span {
 	color: #000000;
 	width: 29%;
 	vertical-align: bottom;
-	border-right: 4px solid #000000;
+	border-right: 3px solid #000000;
 	padding-right: 2%;
 	margin-bottom: 10%;
 	margin-left: 10%;
@@ -723,7 +728,7 @@ h2 span {
 	color: #283062;
 	width: 29%;
 	vertical-align: bottom;
-	border-right: 4px solid #283062;
+	border-right: 3px solid #283062;
 	padding-right: 2%;
 	margin-bottom: 10%;
 	margin-left: 10%;
@@ -805,7 +810,7 @@ h2 span {
 	color: #542C8E;
 	width: 29%;
 	vertical-align: bottom;
-	border-right: 4px solid #542C8E;
+	border-right: 3px solid #542C8E;
 	padding-right: 2%;
 	margin-bottom: 10%;
 	margin-left: 10%;
@@ -1196,7 +1201,7 @@ h3 {
 	color: #131f6b;
 	width: 29%;
 	vertical-align: bottom;
-	border-right: 4px solid #131f6b;
+	border-right: 3px solid #131f6b;
 	padding-right: 2%;
 	margin-bottom: 10%;
 	margin-left: 10%;
@@ -1466,14 +1471,16 @@ footer ul ul li {
 	    align-self: left;
 	z-index: 100;
 	position: absolute;
-	    bottom: 22%;
+	    bottom: 27%;
         width: 85%;
 }
 	h1 {
-		font-size: 54px;
+		font-size: 71px;
+        line-height: 92px;
 	}
 	h2 {
 		font-size: 25px;
+        padding-top: 2%;
 	}
 	/* Galaxie page */
 	/*	.lbx {
