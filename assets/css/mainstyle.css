@@ -254,7 +254,7 @@ h2 span {
 /***************************************mp-info********************************************/
 
 #mp-text { 
-    height: 32vh;
+    height: 22vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -269,40 +269,19 @@ h2 span {
     position: relative;
 }
 
-#mp-text h3 {
-	margin: 0;
-    text-align: justify;
-   
-    color: #1C0C1C;
-    width: 50%;
-    font-family: 'Roboto Slab';
-	font-size: 15px;
-	padding-left: 5%;
-	font-weight: 100;
-	letter-spacing: .3px;
-	padding-bottom: 3%;
-	padding-right: 5%;
-    padding-top: 3%;
-    line-height: 19px;
-    font-weight: 300;
-    margin-left: 40%;
-    position: absolute;
-    top:67px;
- 
 
-    
-	
-}
 #mp-text p {
-	font-size: 28px;
-	font-weight: 700;
-    font-family: 'Montserrat';
-    text-align: left;
-    margin-left: 17%;
-    margin-top: 1%;
+      font-family: 'Roboto Slab';
+    	font-weight: 400;
+font-size: 17px;
+    text-align: justify;
+   margin:auto;
     position: absolute;
-    top:30px;
-	
+    margin-top:0%;
+      line-height: 19px;
+    width: 70%;
+    margin-left: 17%;
+	line-height: 20px;
 }
 
 #mp-text div {
@@ -1013,7 +992,7 @@ h3 {
 	margin: 0 auto;
 	padding: 50px;
 	position: relative;
-	background-color: rgba(25, 25, 25, .7);
+	background-color: rgba(25, 25, 25, .0);
     color: white;
 }
 
@@ -1261,6 +1240,7 @@ h3 {
 	font-weight: bold;
 	color: #5C315E;
 	letter-spacing: 3px;
+    
 }
 
 #Contact div {
@@ -1286,12 +1266,14 @@ footer {
 	-ms-flex-align: end;
 	align-items: flex-end;
 	padding: 3% 5%;
+    align-items: center;
 }
 
 footer img {
 	max-width: 15%;
 	padding-left: 2%;
 	margin-left: 10%;
+    align-items: center;
 }
 
 footer a {
@@ -1299,6 +1281,10 @@ footer a {
 	-ms-flex-positive: 1;
 	flex-grow: 1;
 	color: white! important;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+    font-size: 14px;
+    
 }
 
 footer ul {
@@ -1317,7 +1303,7 @@ footer ul ul {
 
 footer ul ul li {
 	padding: 7% 0;
-	font-size: 14px;
+	font-size: 13px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 100;
 }
@@ -1327,10 +1313,12 @@ footer ul ul li {
 	-ms-flex-positive: 1;
 	flex-grow: 1;
 	text-align: right;
+    align-items: center;
 }
 
 #social a {
 	color: #191919 !important;
+     align-items: center;
 }
 
 .smGlobalBtn {
@@ -1352,6 +1340,7 @@ footer ul ul li {
 	-webkit-border-radius: 37px;
 	background-color: white;
 	margin: 5%;
+     align-items: center;
 }
 
 
@@ -1471,12 +1460,12 @@ footer ul ul li {
 	    align-self: left;
 	z-index: 100;
 	position: absolute;
-	    bottom: 27%;
-        width: 85%;
+	    bottom: 33%;
+        width: 100%;
 }
 	h1 {
-		font-size: 71px;
-        line-height: 92px;
+		font-size: 55px;
+        line-height: 70px;
 	}
 	h2 {
 		font-size: 25px;

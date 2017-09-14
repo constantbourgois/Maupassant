@@ -78,8 +78,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</nav>
 			<div class="fondh1">
 
-				<span><h1>Nous créons<br> des possibilités</h1>
-			<h2> <span>
+				<span><h1>Leader dans l’accompagnement<br> des cabinets de
+gestion<br> de patrimoine.</h1>
+			<!--<h2> <span>
 Découvrez un endroit<br> où  il n'y a pas de frontière</span></h2>
 				</span>
 			</div>
@@ -110,8 +111,8 @@ Découvrez un endroit<br> où  il n'y a pas de frontière</span></h2>
             
             <section id="mp-text">
                	
-        <p>Leader dans l’accompagnement des cabinets de<br> gestion de patrimoine.</p>
-				<h3> <span>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier.</span></h3>
+        <p>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier..</p>
+			
 				</div>
 
 			</section>
@@ -508,18 +509,9 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 		</main>
 		<footer>
 			<a href="#Home"> <img id="logosmall" src="<?php echo base_url()?>assets/img/logompwhite.png" alt="logomaupassant"> </a>
-			<ul>
-				<ul>
-					<li><a href="#">Turgot</a></li>
-					<li><a href="#">Leemo</a></li>
-					<li><a href="#">Vingtrois</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Fiducée</a></li>
-					<li><a href="#">Fundee</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</ul>
+			
+			<a href="#">© 2017 Maupassant Partenaires all rights reserved</a>
+		
 			<div id="social">
 				<a class="linkedinBtn smGlobalBtn" href="#"></a>
 				<a class="twitterBtn smGlobalBtn" href="#"></a>
