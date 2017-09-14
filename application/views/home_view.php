@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 	<!DOCTYPE html>
-	<html lang="en">
+	<html lang="fr">
 
 	<head>
 		<meta charset="utf-8" />
@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<body >
 		<header id="Home">
 			<div class="navmobile">
-				<!--<button id="simple-menu" type="button" class="hamburger hamburger--slider">
+				<!--<button id="simple-menu" type="button" class="hamburger hamburger-slider">
 					<span class="hamburger-box">
 						<span class="hamburger-inner"></span>
 					</span>

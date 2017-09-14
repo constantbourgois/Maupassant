@@ -53,7 +53,7 @@ $(document).ready(function () {
 
 		var offsetLinks = $('.button_container').offset().top;
 
-		console.log(offsetLinks);
+		
 	
 
 		if ((offsetLinks >= headerOffset && offsetLinks <= acteursOffset) /*|| offsetLinks >= contactOffset*/ ) {
