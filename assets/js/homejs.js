@@ -28,6 +28,8 @@ $(document).ready(function () {
 	var acteursOffset = Math.floor(($('#Acteurs').offset()).top);
 	var eventsOffset = Math.floor(($('#Events .background').offset()).top);
 	var contactOffset = Math.floor(($('#Contact').offset()).top);
+	var contactLinkOffset = Math.floor(($('#Contact a').offset()).top);
+	console.log(contactLinkOffset);
 
     var menuLinks = $(".navfull .categories a");
     
@@ -37,13 +39,20 @@ $(document).ready(function () {
 
 
 	$(window).scroll(function () {
+		console.log($(window).scrollTop())
         if(window.scrollY === 0){
             $('.navmobile').hide();
 			$('.navfull').show();
 			$('.backhome').css('z-index','100000');
 
            
+		}
+		else if($(window).scrollTop() > contactLinkOffset ){
+			alert();
+          $(contactLinkOffset).addClass('typeEffect');
+           
         }
+
         else{
             $('.navfull').hide();
 			$('.backhome').css('z-index','-100000');
@@ -53,8 +62,6 @@ $(document).ready(function () {
 
 		var offsetLinks = $('.button_container').offset().top;
 
-		
-	
 
 		if ((offsetLinks >= headerOffset && offsetLinks <= acteursOffset) /*|| offsetLinks >= contactOffset*/ ) {
 			$('.navfull .categories a').removeClass('black');

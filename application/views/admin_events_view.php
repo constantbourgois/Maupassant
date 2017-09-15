@@ -327,7 +327,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="form-group">
 											<label class="control-label col-md-3">date</label>
 											<div class="col-md-9">
-												<input class="datepicker form-control" name="date" placeholder="event date" type="text">
+												<input class="datepicker form-control" name="date" type="text">
 											</div>
 										</div>
 										<div class="form-group">
@@ -755,6 +755,7 @@ immediately after the control sidebar -->
 					}
 					
 					dataForm = $('#form');
+					console.log(dataForm);
 
 					// ajax adding data to database
 					$.ajax({

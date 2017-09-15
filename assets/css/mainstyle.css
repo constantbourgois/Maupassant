@@ -1323,8 +1323,27 @@ h3 {
 	font-weight: bold;
 	color: #5C315E;
 	letter-spacing: 3px;
-    
+	white-space: nowrap;
+	overflow: hidden;
 }
+
+#Contact .typeEffect{
+	animation: type 4s steps(60, end); 
+
+}
+@keyframes type{ 
+	from { width: 0; } 
+  } 
+  
+  @keyframes type2{
+	0%{width: 0;}
+	50%{width: 0;}
+	100%{ width: 100; } 
+  } 
+  
+  @keyframes blink{
+	to{opacity: .0;}
+  }
 
 #Contact div {
 	font-size: 15px;

@@ -105,9 +105,13 @@ class Adminevents extends CI_Controller
 
        // convert date to the right format //
 
-		$from = $this->input->post('date');
-		$date = DateTime::createFromFormat('d/m/Y',$from);
-		$from_date = $date->format("Y-m-d");
+        $from = $this->input->post('date');
+        if ($from){
+            $date = DateTime::createFromFormat('d/m/Y',$from);
+            $from_date = $date->format("Y-m-d");
+
+        }
+	
 	
         $data = array(
             'date' => $from_date,
