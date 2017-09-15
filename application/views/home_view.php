@@ -524,7 +524,7 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 						<span class="innerlbx">
 							<span class="paraglbx">
 							<h5>Une gestion diversifiée, indépendante et reconnue</h5>
-                                <p>Turgot AM a été créé en novembre 2008 aux débuts d’une crise financière sans précédent et en plein milieu d’une révolution de marché chez les Accredited Financial Advisor en Grande Bretagne. Turgot AM a développé depuis bientôt 10 ans un savoir faire reconnu qui permet aux conseillers en gestion de patrimoine de parer aux nouveaux enjeux de la gestion d’actifs et aux exigences réglementaires. La méthodologie ? L’innovation ! Et la synthèse de cette stratégie basée sur la technologie se retrouve aujourd’hui à travers sa fintech Fundee
+                                <p>Turgot AM a été créé en novembre 2008 aux débuts d’une crise financière sans précédent et en pleine révolution de marché chez les Accredited Financial Advisor en Grande Bretagne. Turgot AM a développé, depuis bientôt 10 ans, un savoir-faire reconnu, qui permet aux conseillers en gestion de patrimoine de pallier les nouveaux enjeux de la gestion d’actifs et les exigences réglementaires. La méthode ? L’innovation ! La synthèse de cette stratégie basée sur la technologie s’exprime  aujourd’hui à travers sa fintech Fundee. www.fundee.fr
 							</p>
 							</span>
 						<a target="_blank" href="http://www.turgot-am.fr/">www.turgot-am.fr</a>
@@ -539,6 +539,7 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 							<span class="paraglbx">
 							<h5>Fiducée Gestion Privée</h5>
 							<p>Fiducée Fiducée Gestion Privée est le 1er réseau de franchise spécialisé dans le conseil en gestion de patrimoine. Créé en 2009, Fiducée Gestion Privé compte plus de 40 franchisés spécialisés dans le traitement patrimonial des professionnels de santé. Cette légitimité a permis à FGP de bénéficier de l’exceptionnelle recommandation de Caducia, gage de la qualité du réseau, de la fiabilité, ainsi que la transparence des procédures.
+
 							</p>
 							</span>
 						<a target="_blank" href="http://www.fiducee.com/">www.fiducee.com</a>
@@ -566,13 +567,12 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 							<span class="paraglbx">
 
 							<h5>Fundee, nouvel outil de gestion financière des contrats d’assurance-vie destiné aux CGP</h5>
-							<p>Fundee est né d’un double constat : des enjeux réglementaires qui bouleversent le métier d’intermédiaires financiers et une lecture de plus en plus complexe, des marchés en termes de gestion financière. Fundee permet aux conseillers financiers de répondre réglementairement et commercialement aux exigences de transparence qui sont les leurs à travers MIFID et PRIIPS. Ces enjeux sont :<br> 
-Le renforcement des diligences auprès du client<br>  
-La qualification du client<br> 
-L'exigence en matière de gouvernance produit<br> 
-Le niveau accru d’information apportée au client<br> 
-	L’approche Fundee apporte la structuration et le service associé au conseiller et plus de service au client final qui préservent le modèle économique des cabinets en gestion de patrimoine.
-
+							<p>La technologie Fundee est née d’un double constat : les enjeux réglementaires bouleversent le métier d’intermédiaire financier, et la lecture des marchés, en termes de gestion financière, est de plus en plus complexe. Fundee permet aux conseillers financiers de répondre réglementairement et commercialement aux exigences de transparence qui sont les leurs, à travers MIFID et PRIIPS. Ces enjeux sont : <br> <br> 
+Le renforcement des diligences auprès du client <br> <br> 
+La qualification du client<br> <br> 
+L'exigence en matière de gouvernance produit<br> <br> 
+Le niveau accru d’information apportée au client<br> <br> 
+Fundee permet au conseiller de structurer son approche et son service, afin de mieux accompagner le client final, et ainsi préserver le modèle économique des cabinets en GP. 
 					
 							</p>
 							</span>
@@ -601,7 +601,7 @@ Le niveau accru d’information apportée au client<br>
 						<span class="innerlbx">
 							<span class="paraglbx">
 							<h5>Leemo</h5>
-							<p>Leemo est la place de marché immobilière de référence exclusivement réservée aux conseillers en gestion de patrimoine. Leemo  agrège en temps réel le plus grand nombre de promoteurs, de programmes neufs, et de lots accessibles à la vente via son moteur de recherche. 160 promoteurs partenaires, plus de 300 partenaires distributeurs et près de 3000 lots vendus cette année. Le moteur et  les équipes permettent à nos partenaires de rechercher, sélectionner, vendre, et suivre les opérations proposées à leurs clients.
+							<p>Leemo est la place de marché immobilière de référence exclusivement réservée aux conseillers en gestion de patrimoine. Leemo agrège, en temps réel, le plus grand nombre de promoteurs, de programmes neufs et de lots accessibles à la vente, via son moteur de recherche unique. Leemo compte 160 promoteurs partenaires, plus de 300 partenaires distributeurs et près de 3000 lots vendus. La plateforme et les équipes dédiées permettent à nos partenaires de rechercher, sélectionner et vendre des biens de qualité, puis de suivre les opérations proposées à leurs clients.
 							</p>
 							</span>
 						<a target="_blank" href="#">aller au site pour plus d'informations</a>
