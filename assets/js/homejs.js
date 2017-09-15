@@ -39,7 +39,7 @@ $(document).ready(function () {
 
 
 	$(window).scroll(function () {
-		console.log($(window).scrollTop())
+		console.log($(window).scrollTop(),contactLinkOffset)
         if(window.scrollY === 0){
             $('.navmobile').hide();
 			$('.navfull').show();
@@ -47,9 +47,9 @@ $(document).ready(function () {
 
            
 		}
-		else if($(window).scrollTop() > contactLinkOffset ){
-			alert();
-          $(contactLinkOffset).addClass('typeEffect');
+		else if($(window).scrollTop()  + $(window).height() > contactLinkOffset ){
+		
+          $('#Contact a').addClass('typeEffect');
            
         }
 

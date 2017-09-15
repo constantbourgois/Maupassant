@@ -626,7 +626,7 @@ immediately after the control sidebar -->
 						dropZone: $(this),
 						limitMultiFileUploads: 1,
 						maxNumberOfFiles: 2,
-						maxFileSize: 3000000,
+						maxFileSize: 'undefined',
 					});
 				});
 

@@ -450,7 +450,9 @@ h2 span {
 	margin-bottom: 10%;
 	margin-left: 10%;
 }
-
+.featherlight{
+	width:100%;
+}
 .featherlight .featherlight-content {
 	padding: 0px 25px 0;
 	border-bottom: 25px solid transparent;
@@ -1325,10 +1327,13 @@ h3 {
 	letter-spacing: 3px;
 	white-space: nowrap;
 	overflow: hidden;
+	width: 100%;
+	margin:0 auto;
+	
 }
 
 #Contact .typeEffect{
-	animation: type 4s steps(60, end); 
+	animation: type 5s steps(60, end); 
 
 }
 @keyframes type{ 
