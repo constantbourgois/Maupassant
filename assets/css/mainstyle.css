@@ -609,7 +609,7 @@ h2 span {
 	opacity: .9;
 	padding: 6%;
 	padding-top: 3%;
-	padding-bottom: 25%;
+	padding-bottom: 19%;
 	max-width: 30%;
 	position: absolute;
 	top: -70px;
@@ -808,7 +808,7 @@ h2 span {
 
 .lbx6 {
 	height: 100vh;
-	background-image: url("../../assets/img/fondturgotlbx_0002_fiducee.png");
+	background-image: url("../../assets/img/leemo.png");
 	background-position: 18% center;
 	background-repeat: no-repeat;
 	background-size: 60%;
@@ -1363,7 +1363,7 @@ footer {
 	flex-direction: row;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
+	justify-content: space-around;
 	-webkit-box-align: end;
 	-ms-flex-align: end;
 	align-items: flex-end;
@@ -1372,16 +1372,16 @@ footer {
 }
 
 footer img {
-	max-width: 15%;
+	max-width: 19%;
 	padding-left: 2%;
-	margin-left: 10%;
+	margin-left: 0%;
     align-items: center;
 }
 
 footer a {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
-	flex-grow: 1;
+	flex-grow: 0;
 	color: white! important;
     font-family: 'Montserrat', sans-serif;
 	font-weight: 100;
@@ -1413,7 +1413,7 @@ footer ul ul li {
 #social {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
-	flex-grow: 1;
+	flex-grow: 0;
 	text-align: right;
     align-items: center;
 }

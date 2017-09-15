@@ -508,7 +508,7 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 			</section>
 		</main>
 		<footer>
-			<a href="#Home"> <img id="logosmall" src="<?php echo base_url()?>assets/img/logompwhite.png" alt="logomaupassant"> </a>
+			<a href="#Home"> <img id="logosmall" src="<?php echo base_url()?>assets/img/logo-hotel.png" alt="logomaupassant"> </a>
 			
 			<a href="#">© 2017 Maupassant Partenaires all rights reserved</a>
 		
@@ -604,8 +604,8 @@ Fundee permet au conseiller de structurer son approche et son service, afin de m
 							<p>Leemo est la place de marché immobilière de référence exclusivement réservée aux conseillers en gestion de patrimoine. Leemo agrège, en temps réel, le plus grand nombre de promoteurs, de programmes neufs et de lots accessibles à la vente, via son moteur de recherche unique. Leemo compte 160 promoteurs partenaires, plus de 300 partenaires distributeurs et près de 3000 lots vendus. La plateforme et les équipes dédiées permettent à nos partenaires de rechercher, sélectionner et vendre des biens de qualité, puis de suivre les opérations proposées à leurs clients.
 							</p>
 							</span>
-						<a target="_blank" href="#">aller au site pour plus d'informations</a>
-						<span class="imglbx6"><img src="assets/img/logoturgottransp.png" alt="leemolbx"></span>
+						<a target="_blank" href="http://www.leemo.fr/">www.leemo.fr</a>
+						<span class="imglbx6"><img src="assets/img/leemo-logo.png" alt="leemolbx"></span>
 						</span>
 
 					</div>
