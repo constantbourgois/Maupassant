@@ -401,7 +401,7 @@ h2 span {
 	margin-top: 15%;
 	padding: 50px;
 	position: relative;
-	height: 70vh;
+	height: 65vh;
 	-webkit-box-shadow: 7px 7px 55px #888888;
 	box-shadow: 7px 7px 55px #888888;
 }
@@ -409,7 +409,7 @@ h2 span {
 .lbx p {
 	font-family: 'Roboto Slab';
 	font-weight: 300;
-	font-size: 13px;
+	font-size: 15px;
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
@@ -501,7 +501,7 @@ h2 span {
 	margin-top: 15%;
 	padding: 50px;
 	position: relative;
-	height: 70vh;
+	height: 65vh;
 	-webkit-box-shadow: 7px 7px 55px #888888;
 	box-shadow: 7px 7px 55px #888888;
 }
@@ -509,7 +509,7 @@ h2 span {
 .lbx2 p {
 	font-family: 'Roboto Slab';
 	font-weight: 300;
-	font-size: 13px;
+	font-size: 15px;
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
@@ -529,7 +529,7 @@ h2 span {
 	opacity: .7;
 	padding: 6%;
 	padding-top: 3%;
-	padding-bottom: 25%;
+	padding-bottom: 15%;
 	max-width: 30%;
 	position: absolute;
 	top: -70px;
@@ -547,7 +547,7 @@ h2 span {
 	vertical-align: bottom;
 	border-right: 3px solid #004993;
 	padding-right: 2%;
-	margin-bottom: 10%;
+	margin-bottom: -5%;
 	margin-left: 10%;
 }
 
@@ -583,7 +583,7 @@ h2 span {
 	margin-top: 15%;
 	padding: 50px;
 	position: relative;
-	height: 89vh;
+	height: 65vh;
 	-webkit-box-shadow: 7px 7px 55px #888888;
 	box-shadow: 7px 7px 55px #888888;
 }
@@ -591,7 +591,7 @@ h2 span {
 .lbx3 p {
 	font-family: 'Roboto Slab';
 	font-weight: 300;
-	font-size: 13px;
+	font-size: 15px;
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
@@ -611,7 +611,7 @@ h2 span {
 	opacity: .9;
 	padding: 6%;
 	padding-top: 3%;
-	padding-bottom: 19%;
+	padding-bottom: 10%;
 	max-width: 30%;
 	position: absolute;
 	top: -70px;
@@ -665,7 +665,7 @@ h2 span {
 	margin-top: 15%;
 	padding: 50px;
 	position: relative;
-	height: 101vh;
+	height: 65vh;
 	-webkit-box-shadow: 7px 7px 55px #888888;
 	box-shadow: 7px 7px 55px #888888;
 }
@@ -673,7 +673,7 @@ h2 span {
 .lbx4 p {
 	font-family: 'Roboto Slab';
 	font-weight: 300;
-	font-size: 13px;
+	font-size: 15px;
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
@@ -693,7 +693,7 @@ h2 span {
 	opacity: .83;
 	padding: 6%;
 	padding-top: 3%;
-	padding-bottom: 25%;
+	padding-bottom: 18%;
 	max-width: 30%;
 	position: absolute;
 	top: -70px;
@@ -747,7 +747,7 @@ h2 span {
 	margin-top: 15%;
 	padding: 50px;
 	position: relative;
-	height: 70vh;
+	height: 65vh;
 	-webkit-box-shadow: 7px 7px 55px #888888;
 	box-shadow: 7px 7px 55px #888888;
 }
@@ -755,7 +755,7 @@ h2 span {
 .lbx5 p {
 	font-family: 'Roboto Slab';
 	font-weight: 300;
-	font-size: 13px;
+	font-size: 15px;
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
@@ -775,7 +775,7 @@ h2 span {
 	opacity: .83;
 	padding: 6%;
 	padding-top: 3%;
-	padding-bottom: 20%;
+	padding-bottom: 11%;
 	max-width: 30%;
 	position: absolute;
 	top: -70px;
@@ -793,7 +793,7 @@ h2 span {
 	vertical-align: bottom;
 	border-right: 3px solid #542C8E;
 	padding-right: 2%;
-	margin-bottom: 10%;
+	margin-bottom: -9%;
 	margin-left: 10%;
 }
 
@@ -828,7 +828,7 @@ h2 span {
 	margin-top: 15%;
 	padding: 50px;
 	position: relative;
-	height: 70vh;
+	height: 65vh;
 	-webkit-box-shadow: 7px 7px 55px #888888;
 	box-shadow: 7px 7px 55px #888888;
 }
@@ -836,7 +836,7 @@ h2 span {
 .lbx6 p {
 	font-family: 'Roboto Slab';
 	font-weight: 300;
-	font-size: 13px;
+	font-size: 15px;
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
@@ -856,7 +856,7 @@ h2 span {
 	opacity: .83;
 	padding: 6%;
 	padding-top: 3%;
-	padding-bottom: 20%;
+	padding-bottom: 14%;
 	max-width: 30%;
 	position: absolute;
 	top: -70px;
@@ -874,7 +874,7 @@ h2 span {
 	vertical-align: bottom;
 	border-right: 3px solid #002e6d;
 	padding-right: 2%;
-	margin-bottom: 10%;
+	margin-bottom: -4%;
 	margin-left: 10%;
 }
 
@@ -1101,7 +1101,7 @@ h3 {
 }
 
 .event-info img {
-	width: 50%;
+	width: 70%;
 	text-align: left;
 	margin: 0 auto;
 	margin-left: 15%;
@@ -1216,7 +1216,7 @@ h3 {
 	margin-top: 15%;
 	padding: 50px;
 	position: relative;
-	height: 70vh;
+	height: 65vh;
 	-webkit-box-shadow: 7px 7px 55px #888888;
 	box-shadow: 7px 7px 55px #888888;
 }
@@ -1224,7 +1224,7 @@ h3 {
 .lbx p {
 	font-family: 'Roboto Slab';
 	font-weight: 300;
-	font-size: 13px;
+	font-size: 15px;
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
@@ -1249,7 +1249,7 @@ h3 {
 	opacity: .7;
 	padding: 6%;
 	padding-top: 3%;
-	padding-bottom: 25%;
+	padding-bottom: 16%;
 	max-width: 30%;
 	position: absolute;
 	top: -75px;
@@ -1267,7 +1267,7 @@ h3 {
 	vertical-align: bottom;
 	border-right: 3px solid #131f6b;
 	padding-right: 2%;
-	margin-bottom: 10%;
+	margin-bottom: -4%;
 	margin-left: 10%;
 }
 
@@ -1578,6 +1578,63 @@ footer ul ul li {
 		font-size: 29px;
         padding-top: 2%;
 	}
+    
+    .lbx p{
+        font-size: 13px;
+    }
+    .lbx a {
+        margin-bottom: 10%;
+        
+    }
+    .imglbx2 {
+        padding-bottom: 19%;
+    }
+    .lbx2 p{
+        font-size: 13px;
+    }
+     .lbx2 a {
+        margin-bottom: 13%;
+    } 
+    .imglbx2 {
+        padding-bottom: 21%;
+    }
+    .lbx3 p{
+        font-size: 13px;
+    }
+    .lbx3 .innerlbx {
+    height: 84vh;
+    }
+    .imglbx3 {
+        padding-bottom: 15%;
+    }
+    .lbx4 p{
+        font-size: 13px;
+    }
+    .lbx4 .innerlbx {
+        height: 102vh;
+    }
+    .imglbx4 {
+        padding-bottom: 22%;
+    }
+    .lbx5 p{
+        font-size: 13px;
+    }
+    .lbx5 a {
+        margin-bottom: 1%;
+    } 
+     .imglbx5 {
+        padding-bottom: 15%;
+    }
+    .lbx6 p{
+        font-size: 13px;
+    }
+    .lbx6 a {
+        margin-bottom: 8%;
+    } 
+    .imglbx6 {
+        padding-bottom: 18%;
+    }
+    
 	/* Galaxie page */
 	/*	.lbx {
 		height: 70vh;
