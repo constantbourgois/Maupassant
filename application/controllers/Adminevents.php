@@ -41,7 +41,7 @@ class Adminevents extends CI_Controller
         'script_url' => site_url('Adminevents/json'),
         'upload_dir' => APPPATH . '../uploads/files/',
         'upload_url' => site_url('uploads/files/'),
-        'max_file_size' => 'undefined',
+        'max_file_size' => 0,
         ];
         $this->load->library('UploadHandler', $options);
     }
