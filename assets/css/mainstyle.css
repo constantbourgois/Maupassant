@@ -64,7 +64,7 @@ body {
 }
 
 header {
-	background-color: #1C0C1C;
+	background-color: #191919;
 	width: 100%;
 	position: relative;
 	padding: 3%;
@@ -146,15 +146,15 @@ header li:first-of-type a::after {
 
 .fondh1:before {
 	content: '';
-	height: 90vh;
+	height: 80vh;
 	width: 78%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    opacity:0.8;
+    opacity:0.7;
 	display: inline-block;
-	margin: 5% 0 5% 8%;
-	background-image: url('../../assets/img/backgroundtest1.jpg');
+	margin: 2% 0 5% 8%;
+	background-image: url('../../assets/img/door.background.png');
 	
 
 	
@@ -228,7 +228,7 @@ h2 span {
 }
 
 .backhome svg:first-child {
-	width: 100%;
+	width: 90%;
 	background-color: #191919;
 	fill: white;
 }
@@ -254,7 +254,7 @@ h2 span {
 /***************************************mp-info********************************************/
 
 #mp-text { 
-    height: 22vh;
+    height: 25vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -265,25 +265,25 @@ h2 span {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	overflow: hidden;
-    background: #F1F2F5;
+   background-color: #EFF3F7;
     position: relative;
 }
 
 
 #mp-text p {
-      font-family: 'Roboto Slab';
-    	font-weight: 400;
-font-size: 17px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 17px;
     text-align: justify;
-   margin:auto;
+    margin: auto;
     position: absolute;
-    margin-top:0%;
-      line-height: 19px;
-    width: 70%;
-    margin-left: 17%;
-	line-height: 20px;
+    margin-top: 0%;
+    line-height: 19px;
+    width: 80%;
+    margin-left: 10%;
+    color: #191919;
+    line-height: 29px;
 }
-
 #mp-text div {
 	font-size: 15px;
 }
@@ -954,7 +954,7 @@ h3 {
 }
 
 .eventsdata h4 {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	letter-spacing: 1px;
 	font-weight: 300;
 }
@@ -998,13 +998,14 @@ h3 {
 
 .event-info h6 {
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	margin: 0 auto;
 	padding: 0% 3%;
 	padding-bottom: 5%;
 	font-size: 25px;
 	color: white;
 	display: block;
+    
 }
 
 .event-info h6::after {
@@ -1013,10 +1014,11 @@ h3 {
 	width: 50%;
 	border-bottom: 1px solid white;
 	padding-top: 3%;
+    margin: auto;
 }
 
 .event-info img {
-	width: 70%;
+	width: 50%;
 	text-align: left;
 	margin: 0 auto;
 	margin-left: 15%;
@@ -1460,7 +1462,7 @@ footer ul ul li {
 	    align-self: left;
 	z-index: 100;
 	position: absolute;
-	    bottom: 33%;
+	    bottom: 29%;
         width: 100%;
 }
 	h1 {
@@ -1468,7 +1470,7 @@ footer ul ul li {
         line-height: 70px;
 	}
 	h2 {
-		font-size: 25px;
+		font-size: 29px;
         padding-top: 2%;
 	}
 	/* Galaxie page */
