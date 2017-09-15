@@ -804,6 +804,87 @@ h2 span {
 	line-height: 25px;
 }
 
+/************ Leemo lbx ***************/
+
+.lbx6 {
+	height: 100vh;
+	background-image: url("../../assets/img/fondturgotlbx_0002_fiducee.png");
+	background-position: 18% center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	padding-left: 10%;
+	position: relative;
+	display: none;
+	opacity: .9;
+}
+
+.lbx6 .innerlbx {
+	width: 68%;
+	display: inline-block;
+	margin-left: 24%;
+	background-color: white;
+	margin-top: 15%;
+	padding: 50px;
+	position: relative;
+	height: 70vh;
+	-webkit-box-shadow: 7px 7px 55px #888888;
+	box-shadow: 7px 7px 55px #888888;
+}
+
+.lbx6 p {
+	font-family: 'Roboto Slab';
+	font-weight: 300;
+	font-size: 13px;
+	display: inline-block;
+	margin-bottom: 30%;
+	padding: 5% 0;
+}
+
+.lbx6 .paraglbx {
+	width: 60%;
+	display: inline-block;
+}
+
+.imglbx6 img {
+	max-width: 100%;
+}
+
+.imglbx6 {
+	background-color: #002e6d;
+	opacity: .83;
+	padding: 6%;
+	padding-top: 3%;
+	padding-bottom: 20%;
+	max-width: 30%;
+	position: absolute;
+	top: -70px;
+	right: 50px;
+	-webkit-box-sizing: padding-box;
+	box-sizing: padding-box;
+}
+
+.lbx6 a {
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #002e6d;
+	width: 29%;
+	vertical-align: bottom;
+	border-right: 3px solid #002e6d;
+	padding-right: 2%;
+	margin-bottom: 10%;
+	margin-left: 10%;
+}
+
+.lbx6 h5 {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 19px;
+	color: #002e6d;
+	padding: 0 0%;
+	line-height: 25px;
+}
+
 
 /*****************************EVENTS*********************************/
 
