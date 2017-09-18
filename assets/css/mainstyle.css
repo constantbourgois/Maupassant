@@ -225,7 +225,7 @@ h2 span {
 
 .backhome img,
 .backhome svg {
-	width: 100%;
+	width: 11vw;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1432,7 +1432,7 @@ footer {
 }
 
 footer img {
-	max-width: 100%;
+	max-width: 50%;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -1697,7 +1697,7 @@ footer ul ul li {
 	.imglbx6 {
 		padding-bottom: 18%;
 	}
-	/* Galaxie page */
+  /* Galaxie page */
 	/*	.lbx {
 		height: 70vh;
 		background-size: 53%;
@@ -1843,6 +1843,8 @@ footer ul ul li {
 		width: 6vw;
 		left: 3%;
 	}
+    .backhome img, .backhome svg {
+        width: 30vw;}
 	.button_container {
 		right: 4%;
 		height: 27px;
@@ -1856,9 +1858,10 @@ footer ul ul li {
 		top: 40%;
 		bottom: 0;
 		text-align: center;
+        font-size: 24px;
 	}
 	h1 {
-		font-size: 35px;
+		font-size: 55px;
 	}
 	h2 {
 		font-size: 15px;
@@ -2014,6 +2017,13 @@ footer ul ul li {
 		width: 47%;
 		margin-bottom: 5%;
 	}
+    
+    footer img {
+	max-width: 100%;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
 }
 
 
@@ -2071,6 +2081,8 @@ footer ul ul li {
 		margin: unset;
 		padding: unset;
 		display: inline-block;
+        max-width: 32vw;
+        align-items: center;
 	}
 	footer a {
 		text-align: center;
