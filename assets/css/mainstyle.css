@@ -23,8 +23,8 @@ a label {
 	cursor: pointer;
 }
 
-.noscroll{
-	position:fixed!important;
+.noscroll {
+	position: fixed!important;
 	overflow-y: scroll!important;
 }
 
@@ -60,7 +60,6 @@ h3 {
 svg g:hover {
 	cursor: pointer;
 }
-
 
 body {
 	width: 100%;
@@ -154,6 +153,7 @@ header li:first-of-type a::after {
 	content: '';
 	height: 80vh;
 	width: 78%;
+<<<<<<< HEAD
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -164,7 +164,18 @@ header li:first-of-type a::after {
 	
 
 	
+=======
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: .8;
+	display: inline-block;
+	margin: 2% 0 5% 8%;
+	background-image: url('../../assets/img/maupassant2.jpg');
+>>>>>>> origin/master
 }
+
+
 /*
 .videos{
     position: absolute;
@@ -181,27 +192,27 @@ video{
     max-width: 100%;
      opacity:0.4;
 }*/
-.fondh1 span{
+
+.fondh1 span {
 	-ms-flex-item-align: left;
 	align-self: left;
 	z-index: 100;
 	position: absolute;
 	bottom: 38%;
-   
 }
 
 h1 {
 	font-size: 77px;
 	font-weight: Bold;
-     margin-left: 1.4%;
+	margin-left: 1.4%;
 }
 
 h2 {
 	font-family: 'Playfair Display', sans-serif;
 	font-size: 28px;
 	display: inline;
-    line-height: 42px;
-     margin-left: 1.4%;
+	line-height: 42px;
+	margin-left: 1.4%;
 }
 
 h2 span {
@@ -209,12 +220,12 @@ h2 span {
 	display: inline-block;
 }
 
+
 /******************************about**********************************/
 
-.bio-img img{
-    width: 50%;
+.bio-img img {
+	width: 50%;
 }
-
 
 
 /*******************************LOGO ANIM**********************************/
@@ -238,6 +249,8 @@ h2 span {
 	background-color: #191919;
 	fill: white;
 }
+
+
 /*
 .backhome img:last-child {
 	-webkit-transition: .25s cubic-bezier(.645, .045, .355, 1);
@@ -257,10 +270,12 @@ h2 span {
 .backhome:hover svg:first-child {
 	opacity: 0;
 }*/
+
+
 /***************************************mp-info********************************************/
 
-#mp-text { 
-    height: 25vh;
+#mp-text {
+	height: 25vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -271,29 +286,32 @@ h2 span {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	overflow: hidden;
-   background-color: #EFF3F7;
-    position: relative;
+	background-color: #EFF3F7;
+	position: relative;
 }
-
 
 #mp-text p {
-    font-family: 'Roboto Slab';
-    font-weight: 400;
-    font-size: 17px;
-    text-align: justify;
-    margin: auto;
-    position: absolute;
-    margin-top: 0%;
-    line-height: 19px;
-    width: 80%;
-    margin-left: 10%;
-    color: #191919;
-    line-height: 29px;
+	font-family: 'Roboto Slab';
+	font-weight: 400;
+	font-size: 17px;
+	text-align: justify;
+	margin: auto;
+	position: absolute;
+	margin-top: 0%;
+	line-height: 19px;
+	width: 80%;
+	margin-left: 10%;
+	color: #191919;
+	line-height: 29px;
 }
+
 #mp-text div {
 	font-size: 15px;
 }
+
+
 /****************************ANIMATION**********************************/
+
 
 /****************************ANIMATION**********************************/
 
@@ -419,7 +437,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
-    text-align: justify;
+	text-align: justify;
 }
 
 .lbx .paraglbx {
@@ -457,9 +475,11 @@ h2 span {
 	margin-bottom: 10%;
 	margin-left: 10%;
 }
-.featherlight{
-	width:100%;
+
+.featherlight {
+	width: 100%;
 }
+
 .featherlight .featherlight-content {
 	padding: 0px 25px 0;
 	border-bottom: 25px solid transparent;
@@ -520,7 +540,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
-    text-align: justify;
+	text-align: justify;
 }
 
 .lbx2 .paraglbx {
@@ -603,7 +623,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
-    text-align: justify;
+	text-align: justify;
 }
 
 .lbx3 .paraglbx {
@@ -686,7 +706,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
-    text-align: justify;
+	text-align: justify;
 }
 
 .lbx4 .paraglbx {
@@ -769,7 +789,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
-    text-align: justify;
+	text-align: justify;
 }
 
 .lbx5 .paraglbx {
@@ -817,6 +837,7 @@ h2 span {
 	line-height: 25px;
 }
 
+
 /************ Leemo lbx ***************/
 
 .lbx6 {
@@ -851,7 +872,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
-    text-align: justify;
+	text-align: justify;
 }
 
 .lbx6 .paraglbx {
@@ -1012,8 +1033,8 @@ h2 span {
 	letter-spacing: .3px;
 	padding-bottom: 5%;
 	padding-right: 5%;
-    line-height: 19px;
-    text-align: justify;
+	line-height: 19px;
+	text-align: justify;
 }
 
 .eventcontact {
@@ -1089,7 +1110,7 @@ h3 {
 	padding: 50px;
 	position: relative;
 	background-color: rgba(25, 25, 25, .0);
-    color: white;
+	color: white;
 }
 
 .event-info h6 {
@@ -1101,7 +1122,6 @@ h3 {
 	font-size: 25px;
 	color: white;
 	display: block;
-    
 }
 
 .event-info h6::after {
@@ -1110,7 +1130,7 @@ h3 {
 	width: 50%;
 	border-bottom: 1px solid white;
 	padding-top: 3%;
-    margin: auto;
+	margin: auto;
 }
 
 .event-info img {
@@ -1137,17 +1157,17 @@ h3 {
 	color: white;
 	font-family: 'Roboto Slab';
 	font-weight: 100;
-    letter-spacing: .3px;
-    line-height: 21px;
-    padding-bottom: 5%;
-    padding-top: 5%;
+	letter-spacing: .3px;
+	line-height: 21px;
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
 
 .event-info-date {
 	width: 70%;
 	text-align: left;
 	font-size: 15px;
-	color:  white;
+	color: white;
 	padding-top: .5%;
 	margin: 0 auto;
 	font-family: 'Roboto Slab';
@@ -1165,7 +1185,7 @@ h3 {
 	display: inline-block;
 	padding-top: 5%;
 	position: relative;
-    font-family: 'Roboto Slab';
+	font-family: 'Roboto Slab';
 }
 
 .event-info-link:after {
@@ -1180,12 +1200,12 @@ h3 {
 	background: white;
 	-webkit-transition: .35s;
 	transition: .35s;
-    color: white;
+	color: white;
 }
 
 .event-info-link:hover:after {
 	width: 29%;
-    color: white;
+	color: white;
 }
 
 .event-info-logo {
@@ -1212,15 +1232,15 @@ h3 {
 	box-shadow: none;
 }
 
-
-.lbx-event .featherlight-content{
-	background-color: rgba(25, 25, 25, .5)	
+.lbx-event .featherlight-content {
+	background-color: rgba(25, 25, 25, .5)
 }
 
-.lbx-event .featherlight-close-icon{
-	background:transparent;
-	color:white;
+.lbx-event .featherlight-close-icon {
+	background: transparent;
+	color: white;
 }
+
 .lbx .innerlbx {
 	width: 68%;
 	display: inline-block;
@@ -1242,11 +1262,10 @@ h3 {
 	margin-bottom: 30%;
 	padding: 5% 0;
 }
-.lbx-event .featherlight .featherlight-content{
-    background-color: rgba(25, 25, 25, .5)!important;
+
+.lbx-event .featherlight .featherlight-content {
+	background-color: rgba(25, 25, 25, .5)!important;
 }
-
-
 
 .lbx .paraglbx {
 	width: 60%;
@@ -1341,27 +1360,61 @@ h3 {
 	white-space: nowrap;
 	overflow: hidden;
 	width: 100%;
-	margin:0 auto;
-	
+	margin: 0 auto;
 }
 
-#Contact .typeEffect{
-	animation: type 5s steps(60, end); 
-
+#Contact .typeEffect {
+	-webkit-animation: type 5s steps(60, end);
+	        animation: type 5s steps(60, end);
 }
-@keyframes type{ 
-	from { width: 0; } 
-  } 
-  
-  @keyframes type2{
-	0%{width: 0;}
-	50%{width: 0;}
-	100%{ width: 100; } 
-  } 
-  
-  @keyframes blink{
-	to{opacity: .0;}
-  }
+
+@-webkit-keyframes type {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes type {
+	from {
+		width: 0;
+	}
+}
+
+@-webkit-keyframes type2 {
+	0% {
+		width: 0;
+	}
+	50% {
+		width: 0;
+	}
+	100% {
+		width: 100;
+	}
+}
+
+@keyframes type2 {
+	0% {
+		width: 0;
+	}
+	50% {
+		width: 0;
+	}
+	100% {
+		width: 100;
+	}
+}
+
+@-webkit-keyframes blink {
+	to {
+		opacity: .0;
+	}
+}
+
+@keyframes blink {
+	to {
+		opacity: .0;
+	}
+}
 
 #Contact div {
 	font-size: 15px;
@@ -1386,12 +1439,21 @@ footer {
 	-ms-flex-align: end;
 	align-items: flex-end;
 	padding: 3% 5%;
-    align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 footer img {
+<<<<<<< HEAD
 	max-width: 50%;
     align-items: center;
+=======
+	max-width: 100%;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+>>>>>>> origin/master
 }
 
 footer a {
@@ -1399,13 +1461,12 @@ footer a {
 	-ms-flex-positive: 1;
 	flex-grow: 0;
 	color: white! important;
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 100;
-    font-size: 14px;
-    
+	font-size: 14px;
 }
 
-footer > a:first-child{
+footer>a:first-child {
 	max-width: 19%;
 	text-align: left;
 }
@@ -1436,12 +1497,17 @@ footer ul ul li {
 	-ms-flex-positive: 1;
 	flex-grow: 0.3;
 	text-align: right;
-    align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #social a {
-	color: #191919 !important;
-     align-items: center;
+	color: white !important;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: transparent!important;
 }
 
 .smGlobalBtn {
@@ -1463,7 +1529,9 @@ footer ul ul li {
 	-webkit-border-radius: 37px;
 	background-color: white;
 	margin: 5%;
-     align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 
@@ -1577,80 +1645,76 @@ footer ul ul li {
 	.backhome {
 		width: 5vw;
 	}
-    
-    .fondh1 span{
-	-ms-flex-item-align: left;
-	    align-self: left;
-	z-index: 100;
-	position: absolute;
-	    bottom: 37%;
-        width: 100%;
-}
+	.fondh1 span {
+		-ms-flex-item-align: left;
+		align-self: left;
+		z-index: 100;
+		position: absolute;
+		bottom: 37%;
+		width: 100%;
+	}
 	h1 {
 		font-size: 67px;
-        line-height: 70px;
+		line-height: 70px;
 	}
 	h2 {
 		font-size: 33px;
-        padding-top: 2%;
+		padding-top: 2%;
 	}
-    
-    .lbx p{
-        font-size: 13px;
-    }
-    .lbx a {
-        margin-bottom: 10%;
-        
-    }
-    .imglbx2 {
-        padding-bottom: 19%;
-    }
-    .lbx2 p{
-        font-size: 13px;
-    }
-     .lbx2 a {
-        margin-bottom: 13%;
-    } 
-    .imglbx2 {
-        padding-bottom: 21%;
-    }
-    .lbx3 p{
-        font-size: 13px;
-    }
-    .lbx3 .innerlbx {
-    height: 84vh;
-    }
-    .imglbx3 {
-        padding-bottom: 15%;
-    }
-    .lbx4 p{
-        font-size: 13px;
-    }
-    .lbx4 .innerlbx {
-        height: 102vh;
-    }
-    .imglbx4 {
-        padding-bottom: 22%;
-    }
-    .lbx5 p{
-        font-size: 13px;
-    }
-    .lbx5 a {
-        margin-bottom: 1%;
-    } 
-     .imglbx5 {
-        padding-bottom: 15%;
-    }
-    .lbx6 p{
-        font-size: 13px;
-    }
-    .lbx6 a {
-        margin-bottom: 8%;
-    } 
-    .imglbx6 {
-        padding-bottom: 18%;
-    }
-    
+	.lbx p {
+		font-size: 13px;
+	}
+	.lbx a {
+		margin-bottom: 10%;
+	}
+	.imglbx2 {
+		padding-bottom: 19%;
+	}
+	.lbx2 p {
+		font-size: 13px;
+	}
+	.lbx2 a {
+		margin-bottom: 13%;
+	}
+	.imglbx2 {
+		padding-bottom: 21%;
+	}
+	.lbx3 p {
+		font-size: 13px;
+	}
+	.lbx3 .innerlbx {
+		height: 84vh;
+	}
+	.imglbx3 {
+		padding-bottom: 15%;
+	}
+	.lbx4 p {
+		font-size: 13px;
+	}
+	.lbx4 .innerlbx {
+		height: 102vh;
+	}
+	.imglbx4 {
+		padding-bottom: 22%;
+	}
+	.lbx5 p {
+		font-size: 13px;
+	}
+	.lbx5 a {
+		margin-bottom: 1%;
+	}
+	.imglbx5 {
+		padding-bottom: 15%;
+	}
+	.lbx6 p {
+		font-size: 13px;
+	}
+	.lbx6 a {
+		margin-bottom: 8%;
+	}
+	.imglbx6 {
+		padding-bottom: 18%;
+	}
 	/* Galaxie page */
 	/*	.lbx {
 		height: 70vh;
@@ -1780,7 +1844,7 @@ footer ul ul li {
 		height: 66%;
 		width: 100%;
 		background-size: cover;
-		margin:0;
+		margin: 0;
 	}
 	.navfull {
 		padding: 6% 2%;
