@@ -157,10 +157,10 @@ header li:first-of-type a::after {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    opacity:.8;
+    opacity:.6;
 	display: inline-block;
 	margin: 2% 0 5% 8%;
-	background-image: url('../../assets/img/maupassant2.jpg');
+	background-image: url('../../assets/img/door.background2.png');
 	
 
 	
@@ -227,7 +227,7 @@ h2 span {
 
 .backhome img,
 .backhome svg {
-	width: 100%;
+	width: 11vw;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1390,7 +1390,7 @@ footer {
 }
 
 footer img {
-	max-width: 100%;
+	max-width: 50%;
     align-items: center;
 }
 
