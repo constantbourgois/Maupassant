@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.1/hamburgers.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.sidr@2.2.1(stylesheets/jquery.sidr.light.min.css+stylesheets/jquery.sidr.bare.css)">
-		<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="assets/css/featherlight.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 		<link rel="stylesheet" type="text/css" href="assets/css/mainstyle.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/menustyle.css"/>

@@ -18,7 +18,8 @@ $(function () {
 
     $('.fileupload').each(function () {
         $(this).fileupload({
-            url: 'http://localhost:8888/Maupassant/Adminevents/json/'
+            url: window.location.href + '/json',
+            
         });
     });
 

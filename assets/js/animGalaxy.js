@@ -30,15 +30,15 @@ $(document).ready(function () {
 	circles.addClass('mainCircle');
 	paths = $('#paths path');
 	$('#circles').attr('data-animStage', 1);
-		// identify circles and paths//
-		$(paths).each(function (j) {
-			$(this).attr('id', 'Path' + ($(paths).length - j));
-	
-		});
-	
-	totalTarget = targetsAnim.length;// grow Anim //
-	targetGrowAnimIndex = getRandomArbitrary(0, totalTarget);// grow Anim //
-	targetGrow = $(targetsAnim[targetGrowAnimIndex]);// grow Anim //
+	// identify circles and paths//
+	$(paths).each(function (j) {
+		$(this).attr('id', 'Path' + ($(paths).length - j));
+
+	});
+
+	totalTarget = targetsAnim.length; // grow Anim //
+	targetGrowAnimIndex = getRandomArbitrary(0, totalTarget); // grow Anim //
+	targetGrow = $(targetsAnim[targetGrowAnimIndex]); // grow Anim //
 
 
 
@@ -55,7 +55,10 @@ $(document).ready(function () {
 
 
 	$(targetsAnim).click(function (event) {
+		var scrollT = $(window).scrollTop();
 		event.preventDefault();
+		$('body').css('top', -(scrollT) + 'px')
+			.addClass('noscroll'); // prevent window from moving when lightbox appears//
 
 		animMoving = true;
 
@@ -68,18 +71,24 @@ $(document).ready(function () {
 			// load lightbox with delay//
 			dataFeatherlight = $(this).attr('data-featherlight');
 
-			setTimeout(function(){
-			$.featherlight(dataFeatherlight, {
-				afterContent: function (event) {
-					//to restart float//
-					$('.featherlight-close-icon').on("click", function () {
-						console.log("az");
-						floatElements();
-						tweenFloat.play();
+			setTimeout(function () {
+				$.featherlight(dataFeatherlight, {
+					afterContent: function (event) {
+						//to restart float//
+						$('.featherlight-close-icon').on("click", function () {
+							console.log("az");
+							floatElements();
+							tweenFloat.play();
 
-					});
-				}
-			});},350);
+
+							// reset window
+							$('body').toggleClass('noscroll');
+							window.scrollTo(0, scrollT); // remove noscroll from html//
+
+						});
+					}
+				});
+			}, 350);
 
 			switch ($(this).attr('data-path')) {
 				case '6':
@@ -234,7 +243,7 @@ $(document).ready(function () {
 	}
 
 	function animGrow() {
-		
+
 
 		var speed = 1;
 
@@ -253,7 +262,7 @@ $(document).ready(function () {
 
 
 		function reset() {
-		
+
 			tweenGrow.reverse();
 			getRandomTargetGrow();
 			setTimeout(animGrow, speed * 1000);
@@ -574,4 +583,3 @@ $(document).ready(function () {
 
 
 });
-

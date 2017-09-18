@@ -116,7 +116,7 @@
       position: relative;
       opacity: 0; }
       .overlay ul li a {
-        display: block;
+       display: inline;
         position: relative;
         color: #FFF;
         text-decoration: none;

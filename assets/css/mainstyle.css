@@ -23,6 +23,11 @@ a label {
 	cursor: pointer;
 }
 
+.noscroll{
+	position:fixed!important;
+	overflow-y: scroll!important;
+}
+
 a:hover {
 	color: gray;
 	cursor: pointer!important;
@@ -55,6 +60,7 @@ h3 {
 svg g:hover {
 	cursor: pointer;
 }
+
 
 body {
 	width: 100%;
@@ -232,7 +238,7 @@ h2 span {
 	background-color: #191919;
 	fill: white;
 }
-
+/*
 .backhome img:last-child {
 	-webkit-transition: .25s cubic-bezier(.645, .045, .355, 1);
 	transition: .25s cubic-bezier(.645, .045, .355, 1);
@@ -250,7 +256,7 @@ h2 span {
 
 .backhome:hover svg:first-child {
 	opacity: 0;
-}
+}*/
 /***************************************mp-info********************************************/
 
 #mp-text { 
@@ -1375,7 +1381,7 @@ footer {
 	flex-direction: row;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	justify-content: space-around;
+	justify-content: space-between;
 	-webkit-box-align: end;
 	-ms-flex-align: end;
 	align-items: flex-end;
@@ -1384,9 +1390,7 @@ footer {
 }
 
 footer img {
-	max-width: 19%;
-	padding-left: 2%;
-	margin-left: 0%;
+	max-width: 100%;
     align-items: center;
 }
 
@@ -1399,6 +1403,11 @@ footer a {
 	font-weight: 100;
     font-size: 14px;
     
+}
+
+footer > a:first-child{
+	max-width: 19%;
+	text-align: left;
 }
 
 footer ul {
@@ -1425,7 +1434,7 @@ footer ul ul li {
 #social {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
-	flex-grow: 0;
+	flex-grow: 0.3;
 	text-align: right;
     align-items: center;
 }
