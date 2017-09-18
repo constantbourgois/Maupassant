@@ -2084,11 +2084,19 @@ footer ul ul li {
         max-width: 32vw;
         align-items: center;
 	}
-	footer a {
+	footer > a {
 		text-align: center;
 		width: 100%;
 		padding: 3%;
+		
 	}
+
+	footer > a:first-child{
+		max-width: 100%;
+		text-align: center;
+	}
+
+	
 	footer ul ul {
 		display: block;
 		width: 100%;
