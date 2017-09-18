@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<ul>
 							<li><a href="#Home"><img src="<?php echo base_url()?>assets/img/hotelmaupassant.png" alt="logomaupassant"> </a></li>
 							<li><a href="#Acteurs">Le Groupe</a></li>
-							<li><a href="#Events">Evénements</a></li>
+							<li><a href="#Events">Événements</a></li>
 							<li><a href="#Contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -71,14 +71,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<img src="<?php echo base_url()?>assets/img/hotelmaupassant.png" alt="logoAnimMaupassant"> </a>
 				<ul class="categories">
 					<li><a href="#Acteurs"> Le Groupe </a></li>
-					<li><a href="#Events"> Evénements </a></li>
+					<li><a href="#Events"> Événements </a></li>
 					<li><a href="#Contact"> Contact </a></li>
 				</ul>
 				<!--<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>-->
 			</nav>
 			<div class="fondh1">
 
-				<span><h1>Hotel de <br> Maupassant</h1>
+				<span><h1>Hôtel de <br> Maupassant</h1>
 			<h2> <span>
 Leader dans l’accompagnement<br>des cabinets de
 gestion de patrimoine.</span></h2>
@@ -393,7 +393,7 @@ gestion de patrimoine.</span></h2>
 			</section>
 
 			<section id="Events">
-				<h3>Evénements</h3>
+				<h3>Événements</h3>
 				<div class="background">
 					<div id="background-transp">
                         <div class="col-events">
@@ -499,7 +499,7 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 			</section>
 			<section id="Contact">
 				<h3> Contact</h3>
-				<a href="mailTo:contact@maupassant-partenaires.fr">contact@maupassant-partenaires.fr</a>
+				<a href="mailTo:contact@maupassant-partenaires.fr" target="_blank">contact@maupassant-partenaires.fr</a>
 				<div> Hôtel de Maupassant <br> 17 Rue Jacques Bingen <br>75017 Paris
 					<br>
 					<span>01 44 54 82 35</span>
