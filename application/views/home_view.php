@@ -78,7 +78,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</nav>
 			<div class="fondh1">
 
-				<span><h1>Maupassant</h1>
+				<span><h1>Hotel de <br> Maupassant</h1>
 			<h2> <span>
 Leader dans l’accompagnement<br>des cabinets de
 gestion de patrimoine.</span></h2>

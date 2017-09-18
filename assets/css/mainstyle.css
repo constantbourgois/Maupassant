@@ -156,7 +156,7 @@ header li:first-of-type a::after {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
-	opacity: .8;
+	opacity: .35;
 	display: inline-block;
 	margin: 2% 0 5% 8%;
 	background-image: url('../../assets/img/door.background2.png');
@@ -185,7 +185,7 @@ video{
 	align-self: left;
 	z-index: 100;
 	position: absolute;
-	bottom: 38%;
+	bottom: 28%;
 }
 
 h1 {
@@ -234,7 +234,7 @@ ul>li img{
 .backhome svg {
 	width: 11vw;
 	position: absolute;
-	top: 0;
+    top: -15px;
 	left: 0;
 }
 
@@ -1089,7 +1089,7 @@ h3 {
 /***************Event Info*************************/
 
 .event-info {
-	background-color: rgba(25, 25, 25, .05);
+	background-color: rgba(25, 25, 25, .1);
 	position: relative;
 	display: none;
 	width: 80%;
@@ -1144,7 +1144,7 @@ h3 {
 
 .event-info .event-info-info {
 	width: 75%;
-	text-align: left;
+	text-align: justify;
 	margin: 0 auto;
 	padding: 10%, 7%;
 	font-size: 16px;
@@ -1642,7 +1642,7 @@ footer ul ul li {
 		align-self: left;
 		z-index: 100;
 		position: absolute;
-		bottom: 37%;
+		bottom: 26%;
 		width: 100%;
 	}
 	h1 {
@@ -1880,6 +1880,9 @@ footer ul ul li {
 		font-size: 15px;
 		padding-top: 3%;
 	}
+    
+    #mp-text {
+        height: 45vh;}
 	/* Galaxie page */
 	#Acteurs svg {
 		margin-bottom: 0%;
