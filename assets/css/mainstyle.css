@@ -153,26 +153,13 @@ header li:first-of-type a::after {
 	content: '';
 	height: 80vh;
 	width: 78%;
-<<<<<<< HEAD
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity:.6;
-	display: inline-block;
-	margin: 2% 0 5% 8%;
-	background-image: url('../../assets/img/door.background2.png');
-	
-
-	
-=======
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 	opacity: .8;
 	display: inline-block;
 	margin: 2% 0 5% 8%;
-	background-image: url('../../assets/img/maupassant2.jpg');
->>>>>>> origin/master
+	background-image: url('../../assets/img/door.background2.png');
 }
 
 
@@ -238,7 +225,7 @@ h2 span {
 
 .backhome img,
 .backhome svg {
-	width: 11vw;
+	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1445,15 +1432,10 @@ footer {
 }
 
 footer img {
-<<<<<<< HEAD
-	max-width: 50%;
-    align-items: center;
-=======
 	max-width: 100%;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
->>>>>>> origin/master
 }
 
 footer a {
