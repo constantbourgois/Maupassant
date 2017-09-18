@@ -29,17 +29,25 @@ $(document).ready(function () {
 	var eventsOffset = Math.floor(($('#Events .background').offset()).top);
 	var contactOffset = Math.floor(($('#Contact').offset()).top);
 	var contactLinkOffset = Math.floor(($('#Contact a').offset()).top);
-	console.log(contactLinkOffset);
+	
 
-    var menuLinks = $(".navfull .categories a");
+	var menuLinks = $(".navfull .categories a");
+	
+	if ($(window).scrollTop() === 0){
     
     $('.navfull').show();
 	$('.navmobile').hide();
 	$('.backhome').css('z-index','100000');
+	}
+	else{
+	$('.navfull').hide();
+	$('.navmobile').show();
+
+	}
 
 
 	$(window).scroll(function () {
-		console.log($(window).scrollTop(),contactLinkOffset)
+		
         if(window.scrollY === 0){
             $('.navmobile').hide();
 			$('.navfull').show();
