@@ -208,10 +208,10 @@ h2 span {
 }
 
 /*mmobile menu*/
-ul>li:first-child {
+.overlay ul>li:first-child {
 	margin: 0 0 5% 0;
 }
-ul>li img{
+.overlay ul>li img{
 	padding:inherit;
 }
 
@@ -2063,7 +2063,7 @@ footer ul ul li {
 		margin-top: 15%;
 		padding: inherit;
 	}
-	ul>li:first-child {
+	.overlay ul>li:first-child {
 		margin: 0;
 	}
 	.backhome img,
