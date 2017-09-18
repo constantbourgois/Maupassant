@@ -413,6 +413,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
+    text-align: justify;
 }
 
 .lbx .paraglbx {
@@ -513,6 +514,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
+    text-align: justify;
 }
 
 .lbx2 .paraglbx {
@@ -595,6 +597,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
+    text-align: justify;
 }
 
 .lbx3 .paraglbx {
@@ -677,6 +680,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
+    text-align: justify;
 }
 
 .lbx4 .paraglbx {
@@ -759,6 +763,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
+    text-align: justify;
 }
 
 .lbx5 .paraglbx {
@@ -840,6 +845,7 @@ h2 span {
 	display: inline-block;
 	margin-bottom: 30%;
 	padding: 5% 0;
+    text-align: justify;
 }
 
 .lbx6 .paraglbx {
@@ -1001,6 +1007,7 @@ h2 span {
 	padding-bottom: 5%;
 	padding-right: 5%;
     line-height: 19px;
+    text-align: justify;
 }
 
 .eventcontact {
