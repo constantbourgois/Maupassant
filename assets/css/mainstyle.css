@@ -1843,8 +1843,11 @@ footer ul ul li {
 		width: 6vw;
 		left: 3%;
 	}
+    
     .backhome img, .backhome svg {
-        width: 30vw;}
+    width: 15vw;
+    top: -34px;
+}
 	.button_container {
 		right: 4%;
 		height: 27px;
@@ -2048,6 +2051,10 @@ footer ul ul li {
 		margin-top: 15%;
 		padding: inherit;
 	}
+    .backhome img, .backhome svg {
+        width: 30vw;
+    top:0;}
+    
 	.eventsdata {
 		top: 0;
 		right: 0;
