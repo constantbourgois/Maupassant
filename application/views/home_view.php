@@ -513,10 +513,12 @@ Fundee a le plaisir de vous convier à son Webinar du 18 Septembre prochain au c
 			<a href="#">© 2017 Maupassant Partenaires all rights reserved</a>
 		
 			<div id="social">
-				<a class="linkedinBtn smGlobalBtn" href="#"></a>
-				<a class="twitterBtn smGlobalBtn" href="#"></a>
-				<a class="youtubeBtn smGlobalBtn" href="#"></a>
-				<a class="facebookBtn smGlobalBtn" href="#"></a>
+				<a class="linkedinBtn smGlobalBtn"  target="_blank" href="
+https://fr.linkedin.com/company/maupassant-partenaires"></a>
+				<a class="twitterBtn smGlobalBtn" target="_blank" href="https://twitter.com/maupassant_part
+"></a>
+				<a class="youtubeBtn smGlobalBtn" target="_blank" href="https://www.youtube.com/channel/UCpY7ujP0mxxjonKPH4F72_w"></a>
+				<a class="facebookBtn smGlobalBtn" target="_blank" href="https://www.facebook.com/maupassantpartenaires/"></a>
 			</div>
 		</footer>
 		<div id="lightboxes">
