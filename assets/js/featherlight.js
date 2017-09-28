@@ -89,7 +89,7 @@
 		openSpeed: 500,
 		closeSpeed: 150,
 		closeOnClick: "background",
-		closeOnEsc: !0,
+		closeOnEsc: false,
 		closeIcon: "&#10005;",
 		loading: "",
 		persist: !1,
