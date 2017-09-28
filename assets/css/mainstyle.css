@@ -1992,10 +1992,11 @@ footer ul ul li {
 		color: white;
 		left: 0%;
 		right: 0;
-		top: 40%;
+		top: 32%;
 		bottom: 0;
 		text-align: center;
 		font-size: 24px;
+        line-height: 28px;
 	}
 	h1 {
 		font-size: 55px;
@@ -2467,16 +2468,18 @@ footer ul ul li {
 	.event-info img {
 		margin: 0 auto;
 		width: 100%;
+            margin-top: 10%;
 	}
 	.event-info .event-info-info {
 		width: 100%;
 		padding-top: 12%;
 		font-size: 16px;
+        text-align: left;
 	}
 	.event-info-date {
 		width: 100%;
 		font-size: 16px;
-		padding-top: 18%;
+		padding-top: 5%;
 	}
 	event-info-logo a {
 		width: 56%;
@@ -2485,6 +2488,12 @@ footer ul ul li {
 		-webkit-box-shadow: none;
 		box-shadow: none;
 	}
+    .event-info .background-event-info {
+  
+    padding: 50px 0px;
+}
+
+
 }
 
 
