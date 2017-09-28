@@ -2183,6 +2183,12 @@ footer ul ul li {
 		-ms-flex-align: center;
 		align-items: center;
 	}
+    
+    .eventdescription {
+    
+    text-align: left;
+    font-weight: 300;
+}
 }
 
 
@@ -2306,7 +2312,7 @@ footer ul ul li {
 
 @media only screen and (max-width: 480px) {
 	#Contact a {
-		font-size: 15.5px;
+		font-size: 11.5px;
 	}
 	.lbx .innerlbx {
 		width: 98%;
@@ -2475,6 +2481,8 @@ footer ul ul li {
 		padding-top: 12%;
 		font-size: 16px;
         text-align: left;
+        
+    font-weight: 300;
 	}
 	.event-info-date {
 		width: 100%;
