@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<nav class="overlay-menu">
 						<ul>
 							<li><a href="#Home"><img src="<?php echo base_url()?>assets/img/hotelmaupassant.png" alt="logomaupassant"> </a></li>
-							<li><a href="#mp-text">Le Groupe</a></li>
+							<li><a href="#Acteurs">Le Groupe</a></li>
 							<li><a href="#Events">Événements</a></li>
 							<li><a href="#Contact">Contact</a></li>
 						</ul>
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</svg>-->
 					<img src="<?php echo base_url()?>assets/img/hotelmaupassant.png" alt="logoAnimMaupassant"> </a>
 				<ul class="categories">
-					<li><a href="#mp-text"> Le Groupe </a></li>
+					<li><a href="#Acteurs"> Le Groupe </a></li>
 					<li><a href="#Events"> Événements </a></li>
 					<li><a href="#Contact"> Contact </a></li>
 				</ul>
@@ -110,13 +110,13 @@ gestion de patrimoine.</span></h2>
 		</header>
 		<main> 
             
-            <section id="mp-text">
+            <!--<section id="mp-text">
                	
         <p>Depuis près de 15 ans, nous accompagnons plus de 600 cabinets dans la structuration et le développement de leur entreprise, sur le plan économique, technologique et réglementaire. Nous optimisons / mettons à disposition, outre la stratégie de conquête de nouveaux clients, les outils, la gestion d’actif, et l’immobilier..</p>
 			
 				</div>
 
-			</section>
+			</section>-->
 			<section id="Acteurs">
             
 				<svg id="animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-60 -50 1000 600">
@@ -400,10 +400,10 @@ gestion de patrimoine.</span></h2>
                         <div class="col-events">
                             <?php 
                                 
-                                $l = count($events); 
+                                $l = count($events);
                                 
-                                for ($i = 0; $i <$l; $i++){
-                                    if ($i & 1 ){} else{ ?>
+                       
+                                 $i = 0; ?>
                                         <article>
 								<div class="wrapevents">
 									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
@@ -423,8 +423,8 @@ gestion de patrimoine.</span></h2>
 									</div>
 								</div>
 							</article><?php      
-                                    }
-                                }
+                                  
+                                
                             ?>
                         </div>
 						<div class="col-events">
@@ -432,8 +432,8 @@ gestion de patrimoine.</span></h2>
                                 
                                 $l = count($events); 
                                 
-                                for ($i = 0; $i <$l; $i++){
-                                    if ($i & 1 ){ ?>
+                                for ($i = 1; $i <$l; $i++){
+                                    if ( $i){ ?>
                                         <article>
 								<div class="wrapevents">
 									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
