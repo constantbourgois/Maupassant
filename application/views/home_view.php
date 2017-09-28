@@ -8,7 +8,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> Maupassant </title>
+		<title> Maupassant Partenaires</title>
+		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 		<link rel="stylesheet" href="assets/css/reset.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
