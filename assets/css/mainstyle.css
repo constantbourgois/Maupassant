@@ -156,10 +156,10 @@ header li:first-of-type a::after {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
-	opacity: .6;
+	opacity: .8;
 	display: inline-block;
 	margin: 2% 0 5% 8%;
-	background-image: url('../../assets/img/door.background2.png');
+	background-image: url('../../assets/img/mp.buldings.background.png');
 }
 
 
@@ -195,11 +195,12 @@ h1 {
 }
 
 h2 {
-	font-family: 'Playfair Display', sans-serif;
-	font-size: 28px;
+	
+	font-size: 20px;
 	display: inline;
 	line-height: 42px;
 	margin-left: 1.4%;
+    font-weight: 300;
 }
 
 h2 span {
@@ -1552,6 +1553,129 @@ footer ul ul li {
 }
 
 
+/* Responsive 27" */
+
+@media only screen and (min-width : 2400px) {
+    .backhome img,
+.backhome svg {
+	width: 8.5vw;
+	position: absolute;
+    top: -15px;
+	left: 0;
+}
+    h1{
+        font-size: 100px !important;
+        line-height: 106px !important;
+    }
+    
+    h2{
+        font-size: 58px !important;
+        line-height: 71px !important;
+    }
+    
+    #mp-text p{
+        font-size: 20px;
+        line-height: 57px;
+    }
+    
+    .lbx3 a{
+        margin-bottom: 0%;
+        
+    }
+    .lbx .innerlbx{
+        height: 66vh;
+    }
+    .lbx2 .innerlbx{
+        height: 66vh;
+    }
+    .lbx3 .innerlbx{
+        height: 66vh;
+    }
+    .lbx4 .innerlbx{
+        height: 66vh;
+    }
+    .lbx5 .innerlbx{
+        height: 66vh;
+    }
+    .lbx6 .innerlbx{
+        height: 66vh;
+    }
+     .lbx h5{
+        font-size: 25px;
+    }
+    .lbx p{
+        font-size: 18px;
+    }
+     .lbx2 h5{
+        font-size: 25px;
+    }
+     .lbx2 p{
+        font-size: 18px;
+    }
+     .lbx3 h5{
+        font-size: 25px;
+    }
+     .lbx3 p{
+        font-size: 18px;
+    }
+     .lbx4 h5{
+        font-size: 25px;
+    }
+     .lbx4 p{
+        font-size: 18px;
+    } 
+     .lbx5 h5{
+        font-size: 25px;
+    }
+    .lbx5 p{
+        font-size: 18px;
+    }
+     .lbx6 h5{
+        font-size: 25px;
+    }
+     .lbx6 p{
+        font-size: 18px;
+    }
+    
+    .eventdescription{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .eventsdata h4{
+        font-size: 2em;
+    }
+    #Events h3{
+        font-size: 22px;
+    }
+    #Events img{
+        max-width: 86%;
+    }
+    .eventcontact{
+        font-size: 15px;
+    }
+    #Contact h3{
+        font-size: 22px;
+    }
+    #Contact a{
+        font-size: 23px;
+    }
+    
+    #Contact div{
+        font-size: 20px;
+    }
+    
+    footer img{
+        max-width: 37%;
+    }
+    footer a{
+        font-size: 17px;
+    }
+    .smGlobalBtn{
+        font-size: 23px;
+    }
+}
+
 /* Responsive 15" */
 
 @media only screen and (min-width: 1200px) {
@@ -2194,7 +2318,7 @@ footer ul ul li {
 		margin-left: 0%;
 		margin-top: 7%;
 		padding: 38px;
-		height: 95vh;
+		height: 110vh;
 	}
 	.lbx2 .paraglbx {
 		width: 100%;
@@ -2275,9 +2399,9 @@ footer ul ul li {
 		height: 108vh;
 	}
 	.lbx5 a {
-		width: 62%;
+		width: 79%;
 		padding-right: 0%;
-		margin-left: 29%;
+		margin-left: 17%;
 		font-size: 15px;
 	}
 	.lbx5 .paraglbx {
