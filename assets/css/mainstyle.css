@@ -332,7 +332,8 @@ h2 span {
 #Acteurs svg {
 	height: 100vh;
 	width: 100%;
-	margin-bottom: 6%;
+	padding-bottom: 1%;
+    padding-top: 0%;
 }
 
 #paths {
@@ -2146,24 +2147,7 @@ footer ul ul li {
 		padding-bottom: 19%;
 	}
     
-    .lbx p {
-	text-align: left;
-}
-        .lbx2 p {
-	text-align: left;
-}
-        .lbx3 p {
-	text-align: left;
-}
-        .lbx4 p {
-	text-align: left;
-}
-        .lbx5 p {
-	text-align: left;
-}
-        .lbx6 p {
-	text-align: left;
-}
+   
 	#Contact h3 {
 		padding: 0;
 		margin: 0;
@@ -2185,8 +2169,6 @@ footer ul ul li {
 	}
     
     .eventdescription {
-    
-    text-align: left;
     font-weight: 300;
 }
 }
@@ -2480,9 +2462,7 @@ footer ul ul li {
 		width: 100%;
 		padding-top: 12%;
 		font-size: 16px;
-        text-align: left;
-        
-    font-weight: 300;
+        font-weight: 300;
 	}
 	.event-info-date {
 		width: 100%;
