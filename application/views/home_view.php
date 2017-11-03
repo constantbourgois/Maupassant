@@ -443,6 +443,12 @@ gestion de patrimoine.</span></h2>
 								$l = count($events);
 								
 								for ($i = 1; $i <= 2; $i++){
+
+									if (isset($events[$i]))
+									{ 
+										
+								
+										
                        
                                 ?>
                                         <article>
@@ -464,7 +470,8 @@ gestion de patrimoine.</span></h2>
 									</div>
 								</div>
 							</article><?php
-								}     
+								}
+							}     
                                   
                                 
                             ?>
@@ -475,7 +482,9 @@ gestion de patrimoine.</span></h2>
                                 $l = count($events); 
                                 
                                 for ($i = 2; $i <$l; $i++){
-                                    if ($i & 1 ){} else{ ?>
+                                    if ($i & 1 ){} else{
+										if (isset($events[$i]))
+										{ ?>
                                         <article>
 								<div class="wrapevents">
 									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
@@ -495,7 +504,7 @@ gestion de patrimoine.</span></h2>
 									</div>
 								</div>
 							</article><?php      
-                                    }
+                                    }}
                                 }
                             ?>
                         </div>
@@ -505,7 +514,8 @@ gestion de patrimoine.</span></h2>
                                 $l = count($events); 
                                 
                                 for ($i = 2; $i <$l; $i++){
-									if ($i & 1 ){ ?>
+									if ($i & 1 ){ if (isset($events[$i]))
+										{  ?>
                                         <article>
 								<div class="wrapevents">
 									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
@@ -525,7 +535,7 @@ gestion de patrimoine.</span></h2>
 									</div>
 								</div>
 							</article><?php      
-                                    }
+                                    }}
                                 }
                             ?>
                         </div>
