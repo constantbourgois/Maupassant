@@ -8,6 +8,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Google Analytics -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-54594361-1', 'auto');
+		ga('send', 'pageview');
+		</script>
+		<!-- End Google Analytics -->
 		<title> Maupassant Partenaires</title>
 		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 		<link rel="stylesheet" href="assets/css/reset.min.css" />
@@ -401,7 +412,6 @@ gestion de patrimoine.</span></h2>
                             <?php 
                                 
                                 $l = count($events);
-                                
                        
                                  $i = 0; ?>
                                         <article>
@@ -430,10 +440,72 @@ gestion de patrimoine.</span></h2>
 						<div class="col-events">
                             <?php 
                                 
+								$l = count($events);
+								
+								for ($i = 1; $i <= 2; $i++){
+                       
+                                ?>
+                                        <article>
+								<div class="wrapevents">
+									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
+									<div class="eventsdata">
+										<h4>
+											<?php echo $events[$i]->title; ?>
+										</h4>
+										<div class="eventdate">
+											<?php if (!empty($events[$i]->date))
+										echo $newDate = date("d/m/Y", strtotime($events[$i]->date));?>
+										</div>
+										<div class="eventdescription">
+											<?php echo $events[$i]->description; ?>
+										</div>
+										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
+										<a data-featherlight="<?php echo '#'.$events[$i]->id;?>" data-featherlight-variant="lbx-event" href="#" class="eventcontact">Plus d'informations</a>
+									</div>
+								</div>
+							</article><?php
+								}     
+                                  
+                                
+                            ?>
+                        </div>
+						<div class="col-events">
+                            <?php 
+                                
                                 $l = count($events); 
                                 
-                                for ($i = 1; $i <$l; $i++){
-                                    if ( $i){ ?>
+                                for ($i = 2; $i <$l; $i++){
+                                    if ($i & 1 ){} else{ ?>
+                                        <article>
+								<div class="wrapevents">
+									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
+									<div class="eventsdata">
+										<h4>
+											<?php echo $events[$i]->title; ?>
+										</h4>
+										<div class="eventdate">
+											<?php if (!empty($events[$i]->date))
+										echo $newDate = date("d/m/Y", strtotime($events[$i]->date));?>
+										</div>
+										<div class="eventdescription">
+											<?php echo $events[$i]->description; ?>
+										</div>
+										<a class="eventlinklogo" href="<?php echo $events[$i]->link; ?>"><img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->logo; ?>" alt="logoevents"></a>
+										<a  data-featherlight-variant="lbx-event" data-featherlight="<?php echo '#'.$events[$i]->id;?>" href="#" class="eventcontact">Plus d'informations</a>
+									</div>
+								</div>
+							</article><?php      
+                                    }
+                                }
+                            ?>
+                        </div>
+						<div class="col-events">
+                            <?php 
+                                
+                                $l = count($events); 
+                                
+                                for ($i = 2; $i <$l; $i++){
+									if ($i & 1 ){ ?>
                                         <article>
 								<div class="wrapevents">
 									<img src="<?php echo base_url()?>uploads/files/<?php echo $events[$i]->background_image_displayed; ?>" alt="backgroundevent">
