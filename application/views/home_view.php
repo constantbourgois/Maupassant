@@ -447,9 +447,6 @@ gestion de patrimoine.</span></h2>
 									if (isset($events[$i]))
 									{ 
 										
-								
-										
-                       
                                 ?>
                                         <article>
 								<div class="wrapevents">
@@ -481,7 +478,7 @@ gestion de patrimoine.</span></h2>
                                 
                                 $l = count($events); 
                                 
-                                for ($i = 2; $i <$l; $i++){
+                                for ($i = 3; $i <$l; $i++){
                                     if ($i & 1 ){} else{
 										if (isset($events[$i]))
 										{ ?>
@@ -513,7 +510,7 @@ gestion de patrimoine.</span></h2>
                                 
                                 $l = count($events); 
                                 
-                                for ($i = 2; $i <$l; $i++){
+                                for ($i = 3; $i <$l; $i++){
 									if ($i & 1 ){ if (isset($events[$i]))
 										{  ?>
                                         <article>
