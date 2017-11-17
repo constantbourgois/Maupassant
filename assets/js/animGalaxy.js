@@ -75,11 +75,24 @@ $(document).ready(function () {
 				$.featherlight(dataFeatherlight, {
 					afterContent: function (event) {
 						//to restart float//
+
+						$(document).keyup(function(e) {
+							if (e.keyCode === 27 && $('#Events').offset().top < $(window).scrollTop())
+
+							console.log(e);
+						
+							floatElements();
+							tweenFloat.play();
+							// reset window
+							$('body').toggleClass('noscroll');
+							window.scrollTo(0, scrollT); // remove noscroll from html//
+						  });
+
+
 						$('.featherlight-close-icon').on("click", function () {
 							console.log("az");
 							floatElements();
 							tweenFloat.play();
-
 
 							// reset window
 							$('body').toggleClass('noscroll');
